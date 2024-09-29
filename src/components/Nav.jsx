@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 
-import Logo from "../components/Logo";
+import Logo from "./Logo";
 import { NavDataResponsive } from "./NavDataResponsive";
 import { NavData } from "./NavData";
 
@@ -29,14 +29,14 @@ const Nav = () => {
     <nav>
       <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4">
         {/* Logo -------> */}
-        <div className="flex items-center flex-1">
+        <div className="flex items-center flex-1 z-30">
           <span>
             <Logo />
           </span>
         </div>
         {/* Logo <------- */}
 
-        <div className="lg:flex md:flex lg: flex-1 items center justify-end font-normal hidden items-center">
+        <div className="lg:flex md:flex lg:flex-1 items center justify-end font-normal hidden items-center z-10">
           <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
             <ul className="flex gap-8 mr-16 text-[18px]">
               {NavData.map((item, index) => (
