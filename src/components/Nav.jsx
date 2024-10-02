@@ -27,32 +27,32 @@ const Nav = () => {
 
   return (
     // <nav className="">
-      <nav className="bg-slate-600 border-b-slate-700 border-b-4 fixed w-[100%] h-20 flex justify-between z-50 text-white lg:py-5 px-20 py-4">
-        {/* Logo -------> */}
-        <div className="flex items-center flex-1 z-30">
-          <span>
-            <Logo />
-          </span>
-        </div>
-        {/* Logo <------- */}
+    <nav className="bg-slate-600 border-b-slate-700 border-b-4 fixed w-[100%] h-20 flex justify-between z-50 text-white lg:py-5 px-20 py-4">
+      {/* Logo -------> */}
+      <div className="flex items-center flex-1 z-30">
+        <span>
+          <Logo />
+        </span>
+      </div>
+      {/* Logo <------- */}
 
-        <div className="lg:flex md:flex lg:flex-1 items center justify-end font-normal hidden items-center z-10">
-          <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
-            <ul className="flex gap-8 mr-16 text-[18px]">
-              {NavData.map((item, index) => (
-                <Link key={index} spy={true} smooth={true} to={item.to}>
-                  <li className={item.cName}>{item.title}</li>
-                </Link>
-              ))}
-            </ul>
-          </div>
+      <div className="lg:flex md:flex lg:flex-1 items center justify-end font-normal hidden items-center z-10">
+        <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
+          <ul className="flex gap-8 mr-16 text-[18px]">
+            {NavData.map((item, index) => (
+              <Link key={index} spy={true} smooth={true} to={item.to}>
+                <li className={item.cName}>{item.title}</li>
+              </Link>
+            ))}
+          </ul>
         </div>
+      </div>
 
-        <div>{click && content}</div>
-        <button className="block sm:hidden transition" onClick={handleClick}>
-          {click ? <FaTimes /> : <CiMenuFries />}
-        </button>
-      </nav>
+      <div>{click && content}</div>
+      <button className="block sm:hidden transition" onClick={handleClick}>
+        {click ? <FaTimes /> : <CiMenuFries />}
+      </button>
+    </nav>
     // </nav>
   );
 };

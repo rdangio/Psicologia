@@ -19,7 +19,8 @@ function Carousel() {
       id: "1",
       image: "/src/assets/images/slider/slider-1.jpg",
       text1: "Quer encontrar uma melhor qualidade de vida?",
-      text2: "Podemos ajudá-lo a superar uma ampla gama de problemas psicológicos e emocionais.",
+      text2:
+        "Podemos ajudá-lo a superar uma ampla gama de problemas psicológicos e emocionais.",
     },
     {
       id: "2",
@@ -31,14 +32,15 @@ function Carousel() {
       id: "3",
       image: "/src/assets/images/slider/slider-3.jpg",
       text1: "Reconquiste a alegria de viver!",
-      text2: "Somos qualificados para atender às suas necessidades específicas.",
+      text2:
+        "Somos qualificados para atender às suas necessidades específicas.",
     },
   ];
 
   return (
-    <div>
+    <div className="max-w-full">
       <Swiper
-        modules={[ EffectFade ]}
+        modules={[EffectFade]}
         effect="fade"
         className="pb-2"
         style={{
@@ -62,11 +64,23 @@ function Carousel() {
               <img
                 src={item.image}
                 alt="imagem Carrossel"
-                className="w-[100%] h-[500px]"
+                className="w-[100%] h-[100%] blur-[3px] "
               />
-              <div className="absolute ">
-                <p className="text-slate-100 drop-shadow-[_2px_2px_rgba(0,0,0,1.55)] text-[40px]">{item.text1}</p>
-                <p className="text-slate-100 drop-shadow-[_2px_2px_rgba(0,0,0,1.55)] text-[30px]">{item.text2}</p>
+              <div className="absolute">
+                <p
+                  className="text-slate-100 drop-shadow-[_2px_2px_rgba(0,0,0,1.55)] 
+                  md:text-[40px] md:text-center
+                  sm:text-[27px] sm:text-center
+                  text-[17px] text-center">
+                  {item.text1}
+                </p>
+                <p className="text-slate-100 drop-shadow-[_2px_2px_rgba(0,0,0,1.55)]
+                  md:text-[25px] md:text-center
+                  sm:text-[19px] sm:text-center
+                  text-[13px] text-center
+                ">
+                  {item.text2}
+                </p>
               </div>
             </div>
           </SwiperSlide>
@@ -77,4 +91,3 @@ function Carousel() {
 }
 
 export default Carousel;
-
