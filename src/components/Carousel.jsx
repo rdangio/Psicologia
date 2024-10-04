@@ -41,18 +41,26 @@ function Carousel() {
     <div className="max-w-full">
       <Swiper
         modules={[EffectFade]}
+        speed= "1500"
         effect="fade"
         className="pb-2"
         style={{
           "--swiper-navigation-color": "#000",
+          "--swiper-navigation-size": "33px",
+          "--swiper-navigation-top-offset": "50%",
+          "--swiper-navigation-sides-offset": "15px",
+          
+          
           "--swiper-pagination-color": "#000",
           "--swiper-pagination-bullet-size": "15px",
+
         }}
         autoplay={{
           delay: 6000,
           disableOnInteraction: false,
         }}
         slidesPerView={1}
+        loop={true}
         pagination={{
           clickable: true,
         }}
