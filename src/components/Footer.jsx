@@ -1,5 +1,6 @@
 // Utilizado a biblioteca para fazer o efeito de onda no footer: https://www.shapedivider.app/
 
+import DefautlButton from "./Button";
 import { FooterData } from "./FooterData";
 
 const Footer = () => {
@@ -55,6 +56,8 @@ const Footer = () => {
               )}
             </div>
           ))}
+
+          <DefautlButton />
         </div>
 
         <h6 className="text-center font-bold">&copy; {Year} RD Dev&Design</h6>
