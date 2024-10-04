@@ -27,7 +27,7 @@ const Nav = () => {
 
   return (
     // <nav className="">
-    <nav className="bg-slate-600 border-b-slate-700 border-b-4 fixed w-[100%] h-20 flex justify-between z-50 text-white lg:py-5 px-20 py-4">
+    <nav className="bg-[#A2CACA] border-b-slate-500 border-b-2 shadow-2xl fixed w-[100%] h-20 flex justify-between z-50 text-white lg:py-5 px-20 py-4">
       {/* Logo -------> */}
       <div className="flex items-center flex-1 z-30">
         <span>

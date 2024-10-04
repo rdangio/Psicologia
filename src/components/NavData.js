@@ -4,7 +4,7 @@ export const NavData = [
     to: "Home",
     url: "/",
     cName:
-      "hover:text-color-title transition border-b-2 border-slate-900 hover:border-color-title cursor-pointer",
+      "hover:text-color-title transition border-b-2 border-[#4A7D7E] hover:border-color-title cursor-pointer",
   },
 
   {
@@ -12,7 +12,7 @@ export const NavData = [
     to: "About",
     url: "#",
     cName:
-      "hover:text-color-title transition border-b-2 border-slate-900 hover:border-color-title cursor-pointer",
+      "hover:text-color-title transition border-b-2 border-[#4A7D7E] hover:border-color-title cursor-pointer",
   },
 
   {
@@ -20,7 +20,7 @@ export const NavData = [
     to: "Services",
     url: "#",
     cName:
-      "hover:text-color-title transition border-b-2 border-slate-900 hover:border-color-title cursor-pointer",
+      "hover:text-color-title transition border-b-2 border-[#4A7D7E] hover:border-color-title cursor-pointer",
   },
 
   {
@@ -28,7 +28,7 @@ export const NavData = [
     to: "Project",
     url: "#",
     cName:
-      "hover:text-color-title transition border-b-2 border-slate-900 hover:border-color-title cursor-pointer",
+      "hover:text-color-title transition border-b-2 border-[#4A7D7E] hover:border-color-title cursor-pointer",
   },
 
   {
@@ -36,6 +36,6 @@ export const NavData = [
     to: "Contact",
     url: "#",
     cName:
-      "hover:text-color-title transition border-b-2 border-slate-900 hover:border-color-title cursor-pointer",
+      "hover:text-color-title transition border-b-2 border-[#4A7D7E] hover:border-color-title cursor-pointer",
   },
 ];
