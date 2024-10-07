@@ -5,7 +5,7 @@ const DefaultButton = ({ children, ...props }) => {
     <div>
       <button
         {...props}
-        className="absolute border-2 bg-purple-400 p-1 px-2 rounded-2xl font-bold"
+        className="bg-purple-400 p-2 px-4 rounded-2xl font-bold hover:bg-purple-500 active:bg-purple-600 transition-all"
       >
         {children}
       </button>
