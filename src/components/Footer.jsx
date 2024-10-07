@@ -23,7 +23,7 @@ const Footer = () => {
 
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-20 p-20 text-[18px] ">
           <div className="flex flex-col">
-            <h2 className="text-3xl text-pink-500 uppercase mb-4">Footer</h2>
+            <h2 className="text-2xl text-pink-500 uppercase mb-4">Footer</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
               perspiciatis a magni maxime, possimus reprehenderit tempore nam

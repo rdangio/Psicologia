@@ -72,7 +72,7 @@ function Carousel() {
               <img
                 src={item.image}
                 alt="imagem Carrossel"
-                className="w-[100%] h-[100%] blur-[3px] "
+                className="max-w-[100%] max-h-[100%] blur-[3px] "
               />
               <div className="absolute">
                 <p
