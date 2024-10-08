@@ -45,11 +45,10 @@ const Nav = () => {
                   <li className={item.cName}>{item.title}</li>
                 </Link>
               ))}
-              <div className="flex justify-center border-white">
-                <DefaultButton type="button">Agende Sua Consulta</DefaultButton>
-              </div>
             </ul>
           </div>
+
+          <DefaultButton type="button">Agende Sua Consulta</DefaultButton>
         </div>
 
         <div>{click && content}</div>
