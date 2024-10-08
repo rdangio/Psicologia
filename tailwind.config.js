@@ -4,13 +4,21 @@ export default {
   theme: {
     extend: {
       colors: {
+        //Whatsapp Icon
         "whats-green": "#25d366",
         "whats-green-hover": "#0fe961",
         "whats-green-active": "#36c26a",
-        "bgcolor-main": "#0A1828",
-        "textcolor-2": "#178582",
-        "textcolor-3": "#BFA181",
-        "color-title": "#EC4899",
+
+        //Background e texto
+        "bgcolor-1": "#3AAFA9",
+        "textcolor-1": "#FEFFFF",
+        "textcolor-2": "#DEF2F1",
+
+        //Botões
+        "button-color": "#17252A",
+        "button-hover": "#2B7A78",
+        "button-active": "#44BDBB",
+        "titlecolor-1": "#17252A",
       },
     },
   },
