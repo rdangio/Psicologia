@@ -22,3 +22,25 @@
 > > > #222629
 > > > #474B4F
 > > > #6B6E70
+
+# Tarefas e Anotações Rico
+
+# Tarefas e Anotações Dvd
+
+> > > Criar um botão "agendar sessão" que redirecione para o whatsapp
+> > > (https://www.infobip.com/pt/blog/como-criar-link-whatsapp)
+
+### Sites modelos:
+
+> https://franciscahurtadopsicologa.com.br > https://www.psigiovanamoraes.com
+
+> Página de perguntas frequentes
+> Página de contatos
+> https://www.vitoriaalbinopsi.com.br
+
+### Página de depoimentos
+
+Carrosel com endereço e imagens do consultório
+Rodapé
+
+> https://marcossantanapsi.com
