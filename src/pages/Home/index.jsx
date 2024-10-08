@@ -10,8 +10,8 @@ const App = () => {
       <Nav />
       <Carousel />
       <CardServices />
-      <section className="flex justify-center items-center ">
-        <div className="w-[1400px] gap-16 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-purple-400 to-90% flex  justify-center items-center  h-[380px] font-bold">
+      <section className="w-full flex justify-center items-center bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-purple-400 to-90% ">
+        <div className="w-[800px] gap-16  flex  justify-center items-center  h-[380px] font-bold">
           {/* <div className=" gap-16 bg-[url('/src/assets/images/slider/slider-3.jpg')] flex  justify-center items-center  h-[380px] mb-10 font-bold"> */}
           {/* <div className="gap-16 bg-gradient-to-r from-[#A2CACA] to-[#4A7D7E] flex  justify-center items-center  h-[380px] mb-10 font-bold"> */}
           <img
