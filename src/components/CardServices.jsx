@@ -22,7 +22,7 @@ function CardServices() {
 
   return (
           <section className="bg-slate-50 flex flex-col justify-center items-center">
-          <div className="flex flex-col justify-center pt-7 items-center  w-[800px] ">
+          <div className="flex flex-col justify-center pt-7 items-center  w-[800px]  ">
             <h2
               className="text-[#4A7D7E] drop-shadow-[_2px_2px_rgba(0,0,0,1.55)] 
             md:text-[40px] md:text-center
