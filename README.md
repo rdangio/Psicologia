@@ -29,18 +29,13 @@
 
 > > > Criar um botão "agendar sessão" que redirecione para o whatsapp
 > > > (https://www.infobip.com/pt/blog/como-criar-link-whatsapp)
+> > > Mapa da localização
+> > > Página de perguntas frequentes
+> > > Página de contatos
+> > > Página de depoimentos
+> > > Carrosel com endereço e imagens do consultório
+> > > Rodapé
 
 ### Sites modelos:
 
-> https://franciscahurtadopsicologa.com.br > https://www.psigiovanamoraes.com
-
-> Página de perguntas frequentes
-> Página de contatos
-> https://www.vitoriaalbinopsi.com.br
-
-### Página de depoimentos
-
-Carrosel com endereço e imagens do consultório
-Rodapé
-
-> https://marcossantanapsi.com
+> > > https://franciscahurtadopsicologa.com.br > > >https://www.psigiovanamoraes.com > > > https://www.vitoriaalbinopsi.com.br > > > https://marcossantanapsi.com
