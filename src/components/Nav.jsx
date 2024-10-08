@@ -6,6 +6,7 @@ import { CiMenuFries } from "react-icons/ci";
 import Logo from "./Logo";
 import { NavDataResponsive } from "./NavDataResponsive";
 import { NavData } from "./NavData";
+import DefaultButton from "../components/Button";
 
 const Nav = () => {
   const [click, setClick] = useState(false);
@@ -36,7 +37,7 @@ const Nav = () => {
         </div>
         {/* Logo <------- */}
 
-        <div className="lg:flex md:flex lg:flex-1 items center justify-end font-normal hidden items-center z-10">
+        <div className="lg:flex md:flex lg:flex-1 justify-end font-normal hidden items-center z-10">
           <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
             <ul className="flex gap-8 mr-16 text-[18px]">
               {NavData.map((item, index) => (
@@ -44,6 +45,9 @@ const Nav = () => {
                   <li className={item.cName}>{item.title}</li>
                 </Link>
               ))}
+              <div className="flex justify-center border-white">
+                <DefaultButton type="button">Agende Sua Consulta</DefaultButton>
+              </div>
             </ul>
           </div>
         </div>

@@ -7,11 +7,11 @@ const GlobalStyle = createGlobalStyle`
    padding: 0;
    outline: 0;
    box-sizing: border-box;
-   font-family: "Poppins", sans-serif;
+   font-family: "Rubik", sans-serif;
 }
 
 body {
-    background-color: var(--quinary-color);
+    background-color: #3AAFA9;
 }
 
 `;

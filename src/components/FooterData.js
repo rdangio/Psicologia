@@ -4,17 +4,20 @@ export const FooterData = [
   {
     title: "Creativity",
     items: ["Website Guidline & Ideas", "Tips & Tricks", "Photography"],
-    cName: "text-[22px] list-none font-semibold text-pink-500 py-2 uppercase",
+    cName:
+      "text-[22px] list-none font-semibold text-titlecolor-1 py-2 uppercase",
   },
   {
     title: "Guidline & Ideas",
     items: ["Guidline & Ideas", "Tips & Tricks", "Photography"],
-    cName: "text-[22px] list-none font-semibold text-pink-500 py-2 uppercase",
+    cName:
+      "text-[22px] list-none font-semibold text-titlecolor-1 py-2 uppercase",
   },
   {
     title: "Contato",
     items: ["E-mail: seu-email@email.com", "Telefone: +55 14 99999-8888"],
-    cName: "text-[22px] list-none font-semibold text-pink-500 py-2 uppercase",
+    cName:
+      "text-[22px] list-none font-semibold text-titlecolor-1 py-2 uppercase",
     socialLinks: [
       {
         icon: FaGithub,
