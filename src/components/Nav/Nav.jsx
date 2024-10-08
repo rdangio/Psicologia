@@ -3,9 +3,11 @@ import { Link } from "react-scroll";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 
-import Logo from "./Logo";
-import { NavDataResponsive } from "./NavDataResponsive";
+
 import { NavData } from "./NavData";
+import { NavDataResponsive } from "./NavDataResponsive";
+import Logo from "../Logo";
+
 
 const Nav = () => {
   const [click, setClick] = useState(false);
@@ -31,7 +33,7 @@ const Nav = () => {
       {/* Logo -------> */}
       <div className="flex items-center flex-1 z-30">
         <span>
-          <Logo />
+          <Logo/>
         </span>
       </div>
       {/* Logo <------- */}

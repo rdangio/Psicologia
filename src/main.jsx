@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import Home from "./pages/Home/index";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import WhatsButton from "./components/WhatsButton";
 
 import GlobalStyle from "./styles/GlobalStyles";

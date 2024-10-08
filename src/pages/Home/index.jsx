@@ -1,8 +1,8 @@
-import Nav from "../../components/Nav";
-import Carousel from "../../components/Carousel";
-import CardServices from "../../components/CardServices";
-import CardValues from "../../components/CardValues";
-import CardsSessions from "../../components/CardsSessions";
+import Nav from "../../components/Nav/Nav";
+import Carousel from "../../components/Carousel/Carousel";
+import CardServices from "../../components/CardServices/CardServices";
+import CardValues from "../../components/CardValues/CardValues";
+import CardsSessions from "../../components/CardsSessions/CardsSessions";
 
 const App = () => {
   return (
