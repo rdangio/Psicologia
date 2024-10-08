@@ -13,16 +13,18 @@ function CardValues() {
 
   ];
   return (
-    <div className="grid place-content-center">
+    <section className=" h-[580px] bg-white">
+
+    <div className="grid place-content-center ">
       <div className="w-[800px] gap-6 grid grid-cols-2 mt-14">
         {dataValue.map((values) => (
-          <div key={values.id} className="bg-slate-200 rounded-xl shadow-xl shadow-gray-600 border-violet-300 border-2">
-            <p className="text-xl pt-5 text-center font-bold underline text-violet-950">{values.title}</p>
+          <div key={values.id} className="bg-slate-200 rounded-xl shadow-inner shadow-gray-600 border-violet-300 border-2">
+            <p className="text-xl pt-4 text-center font-bold underline text-violet-950">{values.title}</p>
             <p className="text-center text-sm p-6 pt-3">{values.text}</p>
           </div>
         ))}
-        <div className="bg-slate-200 rounded-xl w-[800px] flex flex-col shadow-xl shadow-gray-600 border-violet-300 border-2">
-          <p className="text-xl pt-5 text-center font-bold underline text-violet-950">Valores</p>
+        <div className="bg-slate-200 rounded-xl w-[800px] flex flex-col shadow-inner shadow-gray-600 border-violet-300 border-2">
+          <p className="text-xl pt-4 text-center font-bold underline text-violet-950">Valores</p>
           <p className="text-center text-sm p-6 pt-3">
           <b className="underline">Empatia:</b> Colocamos o respeito e a compreensão dos sentimentos de nossos pacientes em primeiro lugar, garantindo um ambiente seguro e acolhedor. 
           <b className="underline">Ética:</b>  Atuamos com integridade e responsabilidade, preservando a confidencialidade e os direitos dos nossos pacientes. 
@@ -33,6 +35,7 @@ function CardValues() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
 

@@ -28,9 +28,9 @@ function CardsSessions() {
   ];
 
   return (
-    <div className="bg-slate-50 flex flex-col  justify-center items-center">
+    <div className="bg-white h-[600px] flex flex-col  justify-center items-center">
       <div className="w-[800px] text-center">
-        <p className="underline pt-10  font-bold text-xl">
+        <p className="underline pt-3  font-bold text-xl">
           Tipos de Sessões
         </p>
         <p className="pt-5 pb-10 font-bold">
