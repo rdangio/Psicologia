@@ -6,7 +6,7 @@ import { CiMenuFries } from "react-icons/ci";
 
 import { NavData } from "./NavData";
 import { NavDataResponsive } from "./NavDataResponsive";
-import Logo from "../Logo";
+import Logo from "../Logo/Logo";
 
 
 const Nav = () => {
