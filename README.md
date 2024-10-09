@@ -1,8 +1,41 @@
-# React + Vite
+# Possíveis fontes para o projeto:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Montserrat
+> Inter
+> Poppins
+> Roboto
+> Helvetica
 
-Currently, two official plugins are available:
+# Possíveis cores para o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> > > Limpo e Moderno
+> > > #17252A
+> > > #2B7A78
+> > > #3AAFA9
+> > > #44BDBB
+> > > #DEF2F1
+> > > #FEFFFF
+
+> > > Moderna e Futurista
+> > > #61892F
+> > > #86C232
+> > > #222629
+> > > #474B4F
+> > > #6B6E70
+
+# Tarefas e Anotações Rico
+
+# Tarefas e Anotações Dvd
+
+> > > Criar um botão "agendar sessão" que redirecione para o whatsapp
+> > > (https://www.infobip.com/pt/blog/como-criar-link-whatsapp)
+> > > Mapa da localização
+> > > Página de perguntas frequentes
+> > > Página de contatos
+> > > Página de depoimentos
+> > > Carrosel com endereço e imagens do consultório
+> > > Rodapé
+
+### Sites modelos:
+
+> > > https://franciscahurtadopsicologa.com.br > > >https://www.psigiovanamoraes.com > > > https://www.vitoriaalbinopsi.com.br > > > https://marcossantanapsi.com
