@@ -3,11 +3,10 @@ import { Link } from "react-scroll";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 
-
 import { NavData } from "./NavData";
 import { NavDataResponsive } from "./NavDataResponsive";
 import Logo from "../Logo/Logo";
-
+import DefaultButton from "../Button/index";
 
 const Nav = () => {
   const [click, setClick] = useState(false);
@@ -24,6 +23,7 @@ const Nav = () => {
           </Link>
         ))}
       </ul>
+      <DefaultButton>Teste</DefaultButton>
     </div>
   );
 
@@ -33,7 +33,7 @@ const Nav = () => {
       {/* Logo -------> */}
       <div className="flex items-center flex-1 z-30">
         <span>
-          <Logo/>
+          <Logo />
         </span>
       </div>
       {/* Logo <------- */}
