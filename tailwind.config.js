@@ -4,13 +4,21 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Cores ícone whatsapp
         "whats-green": "#25d366",
         "whats-green-hover": "#0fe961",
         "whats-green-active": "#36c26a",
-        "bgcolor-main": "#0A1828",
-        "textcolor-2": "#178582",
-        "textcolor-3": "#BFA181",
-        "color-title": "#EC4899",
+
+        //Cores do projeto
+        background: "#2B7A78",
+        nav: "#17252A",
+        button: "#17252A",
+        hover: "#",
+        active: "#",
+        title1: "#17252A",
+        title2: "#DEF2F1",
+        text1: "#17252A",
+        text2: "#FEFFFF",
       },
     },
   },
