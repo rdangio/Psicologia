@@ -15,6 +15,7 @@ const Nav = () => {
   };
 
   const content = (
+    // Menu responsivo ------->
     <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-600 transition">
       <ul className="text-center text-xl p-20">
         {NavDataResponsive.map((item, index) => (
@@ -25,9 +26,10 @@ const Nav = () => {
       </ul>
     </div>
   );
+  // Menu responsivo <-------
 
   return (
-    <nav className="bg-nav border-b-slate-500 border-b-2 shadow-2xl fixed w-[80%] h-20 flex justify-between z-50 text-white lg:py-5 px-20 py-4">
+    <nav className="bg-nav fixed rounded-lg shadow-2xl w-[100%] h-20 flex z-50 text-text2 lg:py-5 px-20 py-4">
       {/* Logo -------> */}
       <div className="flex items-center flex-1 z-30">
         <span>
