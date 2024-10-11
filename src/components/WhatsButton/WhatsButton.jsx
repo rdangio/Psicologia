@@ -8,7 +8,7 @@ const Whatsapp = () => {
         target="_blank"
       >
         <img
-          src={"/src/assets/whatsapp.svg"}
+          src={"/src/assets/Logos/whatsapp.svg"}
           className="mt-2 ml-[10px] text-white w-9"
         />
       </a>

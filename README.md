@@ -1,10 +1,11 @@
 # Possíveis fontes para o projeto:
 
-> Montserrat x
-> Inter x
-> Poppins x
-> Roboto <=== 
-> Helvetica x
+> Montserrat
+> Inter
+> Poppins
+> Roboto
+> Helvetica
+> Pacífico => fonte cursiva
 
 # Possíveis cores para o projeto
 
@@ -12,7 +13,6 @@
 > > > #17252A
 > > > #2B7A78
 > > > #3AAFA9
-> > > #44BDBB
 > > > #DEF2F1
 > > > #FEFFFF
 
@@ -25,7 +25,12 @@
 
 # Tarefas e Anotações Rico
 
+> > > Informações Cláudia Dangió: CRP 06/136891
+
 # Tarefas e Anotações Dvd
+
+> > > Tamanho do logo criado: 500 x 250
+> > > Fontes utilizadas para o logo: eurofurence, florencesans
 
 > > > Criar um botão "agendar sessão" que redirecione para o whatsapp
 > > > (https://www.infobip.com/pt/blog/como-criar-link-whatsapp)
