@@ -12,11 +12,11 @@ const App = () => {
       <CardServices />
       <section className="w-full flex justify-center items-center bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-purple-400 to-90% ">
         <div className="w-[800px] gap-16  flex  justify-center items-center  h-[380px] font-bold">
-          {/* <div className=" gap-16 bg-[url('/src/assets/images/slider/slider-3.jpg')] flex  justify-center items-center  h-[380px] mb-10 font-bold"> */}
+          {/* <div className=" gap-16 bg-[url('/src/assets/Images/slider/slider-3.jpg')] flex  justify-center items-center  h-[380px] mb-10 font-bold"> */}
           {/* <div className="gap-16 bg-gradient-to-r from-[#A2CACA] to-[#4A7D7E] flex  justify-center items-center  h-[380px] mb-10 font-bold"> */}
           <img
             className="-rotate-[20deg] shadow-lg shadow-purple-950 rounded-xl max-w-[20%] max-h-[100%]"
-            src="/src/assets/images/claudia.jpg"
+            src="/src/assets/Images/claudia.jpg"
             alt=""
           />
           <div className="flex flex-col w-[50%] items-start p-10 text-purple-950">

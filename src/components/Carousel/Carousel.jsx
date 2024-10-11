@@ -17,20 +17,20 @@ function Carousel() {
   const data = [
     {
       id: "1",
-      image: "/src/assets/images/slider/slider-1.jpg",
+      image: "/src/assets/Images/slider/slider-1.jpg",
       text1: "Quer encontrar uma melhor qualidade de vida?",
       text2:
         "Podemos ajudá-lo a superar uma ampla gama de problemas psicológicos e emocionais.",
     },
     {
       id: "2",
-      image: "/src/assets/images/slider/slider-2.jpg",
+      image: "/src/assets/Images/slider/slider-2.jpg",
       text1: "Sente-se estressado ou ansioso?",
       text2: "Podemos ajudá-lo a superar uma ampla gama de problemas",
     },
     {
       id: "3",
-      image: "/src/assets/images/slider/slider-3.jpg",
+      image: "/src/assets/Images/slider/slider-3.jpg",
       text1: "Reconquiste a alegria de viver!",
       text2:
         "Somos qualificados para atender às suas necessidades específicas.",
@@ -41,7 +41,7 @@ function Carousel() {
     <div className="max-w-full">
       <Swiper
         modules={[EffectFade]}
-        speed= "1500"
+        speed="1500"
         effect="fade"
         className="pb-2"
         style={{
@@ -49,11 +49,9 @@ function Carousel() {
           "--swiper-navigation-size": "33px",
           "--swiper-navigation-top-offset": "50%",
           "--swiper-navigation-sides-offset": "15px",
-          
-          
+
           "--swiper-pagination-color": "#000",
           "--swiper-pagination-bullet-size": "15px",
-
         }}
         autoplay={{
           delay: 6000,
@@ -79,14 +77,17 @@ function Carousel() {
                   className="text-slate-100 drop-shadow-[_2px_2px_rgba(0,0,0,1.55)] 
                   md:text-[40px] md:text-center
                   sm:text-[27px] sm:text-center
-                  text-[17px] text-center">
+                  text-[17px] text-center"
+                >
                   {item.text1}
                 </p>
-                <p className="text-slate-100 drop-shadow-[_2px_2px_rgba(0,0,0,1.55)]
+                <p
+                  className="text-slate-100 drop-shadow-[_2px_2px_rgba(0,0,0,1.55)]
                   md:text-[25px] md:text-center
                   sm:text-[19px] sm:text-center
                   text-[13px] text-center
-                ">
+                "
+                >
                   {item.text2}
                 </p>
               </div>

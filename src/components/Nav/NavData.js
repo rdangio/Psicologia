@@ -4,7 +4,7 @@ export const NavData = [
     to: "Home",
     url: "/",
     cName:
-      "hover:text-color-title transition border-b-2 border-[#4A7D7E] hover:border-color-title cursor-pointer",
+      "relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-hover1 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center cursor-pointer",
   },
 
   {
@@ -12,7 +12,7 @@ export const NavData = [
     to: "About",
     url: "#",
     cName:
-      "hover:text-color-title transition border-b-2 border-[#4A7D7E] hover:border-color-title cursor-pointer",
+      "relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-hover1 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center cursor-pointer",
   },
 
   {
@@ -20,7 +20,7 @@ export const NavData = [
     to: "Services",
     url: "#",
     cName:
-      "hover:text-color-title transition border-b-2 border-[#4A7D7E] hover:border-color-title cursor-pointer",
+      "relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-hover1 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center cursor-pointer",
   },
 
   {
@@ -28,7 +28,7 @@ export const NavData = [
     to: "Project",
     url: "#",
     cName:
-      "hover:text-color-title transition border-b-2 border-[#4A7D7E] hover:border-color-title cursor-pointer",
+      "relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-hover1 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center cursor-pointer",
   },
 
   {
@@ -36,6 +36,6 @@ export const NavData = [
     to: "Contact",
     url: "#",
     cName:
-      "hover:text-color-title transition border-b-2 border-[#4A7D7E] hover:border-color-title cursor-pointer",
+      "relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-hover1 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center cursor-pointer",
   },
 ];
