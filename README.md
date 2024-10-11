@@ -1,11 +1,11 @@
 # Possíveis fontes para o projeto:
 
+> Roboto => Fonte definida para o projeto
 > Montserrat
 > Inter
 > Poppins
-> Roboto
 > Helvetica
-> Pacífico => fonte cursiva
+> Pacífico (Fonte cursiva)
 
 # Possíveis cores para o projeto
 
