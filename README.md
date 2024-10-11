@@ -1,10 +1,10 @@
 # Possíveis fontes para o projeto:
 
-> Montserrat
-> Inter
-> Poppins
-> Roboto
-> Helvetica
+> Montserrat x
+> Inter x
+> Poppins x
+> Roboto <=== 
+> Helvetica x
 
 # Possíveis cores para o projeto
 

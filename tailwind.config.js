@@ -3,6 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+
       colors: {
         // Cores ícone whatsapp
         "whats-green": "#25d366",
@@ -19,6 +20,11 @@ export default {
         title2: "#DEF2F1",
         text1: "#17252A",
         text2: "#FEFFFF",
+      },
+
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+        'roboto-bold': ['Roboto-Bold', 'sans-serif']
       },
     },
   },

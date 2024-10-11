@@ -2,4 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Roboto-bold";
+  src: url(./fonts/Roboto/Roboto-Bold.ttf) format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/Roboto/Roboto-Regular.ttf) format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
