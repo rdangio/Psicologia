@@ -23,6 +23,15 @@
 > > > #474B4F
 > > > #6B6E70
 
+# Padronizações:
+
+> > > Fonte menu: 1rem (16px) -------> Peso: 500
+> > > Títulos H1: 2.5rem (40px) -----> Peso: 700 (bold)
+> > > Títulos H2: 2rem (32px) -------> Peso: 600 (semi-bold)
+> > > Texto: 1rem (16px) ------------> Peso: 400 (regular)
+> > > Fonte botões: 0.875rem (14px) -> Peso: 600
+> > > Fonte rodapé: 0.75rem (12px) --> Peso: 400
+
 # Tarefas e Anotações Rico
 
 > > > Informações Cláudia Dangió: CRP 06/136891
