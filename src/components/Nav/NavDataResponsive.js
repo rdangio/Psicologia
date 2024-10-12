@@ -4,7 +4,7 @@ export const NavDataResponsive = [
     to: "Home",
     url: "/",
     cName:
-      "text-color-title my-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded cursor-pointer",
+      "text-c-text2 text-fs-nav my-4 p-1 border-b border-t border-slate-800 hover:bg-c-background hover:rounded cursor-pointer",
   },
 
   {
@@ -12,7 +12,7 @@ export const NavDataResponsive = [
     to: "About",
     url: "#",
     cName:
-      "text-color-title my-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded cursor-pointer",
+      "text-c-text2 text-fs-nav my-4 p-1 border-b border-t border-slate-800 hover:bg-c-background hover:rounded cursor-pointer",
   },
 
   {
@@ -20,7 +20,7 @@ export const NavDataResponsive = [
     to: "Services",
     url: "#",
     cName:
-      "text-color-title my-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded cursor-pointer",
+      "text-c-text2 text-fs-nav my-4 p-1 border-b border-t border-slate-800 hover:bg-c-background hover:rounded cursor-pointer",
   },
 
   {
@@ -28,7 +28,7 @@ export const NavDataResponsive = [
     to: "Project",
     url: "#",
     cName:
-      "text-color-title my-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded cursor-pointer",
+      "text-c-text2 text-fs-nav my-4 p-1 border-b border-t border-slate-800 hover:bg-c-background hover:rounded cursor-pointer",
   },
 
   {
@@ -36,6 +36,6 @@ export const NavDataResponsive = [
     to: "Contact",
     url: "#",
     cName:
-      "text-color-title my-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded cursor-pointer",
+      "text-c-text2 text-fs-nav my-4 p-1 border-b border-t border-slate-800 hover:bg-c-background hover:rounded cursor-pointer",
   },
 ];
