@@ -10,7 +10,7 @@ export default {
         "c-whats-active": "#36c26a",
 
         //Cores do projeto
-        "c-background": "#2B7A78",
+        "c-background": "#FEFFFF",
         "c-nav": "#17252A",
 
         //Botão 1
