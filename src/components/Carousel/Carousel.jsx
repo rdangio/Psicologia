@@ -1,6 +1,8 @@
 import { register } from "swiper/element/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade } from "swiper/modules";
+import { CarouselData } from "./CaroseulData";
+
 
 register();
 
@@ -14,28 +16,7 @@ import "swiper/css/autoplay";
 // import "../styles/carousel.css";
 
 function Carousel() {
-  const data = [
-    {
-      id: "1",
-      image: "/src/assets/Images/slider/slider-1.jpg",
-      text1: "Quer encontrar uma melhor qualidade de vida?",
-      text2:
-        "Podemos ajudá-lo a superar uma ampla gama de problemas psicológicos e emocionais.",
-    },
-    {
-      id: "2",
-      image: "/src/assets/Images/slider/slider-2.jpg",
-      text1: "Sente-se estressado ou ansioso?",
-      text2: "Podemos ajudá-lo a superar uma ampla gama de problemas",
-    },
-    {
-      id: "3",
-      image: "/src/assets/Images/slider/slider-3.jpg",
-      text1: "Reconquiste a alegria de viver!",
-      text2:
-        "Somos qualificados para atender às suas necessidades específicas.",
-    },
-  ];
+
 
   return (
     <div className="max-w-full">
@@ -46,7 +27,7 @@ function Carousel() {
         className="pb-2"
         style={{
           "--swiper-navigation-color": "#000",
-          "--swiper-navigation-size": "33px",
+          "--swiper-navigation-size": "28px",
           "--swiper-navigation-top-offset": "50%",
           "--swiper-navigation-sides-offset": "15px",
 
@@ -64,13 +45,13 @@ function Carousel() {
         }}
         navigation={true}
       >
-        {data.map((item) => (
-          <SwiperSlide className="mt-[80px] " key={item.id}>
+        {CarouselData.map((item) => (
+          <SwiperSlide className="mt-[100px] " key={item.id}>
             <div className=" relative flex justify-center items-center">
               <img
                 src={item.image}
                 alt="imagem Carrossel"
-                className="max-w-[100%] max-h-[100%] blur-[3px] "
+                className="max-w-[100%] max-h-[100%] blur-[2px] "
               />
               <div className="absolute">
                 <p

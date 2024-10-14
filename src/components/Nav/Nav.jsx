@@ -4,7 +4,6 @@ import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 
 import { NavData } from "./NavData";
-import { NavDataResponsive } from "./NavDataResponsive";
 import Logo from "../Logo/Logo";
 import DefaultButton from "../Button";
 
@@ -18,9 +17,9 @@ const Nav = () => {
     // Menu responsivo ------->
     <div className="lg:hidden block absolute top-14 w-full left-0 right-0 bg-c-nav transition">
       <ul className="text-center text-xl p-20">
-        {NavDataResponsive.map((item, index) => (
+        {NavData.map((item, index) => (
           <Link key={index} spy={true} smooth={true} to={item.to}>
-            <li className={item.cName}>{item.title}</li>
+            <li className={item.cResponsive}>{item.title}</li>
           </Link>
         ))}
       </ul>

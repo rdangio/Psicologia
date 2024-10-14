@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body {
-   background-color: #2B7A78;
+   background-color: #FEFFFF;
 }
 
 :root{
