@@ -30,6 +30,9 @@ export default {
         //Textos
         "c-text1": "#17252A",
         "c-text2": "#FEFFFF",
+
+        //Footer
+        "c-footer": "#17252A",
       },
 
       fontFamily: {
