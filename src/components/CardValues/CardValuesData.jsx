@@ -35,7 +35,7 @@ export const dataValue = [
     title: "Valores",
     classCard: `${classCard} row-span-2  col-span-2`,
     classTitle,
-    classText: `${classText}  indent-0 pb-5`,
+    classText: `${classText} indent-0 pb-5`,
     text: (
       <p>
         <b className={detail}>Empatia:</b> Colocamos o respeito e a compreensão
