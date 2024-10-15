@@ -2,9 +2,9 @@ import { dataValue } from "./CardValuesData";
 
 function CardValues() {
   return (
-    <section className=" h-auto">
+    <section className="">
       <div className="grid place-content-center ">
-        <div className="w-[800px] gap-6 grid grid-cols-2 grid-rows-2 mt-14 ">
+        <div className="w-[800px] gap-6 grid grid-cols-2 grid-rows-2 mt-14">
           {dataValue.map((values) => (
             <div key={values.id} className={values.classCard}>
               <p className={values.classTitle}>
@@ -17,7 +17,7 @@ function CardValues() {
         </div>
       </div>
     </section>
-  );
+  ); 
 }
 
 export default CardValues;
