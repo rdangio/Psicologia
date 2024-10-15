@@ -28,7 +28,8 @@
 
 # Tarefas e Anotações Dvd
 
-> > > Tamanho do logo criado: 500 x 250
+> > > Tamanho do logo com dizeres: 500 x 250
+> > > Tamanho apenas do logo: 250 x 250
 
 > > > Criar um botão "agendar sessão" que redirecione para o whatsapp
 > > > (https://www.infobip.com/pt/blog/como-criar-link-whatsapp)

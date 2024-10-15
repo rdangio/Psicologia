@@ -29,7 +29,7 @@ const Nav = () => {
 
   return (
     <nav className="flex justify-center">
-      <div className="top-3 bg-c-nav fixed rounded-lg shadow-2xl w-[85%] h-24 flex z-50 text-c-text2 lg:py-5 px-20 py-4 text-fs-button">
+      <div className="top-4 bg-c-nav fixed rounded-lg shadow-2xl w-[85%] h-20 flex z-50 text-c-text2 lg:py-5 px-20 py-4 text-fs-button">
         {/* Logo -------> */}
         <div className="flex items-center flex-1 z-30">
           <Logo />
