@@ -35,6 +35,12 @@ export default {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
         "roboto-bold": ["Roboto-Bold", "sans-serif"],
+
+        eurofucence: ["Eurofurence", "sans-serif"],
+        "eurofurence-bold": ["Eurofurence-Bold", "sans-serif"],
+
+        florencesans: ["Florencesans", "sans-serif"],
+        "florencesans-bold": ["Florencesans-Bold", "sans-serif"],
       },
 
       fontSize: {
