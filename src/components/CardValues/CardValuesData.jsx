@@ -3,12 +3,12 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 import { TbDiamond } from "react-icons/tb";
 
 const classCard =
-  "flex flex-col  bg-[#DEF2F1] pb-0 pt-1 px-1 rounded-xl shadow-inner shadow-gray-600 border-[#2B7A78] border-2 ";
+  "flex flex-col  bg-c-turquoise-2 pb-0 pt-1 px-1 rounded-xl shadow-inner shadow-black border-c-turquoise-4 border-2 ";
 const classTitle =
-  "flex  items-center gap-2 bg-c-turquoise-5 p-1 rounded-lg text-xl pt-1 font-roboto-bold text-[#FEFFFF]  ";
+  "flex  items-center gap-3 bg-c-turquoise-5 p-1 rounded-lg text-fs-h5 pt-1 font-roboto-bold text-c-turquoise-1";
 const classText =
-  "text-pretty text-balance indent-8 font-roboto text-justify p-6 leading-7 border-bottom";
-const detail = "p-1 rounded-md text-[#2B7A78] font-lg underline underline-offset-2";
+  "text-fs-h6 text-pretty text-balance indent-8 font-roboto text-justify p-6 leading-7 border-bottom";
+const detail = "p-1 rounded-md text-c-turquoise-4 font-lg underline underline-offset-2";
 
 export const dataValue = [
   {

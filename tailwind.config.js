@@ -53,12 +53,16 @@ export default {
       },
 
       fontSize: {
-        "fs-nav": "1rem",
-        "fs-h1": "2.5rem",
-        "fs-h2": "2rem",
-        "fs-text": "1rem",
-        "fs-button": "0.875rem",
-        "fs-footer": "0.75rem",
+        "fs-h1": ["2.986rem", "3.881rem"],
+        "fs-h2": ["2.488rem", "3.234rem"],
+        "fs-h3": ["2.074rem", "2.696rem"],
+        "fs-h4": ["1.728rem", "2.246rem"],
+        "fs-h5": ["1.44rem", "1.872rem"],
+        "fs-h6": ["1.2rem", "1.56rem"],      
+        "fs-text": ["1rem", "1.5rem"],
+        "fs-nav": ["1rem", "1.5rem"],
+        "fs-button": ["0.833rem", "1.25rem"],
+        "fs-footer": ["0.694rem", "1.041rem"],
       },
 
       screens: {
