@@ -4,6 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
+        "c-turquoise-5": "#17252A",
+        "c-turquoise-4": "#2B7A78",
+        "c-turquoise-3": "#3AAFA9",
+        "c-turquoise-2": "#DEF2F1",
+        "c-turquoise-1": "#FEFFFF",
+
         //Whatsapp
         "c-whats": "#25d366",
         "c-whats-hover": "#0fe961",
@@ -53,6 +59,12 @@ export default {
         "fs-text": "1rem",
         "fs-button": "0.875rem",
         "fs-footer": "0.75rem",
+      },
+
+      screens: {
+        's-small': '480px',
+        's-medium': '768px',
+        's-large': '1024px', 
       },
     },
   },

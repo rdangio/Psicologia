@@ -22,6 +22,13 @@
 > > > Fonte botões: 0.875rem (14px) -> Peso: 600
 > > > Fonte rodapé: 0.75rem (12px) --> Peso: 400
 
+# Breakpoints:
+
+> > > telas pequenas (celular) --->  480px ---> classe: 's-small'
+> > > telas medias (tablet) ------>  768px ---> classe: 's-medium'
+> > > telas grandes (desktop) ----> 1024px ---> classe: 's-large'
+
+
 # Tarefas e Anotações Rico
 
 > > > Informações Cláudia Dangió: CRP 06/136891

@@ -44,7 +44,7 @@ function CardServices() {
                 </p>
                 <p className="text-black font-roboto text-sm text-center">{card.text}</p>
                 <div className="justify-center flex">
-                  <button className="mt-3  text-white absolute px-3 border-2 bg-[#17252A] p-1 px-2 rounded-lg font-bold hover:shadow-[#3AAFA9] hover:shadow-md hover:text-white">
+                  <button className="mt-3  text-white absolute px-3 border-2 bg-[#17252A]  rounded-lg font-bold hover:shadow-[#3AAFA9] hover:shadow-md hover:text-white">
                     Saiba mais
                   </button>
                 </div>
