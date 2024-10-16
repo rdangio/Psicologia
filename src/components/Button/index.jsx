@@ -11,8 +11,9 @@ const DefaultButton = ({ children, ...props }) => {
         text-c-text2 
         font-semibold
         border
-        py-2 
-        px-4
+        py-1 sm:py-2 
+        px-3 sm:px-4
+        text-xs sm:text-base
         border-white
         hover:bg-c-hover1
         active:bg-c-active1

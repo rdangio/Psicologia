@@ -1,20 +1,20 @@
 const Logo = () => {
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex flex-col sm:flex-row items-center gap-3 min-w-[150px]">
       <div>
         <img
-          className="w-28"
+          className="w-24 sm:w-28 min-w-[80px] sm:min-w-[100px]"
           src={"/src/assets/Logos/logo-psico-preto.webp"}
           alt="logo"
         />
       </div>
 
-      <div className="text-center">
-        <p className="font-eurofucence text-xl">
+      <div className="text-center sm:text-left">
+        <p className="font-eurofucence text-sm sm:text-xl whitespace-nowrap">
           C L Á U D I A <br />
           D A N G I Ó <br />
         </p>
-        <span className="font-florencesans text-[10px]">
+        <span className="font-florencesans text-[8px] sm:text-[10px] whitespace-nowrap">
           PSICOLÓGA - CRP 06 / 136891
         </span>
       </div>
