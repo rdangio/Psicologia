@@ -1,6 +1,6 @@
 const Logo = () => {
   return (
-    <div className="flex flex-col sm:flex-row items-center gap-3 min-w-[150px]">
+    <div className="flex sm:flex-row items-center gap-3 min-w-[150px]">
       <div>
         <img
           className="w-24 sm:w-28 min-w-[80px] sm:min-w-[100px]"
@@ -10,13 +10,13 @@ const Logo = () => {
       </div>
 
       <div className="text-center sm:text-left">
-        <p className="font-eurofucence text-sm sm:text-xl whitespace-nowrap">
+        <p className="font-eurofucence text-center text-sm sm:text-xl whitespace-nowrap">
           C L Á U D I A <br />
           D A N G I Ó <br />
         </p>
-        <span className="font-florencesans text-[8px] sm:text-[10px] whitespace-nowrap">
+        {/* <span className="font-florencesans text-[8px] sm:text-[10px] whitespace-nowrap">
           PSICOLÓGA - CRP 06 / 136891
-        </span>
+        </span> */}
       </div>
     </div>
   );
