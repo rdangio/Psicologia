@@ -1,6 +1,25 @@
 import PropTypes from "prop-types";
+import { useEffect, useState } from "react";
 
-const DefaultButton = ({ children, ...props }) => {
+const DefaultButton = ({ children, hideOnResize, ...props }) => {
+  const [isVisible, setIsVisible] = useState(true);
+  useEffect(() => {
+    if (hideOnResize) {
+      const handleResize = () => {
+        setIsVisible(window.innerWidth > 1120);
+      };
+
+      window.addEventListener("resize", handleResize);
+      handleResize();
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
+  }, [hideOnResize]);
+
+  if (!isVisible && hideOnResize) return null;
+
   return (
     <div>
       <button
@@ -12,7 +31,7 @@ const DefaultButton = ({ children, ...props }) => {
         font-semibold
         border
         py-1 sm:py-2 
-        px-3 sm:px-4
+        px-1 sm:px-2
         text-xs sm:text-base
         border-white
         hover:bg-c-hover1
@@ -29,6 +48,7 @@ const DefaultButton = ({ children, ...props }) => {
 //Tipagem das propriedades (yarn add prop-types)
 DefaultButton.propTypes = {
   children: PropTypes.node.isRequired,
+  hideOnResize: PropTypes.bool,
 };
 
 export default DefaultButton;

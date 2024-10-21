@@ -22,18 +22,18 @@ const Nav = () => {
             <li className={item.cResponsive + "mb-4"}>{item.title}</li>
           </Link>
         ))}
+        {/* Botão dentro do menu responsivo */}
+        <div className="flex justify-center mt-2">
+          <DefaultButton>Agende sua Sessão</DefaultButton>
+        </div>
       </ul>
-      {/* Botão dentro do menu responsivo */}
-      <div className="flex justify-center">
-        <DefaultButton>Agende sua Sessão</DefaultButton>
-      </div>
     </div>
   );
   // Menu responsivo <-------
 
   return (
-    <nav className="flex justify-center">
-      <div className="top-4 bg-c-nav fixed rounded-lg shadow-2xl w-[85%] h-16 sm:h-20 flex z-50 text-c-text2 lg:py-5 px-4 sm:px-20 py-4 text-fs-button">
+    <nav className="flex justify-center w-full">
+      <div className="top-4 bg-c-nav fixed rounded-lg shadow-2xl w-[80%] h-16 sm:h-20 flex z-50 text-c-text2 lg:py-5 px-4 sm:px-8 py-4 text-fs-button">
         {/* Logo -------> */}
         <div className="flex items-center flex-1 z-30">
           <Logo />
@@ -43,14 +43,14 @@ const Nav = () => {
         {/* Menu -------> */}
         <div className="lg:flex md:flex lg:flex-1 items center justify-end hidden items-center z-10">
           <div className="lg:flex md:flex lg:flex-1 items-center justify-end hidden">
-            <ul className="flex gap-4 sm:gap-8 mr-8 sm:mr-16">
+            <ul className="flex gap-4 sm:gap-8 mr-2 sm:mr-8">
               {NavData.map((item, index) => (
                 <Link key={index} spy={true} smooth={true} to={item.to}>
                   <li className={item.cName}>{item.title}</li>
                 </Link>
               ))}
             </ul>
-            <DefaultButton>Agende sua Sessão</DefaultButton>
+            <DefaultButton hideOnResize={true}>Agende sua Sessão</DefaultButton>
           </div>
         </div>
         {/* Menu <------- */}
