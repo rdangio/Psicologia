@@ -59,6 +59,9 @@ export default {
         "fs-h4": ["1.728rem", "2.246rem"],
         "fs-h5": ["1.44rem", "1.872rem"],
         "fs-h6": ["1.2rem", "1.56rem"],      
+        "fs-h7": ["1rem", "1.5rem"],      
+        "fs-h8": ["0.833rem", "1.25rem"],      
+        "fs-h9": ["0.694rem", "1.041rem"],      
         "fs-text": ["1rem", "1.5rem"],
         "fs-nav": ["1rem", "1.5rem"],
         "fs-button": ["0.833rem", "1.25rem"],
@@ -66,9 +69,9 @@ export default {
       },
 
       screens: {
-        's-small': '480px',
-        's-medium': '768px',
-        's-large': '1024px', 
+        's-small': {'min': '320px', 'max': '767px'},
+        's-medium': {'min': '768px', 'max': '1023px'},
+        's-large': {'min': '1024px'}, 
       },
     },
   },
