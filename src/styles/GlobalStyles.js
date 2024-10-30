@@ -11,12 +11,11 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body {
+   min-width: 100vh;
    background-color: #FEFFFF;
 }
 
 :root{
-    
-}
 `;
 
 export default GlobalStyle;

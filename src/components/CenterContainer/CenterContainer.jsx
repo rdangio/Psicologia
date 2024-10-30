@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const CenterContainer = ({ children }) => {
   return (
-    <div className="container max-w-[60%] mx-auto p-4">
+    <div className="container mx-auto p-4">
       {children}
     </div>
   );

@@ -69,9 +69,9 @@ export default {
       },
 
       screens: {
-        's-small': {'min': '320px', 'max': '767px'},
-        's-medium': {'min': '768px', 'max': '1023px'},
-        's-large': {'min': '1024px'}, 
+        // 's-small': {'min': '320px', 'max': '767px'},
+        // 's-medium': {'min': '768px', 'max': '1023px'},
+        // 's-large': {'min': '1024px'}, 
       },
     },
   },
