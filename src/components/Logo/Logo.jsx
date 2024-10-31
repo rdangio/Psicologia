@@ -10,7 +10,7 @@ const Logo = () => {
       </div>
 
       <div className="text-center sm:text-left">
-        <p className="font-eurofucence text-center text-sm sm:text-xl whitespace-nowrap">
+        <p className="font-eurofucence text-center text-sm sm:text-xl whitespace-nowrap text-c-turquoise-1">
           C L Á U D I A <br />
           D A N G I Ó <br />
         </p>
