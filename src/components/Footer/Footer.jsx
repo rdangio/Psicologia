@@ -1,5 +1,6 @@
 import Form from "../Form";
-import { FooterData } from "./FooterData";
+// import { FooterData } from "./FooterData";
+import Logo from "../Logo/Logo";
 
 const Footer = () => {
   //Const para atualizar o ano junto ao rodapé
@@ -7,30 +8,9 @@ const Footer = () => {
 
   return (
     <footer className="bg-c-footer">
-      {FooterData.map((item, index) => (
-        <div
-          key={index}
-          className="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap"
-        >
-          <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
-            <p className={item.cName}>
-              {item.title} <br />
-              {item.items} <br />
-              {item.subItems}
-            </p>
-
-            {/* <div className="mt-4">
-              <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
-                {FooterData.socialLinks.map((link, idx) => (
-                  <a key={idx} href={link.href} className={link.cName}>
-                    <link.icon />
-                  </a>
-                ))}
-              </span>
-            </div> */}
-          </div>
-        </div>
-      ))}
+      <div>
+        <Logo />
+      </div>
 
       {/* 
             
