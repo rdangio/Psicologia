@@ -2,7 +2,7 @@ import { register } from "swiper/element/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade } from "swiper/modules";
 import { CarouselData } from "./CaroseulData";
-import CenterContainer from "../CenterContainer/CenterContainer";
+
 
 register();
 
@@ -17,7 +17,7 @@ import "swiper/css/autoplay";
 
 function Carousel() {
   return (
-    <CenterContainer>
+
       <div className="max-w-full">
         <Swiper
           modules={[EffectFade]}
@@ -76,7 +76,7 @@ function Carousel() {
           ))}
         </Swiper>
       </div>
-    </CenterContainer>
+
   );
 }
 

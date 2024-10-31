@@ -16,8 +16,8 @@ const App = () => {
       <Carousel />
       <CardServices />
       <Banner />
-      <CardValues />
-      <CardsSessions />
+      {/* <CardValues /> */}
+      {/* <CardsSessions /> */}
       <Footer />
       <WhatsappButton />
     </>

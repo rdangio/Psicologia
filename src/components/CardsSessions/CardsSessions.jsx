@@ -3,7 +3,7 @@ import { dataSessions } from "./CardsSeccionsData";
 function CardsSessions() {
 
   return (
-    <div className="bg-white h-[600px] flex flex-col  justify-center items-center">
+    <div className="container bg-white h-[600px] flex flex-col  justify-center items-center">
       <div className="w-[800px] text-center">
         <p className="underline pt-3  font-bold text-xl">Tipos de Sessões</p>
         <p className="pt-5 pb-10 font-bold">

@@ -1,8 +1,7 @@
-import CenterContainer from "../CenterContainer/CenterContainer";
 
 const Banner = () => {
   return (
-    <CenterContainer>
+
       <section className="w-full flex justify-center items-center bg-gradient-to-r from-c-turquoise-5 from-10% via-c-turquoise-4 via-30% to-c-turquoise-2 to-90% ">
         <div className="w-[900px] mx-auto flex justify-center items-center  h-[300px] font-roboto">
           <img
@@ -23,7 +22,7 @@ const Banner = () => {
           </div>
         </div>
       </section>
-    </CenterContainer>
+
   );
 };
 

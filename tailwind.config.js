@@ -3,6 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+
+      container: {
+        center: true, // Centraliza o container automaticamente
+        padding: '2rem',  // Adiciona padding ao redor do container
+      },
+
       colors: {
         "c-turquoise-5": "#17252A",
         "c-turquoise-4": "#2B7A78",
@@ -69,9 +75,11 @@ export default {
       },
 
       screens: {
-        // 's-small': {'min': '320px', 'max': '767px'},
-        // 's-medium': {'min': '768px', 'max': '1023px'},
-        // 's-large': {'min': '1024px'}, 
+        // sm: '576',
+        // md: '768',
+        // lg: '992',
+        // xl: '1200',
+        // '2xl': '',
       },
     },
   },

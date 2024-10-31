@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body {
-   min-width: 100vh;
+   min-width: 320px;
    background-color: #FEFFFF;
 }
 
