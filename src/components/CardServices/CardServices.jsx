@@ -13,7 +13,7 @@ function CardServices() {
           Áreas de Atuação
         </h2>
 
-        <h3 className="text-c-turquoise-5 font-roboto pt-3 pb-4
+        <h3 className="text-c-turquoise-5 font-roboto pt-3 pb-5
             sm:text-fs-h8 md:text-fs-h7 
             sm:w-[30rem] md:w-[35rem] lg:w-[45rem] ">
           Seja atendido por uma profissional experiente e qualificada.
@@ -23,7 +23,7 @@ function CardServices() {
       </div>
 
       {/* Grid dos Cards */}
-      <div className="grid grid-cols-3 grid-rows-1 gap-x-5 mb-4 ">
+      <div className="grid grid-cols-3 grid-rows-1 sm:gap-x-3 md:gap-x-7 lg:gap-x-14 mb-6 ">
         {dataCardServices.map((card) => (
           <div key={card.id}>
             {/* Imagem do Card (Linha 1/2) */}
@@ -53,10 +53,10 @@ function CardServices() {
                   : card.id % 3 === 1
                   ? "col-start-2"
                   : "col-start-3"
-              }  row-start-2 flex justify-center items-start sm:-mt-4`}
+              }  row-start-2 flex justify-center items-start sm:-mt-6 lg:-mt-8`}
             >
               <div className="flex flex-col items-center justify-center 
-                    sm:w-[10.5rem] md:w-36 lg:w-52 bg-c-turquoise-1 rounded-xl shadow-2xl border-2 border-b-c-turquoise-4">
+                    sm:w-[10.5rem] md:w-36 lg:w-52 bg-c-turquoise-1 rounded-xl shadow-2xl border-2 border-b-c-turquoise-3 border-l-c-turquoise-4">
                 {/* Título */}
                 <p
                   className="mt-3 text-center text-c-turquoise-4 underline underline-offset-2 font-roboto-bold 
