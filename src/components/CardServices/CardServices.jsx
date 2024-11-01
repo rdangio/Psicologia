@@ -17,13 +17,15 @@ function CardServices() {
             sm:text-fs-h8 md:text-fs-h7 
             sm:w-[30rem] md:w-[35rem] lg:w-[45rem] ">
           Seja atendido por uma profissional experiente e qualificada.
+          <p className="hidden sm:block">
           Desbloqueie sua vida, trate suas angústias. Comece seu tratamento.
           Alívio para sua tristeza.
+          </p>
         </h3>
       </div>
 
       {/* Grid dos Cards */}
-      <div className="grid grid-cols-3 grid-rows-1 sm:gap-x-3 md:gap-x-7 lg:gap-x-14 mb-6 ">
+      <div className="grid sm:grid-cols-3 sm:grid-rows-1 sm:gap-x-3 md:gap-x-7 lg:gap-x-14 mb-6 ">
         {dataCardServices.map((card) => (
           <div key={card.id}>
             {/* Imagem do Card (Linha 1/2) */}
@@ -53,10 +55,10 @@ function CardServices() {
                   : card.id % 3 === 1
                   ? "col-start-2"
                   : "col-start-3"
-              }  row-start-2 flex justify-center items-start sm:-mt-6 lg:-mt-8`}
+              }  row-start-2 flex justify-center items-start -mt-20 mb-4 sm:-mt-6 lg:-mt-8`}
             >
               <div className="flex flex-col items-center justify-center 
-                    sm:w-[10.5rem] md:w-36 lg:w-52 bg-c-turquoise-1 rounded-xl shadow-2xl border-2 border-b-c-turquoise-3 border-l-c-turquoise-4">
+                    w-[14rem] sm:w-[10.5rem] md:w-36 lg:w-52 bg-c-turquoise-1 rounded-xl shadow-2xl border-2 border-b-c-turquoise-3 border-l-c-turquoise-4">
                 {/* Título */}
                 <p
                   className="mt-3 text-center text-c-turquoise-4 underline underline-offset-2 font-roboto-bold 
@@ -70,7 +72,7 @@ function CardServices() {
                 </p>
                 {/* Botão Saiba Mais */}
 
-                <button className="sm:mb-2 md:mb-2 lg:mb-3 sm:text-fs-h9 lg:text-fs-h8  text-c-turquoise-1 py-1 px-3 border-2 bg-c-turquoise-5 rounded-lg font-roboto hover:shadow-c-turquoise-4 hover:bg-c-turquoise-4 hover:shadow-md hover:text-white">
+                <button className="mb-2 sm:mb-2 md:mb-2 lg:mb-3 sm:text-fs-h9 lg:text-fs-h8  text-c-turquoise-1 py-1 px-3 border-2 bg-c-turquoise-5 rounded-lg font-roboto hover:shadow-c-turquoise-4 hover:bg-c-turquoise-4 hover:shadow-md hover:text-white">
                   Saiba mais
                 </button>
               </div>

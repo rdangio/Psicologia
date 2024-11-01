@@ -18,7 +18,7 @@ const App = () => {
       <Banner />
       {/* <CardValues /> */}
       {/* <CardsSessions /> */}
-      <Footer />
+      {/* <Footer /> */}
       <WhatsappButton />
     </>
   );
