@@ -36,7 +36,7 @@ const Nav = () => {
       <div className="top-4 bg-c-turquoise-5 fixed rounded-lg shadow-2xl w-[80%] h-16 sm:h-20 flex z-50 text-c-turquoise-1 lg:py-5 px-4 sm:px-8 py-4 text-fs-button">
         {/* Logo -------> */}
         <div className="flex items-center flex-1 z-30">
-          <Logo />
+          <Logo showSubtitle={false} />
         </div>
         {/* Logo <------- */}
 

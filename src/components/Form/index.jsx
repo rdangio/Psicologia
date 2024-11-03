@@ -1,7 +1,7 @@
 //Bilioteca utilizada para o envio de e-mail através do formulário: Emailjs (yarn add @emailjs/browser)
 
 import { useState } from "react";
-import DefaultButton from "../Button";
+import DefaultButton from "../Button/index";
 import emailJs from "@emailjs/browser";
 
 function Form() {
@@ -46,8 +46,10 @@ function Form() {
   }
 
   return (
-    <div className="flex flex-col items-center p-2 m-5 w-full">
-      <h1 className="text-c-turquoise-1 font-bold mb-3.5">Contato</h1>
+    <div className="flex flex-col w-full sm:w-full sm:mt-0 md:items-center xs:w-60 xs:mt-10">
+      <h2 className="mb-3 text-sm font-medium tracking-widest text-c-turquoise-1 uppercase title-font">
+        Contato
+      </h2>
 
       <form
         onSubmit={sendEmail}
@@ -78,9 +80,11 @@ function Form() {
         />
       </form>
 
-      <DefaultButton type="submit" onClick={sendEmail}>
-        Enviar
-      </DefaultButton>
+      <div className="w-full flex justify-center">
+        <DefaultButton type="submit" onClick={sendEmail}>
+          Enviar
+        </DefaultButton>
+      </div>
     </div>
   );
 }
