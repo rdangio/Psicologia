@@ -14,8 +14,6 @@ body {
    min-width: 320px;
    background-color: #FEFFFF;
 }
-
-:root{
 `;
 
 export default GlobalStyle;

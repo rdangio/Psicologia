@@ -1,6 +1,6 @@
 const Logo = () => {
   return (
-    <div className="flex sm:flex-row items-center gap-3 min-w-[150px]">
+    <div className="flex items-center gap-3 min-w-[150px]">
       <div>
         <img
           className="w-24 sm:w-28 min-w-[80px] sm:min-w-[100px]"

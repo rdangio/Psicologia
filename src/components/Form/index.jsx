@@ -46,10 +46,13 @@ function Form() {
   }
 
   return (
-    <div className="flex flex-col items-center p-2">
-      <h1 className="text-c-text2 font-bold mb-3.5">Contato</h1>
+    <div className="flex flex-col items-center p-2 m-5 w-full">
+      <h1 className="text-c-turquoise-1 font-bold mb-3.5">Contato</h1>
 
-      <form onSubmit={sendEmail} className="flex flex-col max-w-lg w-full">
+      <form
+        onSubmit={sendEmail}
+        className="flex flex-col max-w-lg w-full sm:w-full"
+      >
         <input
           className="mb-3.5 h-8 rounded border-none p-0 p2 pl-2"
           type="text"
