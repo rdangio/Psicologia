@@ -11,7 +11,7 @@ const Banner = () => {
           {/* tratamento da imagem */}
           <img
             className="sm:ml-[3.5rem] lg:ml-12 sm:-rotate-[22deg] shadow-xl shadow-c-turquoise-5 rounded-xl 
-            sm:max-w-[25%] lg:max-w-[25%] xl:max-w-[20%] max-w-[60%] max-h-[100%]
+            sm:max-w-[25%] lg:max-w-[25%] xl:max-w-[17%] max-w-[60%] max-h-[100%] border-2 border-solid border-c-turquoise-5
             my-10"
             src="/src/assets/Images/claudia.jpg"
             alt=""

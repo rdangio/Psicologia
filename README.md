@@ -7,6 +7,7 @@
 # Possíveis cores para o projeto
 
 > > > Limpo e Moderno
+> > > #00514f => ----------------------> classe: c-turquoise-6
 > > > #17252A => Nav, Botão -----------> classe: c-turquoise-5
 > > > #2B7A78 => Efeito Hover Botão ---> classe: c-turquoise-4
 > > > #3AAFA9 => Efeito Active Botão --> classe: c-turquoise-3

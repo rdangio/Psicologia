@@ -7,7 +7,7 @@ function CardServices() {
       {/* Título e texto */}
       <div className="text-center">
         <h2
-          className="text-c-turquoise-4 font-roboto-bold mt-4 
+          className="text-c-turquoise-6 font-roboto-bold mt-4 
                         sm:text-fs-h6 md:text-fs-h5 lg:text-fs-h4"
         >
           Áreas de Atuação
@@ -40,7 +40,7 @@ function CardServices() {
             >
               <div>
                 <img
-                  className="sm:w-35 md:w-40 md:h-40 lg:w-60 lg:h-60 rounded-xl shadow shadow-[#000000] border-c-turquoise-4 border-2"
+                  className="sm:w-35 md:w-40 md:h-40 lg:w-60 lg:h-60 rounded-ss-3xl rounded-ee-3xl overflow-hidden shadow shadow-[#000000] border-c-turquoise-5 border-2"
                   src={card.image}
                   alt="imagens dos cards serviços"
                 />
