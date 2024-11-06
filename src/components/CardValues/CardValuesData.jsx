@@ -3,10 +3,10 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 import { TbDiamond } from "react-icons/tb";
 
 const classCard =
-  "bg-c-turquoise-2 pb-0 pt-1 px-1 rounded-ss-3xl rounded-ee-3xl overflow-hidden shadow-inner shadow-black border-c-turquoise-5 border-1"; // Estilização da borda e sombra do card
+  "bg-c-turquoise-2 pb-0 pt-1 px-1 rounded-3xl overflow-hidden shadow-inner shadow-black border-c-turquoise-5 border-1"; // Estilização da borda e sombra do card
 
 const classTitle =
-  "flex  items-center gap-3 p-1 rounded-ss-3xl rounded-ee-3xl overflow-hidden text-fs-h6 pt-1 font-roboto-bold text-c-turquoise-1 bg-gradient-to-r from-c-turquoise-5 from-10% via-c-turquoise-4 via-50% to-c-turquoise-2 to-95% "; // Estilização do titulo do card
+  "flex  items-center gap-3 p-1 rounded-3xl overflow-hidden text-fs-h6 pt-1 font-roboto-bold text-c-turquoise-1 bg-gradient-to-r from-c-turquoise-5 from-10% via-c-turquoise-4 via-50% to-c-turquoise-2 to-95% "; // Estilização do titulo do card
 
 const classText = "text-fs-h7 indent-8 font-roboto text-justify p-4"; // Texto dos valores
 

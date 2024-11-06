@@ -24,4 +24,10 @@ export const dataSessions = [
     title: "Grupos para Empresas",
     imagem: "/src/assets/Images/session/therapy-5.jpg",
   },
+  {
+    id: "6",
+    title2: "Agende uma sessão hoje!",
+    text: "Dê o primeiro passo na sua jornada para uma melhor qualidade de vida.",
+  },
+
 ];
