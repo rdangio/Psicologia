@@ -40,7 +40,7 @@ function CardServices() {
             >
               <div>
                 <img
-                  className="sm:w-35 md:w-40 md:h-40 lg:w-60 lg:h-60 rounded-ss-3xl rounded-ee-3xl overflow-hidden shadow shadow-[#000000] border-c-turquoise-5 border-2"
+                  className="sm:w-35 md:w-40 md:h-40 lg:w-60 lg:h-60 rounded-ss-3xl rounded-ee-3xl overflow-hidden shadow-xl shadow-gray-600 border-c-turquoise-5 border-2"
                   src={card.image}
                   alt="imagens dos cards serviços"
                 />
@@ -58,7 +58,7 @@ function CardServices() {
               }  row-start-2 flex justify-center items-start -mt-20 mb-4 sm:-mt-6 lg:-mt-8`}
             >
               <div className="flex flex-col items-center justify-center 
-                    w-[14rem] sm:w-[10.5rem] md:w-36 lg:w-52 bg-c-turquoise-1 rounded-xl shadow-2xl border-2 border-b-c-turquoise-3 border-l-c-turquoise-4">
+                    w-[14rem] sm:w-[10.5rem] md:w-36 lg:w-52 bg-c-turquoise-1 rounded-xl shadow-2xl border-2 border-b-c-turquoise-3 border-l-c-turquoise-4 shadow-xl shadow-gray-600">
                 {/* Título */}
                 <p
                   className="mt-3 text-center text-c-turquoise-4 underline underline-offset-2 font-roboto-bold 
