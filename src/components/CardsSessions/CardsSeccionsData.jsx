@@ -2,7 +2,7 @@ export const dataSessions = [
   {
     id: "1",
     title: "Terapia Individual",
-    imagem: "src/assets/Images/session/therapy-1.jpg",
+    imagem: "public/Images/session/therapy-1.jpg",
   },
   {
     id: "2",
