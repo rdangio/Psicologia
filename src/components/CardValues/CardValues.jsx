@@ -2,10 +2,10 @@ import { dataValue } from "./CardValuesData";
 
 function CardValues() {
   return (
-    <div className="flex justify-center items-center mb-10">
-      <div className="container grid justify-center items-center sm:w-[90%]">
+    <div className="mb-10 flex items-center justify-center">
+      <div className="container grid items-center justify-center sm:w-[90%]">
         {/* desenho do card  */}
-        <div className="grid grid-cols-12 grid-rows-1 gap-9 items-start mx-8 ">
+        <div className="mx-8 grid grid-cols-12 grid-rows-1 items-start gap-9">
           {dataValue.map((values) => (
             // estilização do card
             <div key={values.id} className={`${values.classCard} `}>

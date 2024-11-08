@@ -25,22 +25,7 @@ const DefaultButton = ({ children, hideOnResize, ...props }) => {
       <button
         {...props}
         type="submit"
-        className="whitespace-nowrap 
-        bg-c-turquoise-5
-        text-c-turquoise-1
-        active:text-c-turquoise-5
-        font-medium
-        font-roboto
-        active:font-roboto
-        border
-        py-1 sm:py-2 
-        px-1 sm:px-2
-        text-xs sm:text-base
-        border-white
-        hover:bg-c-turquoise-6
-        active:bg-c-turquoise-3
-        rounded-xl 
-        transition-all"
+        className="whitespace-nowrap rounded-xl border border-white bg-c-turquoise-5 px-1 py-1 font-roboto text-xs font-medium text-c-turquoise-1 transition-all hover:bg-c-turquoise-6 active:bg-c-turquoise-3 active:font-roboto active:text-c-turquoise-5 sm:px-2 sm:py-2 sm:text-base"
       >
         {children}
       </button>

@@ -16,7 +16,6 @@ export const CarouselData = [
     id: "3",
     image: "/src/assets/Images/slider/slider-3.jpg",
     text1: "Reconquiste a alegria de viver!",
-    text2:
-      "Somos qualificados para atender às suas necessidades específicas.",
+    text2: "Somos qualificados para atender às suas necessidades específicas.",
   },
 ];

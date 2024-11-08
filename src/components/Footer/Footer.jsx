@@ -8,19 +8,19 @@ const Footer = () => {
 
   return (
     <footer className="w-full bg-c-turquoise-5">
-      <div className="container flex flex-col flex-wrap justify-between px-10 py-10 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap md:justify-around sm:items-center">
+      <div className="md:flex-no-wrap container mx-auto flex flex-col flex-wrap justify-between px-10 py-10 sm:items-center md:flex-row md:items-center md:justify-around lg:items-start">
         <Logo showSubtitle={true} showSocialMedia={true} />
 
         <div className="xs:w-60">
-          <div className="flex flex-col flex-grow mt-10 text-center md:mt-10 md:text-left md:justify-end lg:mt-5 lg:justify-center">
-            <h2 className="text-sm font-medium tracking-widest text-c-turquoise-1 uppercase title-font">
+          <div className="mt-10 flex flex-grow flex-col text-center md:mt-10 md:justify-end md:text-left lg:mt-5 lg:justify-center">
+            <h2 className="title-font text-sm font-medium uppercase tracking-widest text-c-turquoise-1">
               Sobre
             </h2>
             <ul className="mt-3 list-none">
               <li className="mb-3">
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-c-turquoise-4 cursor-pointer"
+                  className="cursor-pointer text-gray-400 hover:text-c-turquoise-4"
                 >
                   Quem Sou?
                 </a>
@@ -34,14 +34,14 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex text-center w-96 items-center md:mt-5 sm:mt-10">
+        <div className="flex w-96 items-center text-center sm:mt-10 md:mt-5">
           {/* Formulário */}
           <Form />
         </div>
       </div>
-      <div className="bg-gray-300 w-full">
-        <div className="container px-5 py-4 mx-auto">
-          <p className="text-sm text-c-turquoise-5 capitalize xs:text-center">
+      <div className="w-full bg-gray-300">
+        <div className="container mx-auto px-5 py-4">
+          <p className="text-sm capitalize text-c-turquoise-5 xs:text-center">
             &copy; {Year} RD Dev&Design
           </p>
         </div>

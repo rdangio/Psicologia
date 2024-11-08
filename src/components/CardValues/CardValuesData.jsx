@@ -39,10 +39,10 @@ export const dataValue = [
     classTitle,
     classText: `${classText}  pb-4`,
     text: (
-      <p className="indent-0 text-justify p-2 text-fs-h7 leading-6">
+      <p className="p-2 text-justify indent-0 text-fs-h7 leading-6">
         <img
           src="./src/assets/images/psi_1.png"
-          className="w-5 h-5 inline-block"
+          className="inline-block h-5 w-5"
           alt="Psy simbol"
         />
         <b className={`${detail} pl-2`}>Empatia:</b> Colocamos o respeito e a
@@ -51,7 +51,7 @@ export const dataValue = [
         <br />
         <img
           src="./src/assets/images/psi_1.png"
-          className="w-5 h-5 inline-block"
+          className="inline-block h-5 w-5"
           alt="Psy simbol"
         />
         <b className={`${detail} pl-2`}>Ética:</b> Atuamos com integridade e
@@ -60,7 +60,7 @@ export const dataValue = [
         <br />
         <img
           src="./src/assets/images/psi_1.png"
-          className="w-5 h-5 inline-block"
+          className="inline-block h-5 w-5"
           alt="Psy simbol"
         />
         <b className={`${detail} pl-2`}>Respeito à Individualidade:</b>{" "}
@@ -70,7 +70,7 @@ export const dataValue = [
         <br />
         <img
           src="./src/assets/images/psi_1.png"
-          className="w-5 h-5 inline-block"
+          className="inline-block h-5 w-5"
           alt="Psy simbol"
         />
         <b className={`${detail} pl-2`}>Compromisso com o Crescimento:</b>{" "}
@@ -78,7 +78,7 @@ export const dataValue = [
         as melhores soluções para nossos pacientes. <br />
         <img
           src="./src/assets/images/psi_1.png"
-          className="w-5 h-5 inline-block"
+          className="inline-block h-5 w-5"
           alt="Psy simbol"
         />
         <b className={`${detail} pl-2`}>Humanização:</b> Tratamos nossos

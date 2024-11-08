@@ -29,5 +29,4 @@ export const dataSessions = [
     title2: "Agende uma sessão hoje!",
     text: "Dê o primeiro passo na sua jornada para uma melhor qualidade de vida.",
   },
-
 ];

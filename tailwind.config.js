@@ -10,7 +10,7 @@ export default {
 
       colors: {
         "c-turquoise-5": "#17252A",
-        'c-turquoise-6': "#00514f",
+        "c-turquoise-6": "#00514f",
         "c-turquoise-4": "#2B7A78",
         "c-turquoise-3": "#3AAFA9",
         "c-turquoise-2": "#DEF2F1",

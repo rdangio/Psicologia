@@ -28,7 +28,7 @@ function Form() {
         "service_3jpp0hj",
         "template_hcdprma",
         tamplateParams,
-        "LC0umWmEt9nBlaNjV"
+        "LC0umWmEt9nBlaNjV",
       )
       .then(
         (response) => {
@@ -41,22 +41,22 @@ function Form() {
         },
         (err) => {
           console.log("Erro: ", err);
-        }
+        },
       );
   }
 
   return (
-    <div className="flex flex-col w-full sm:w-full sm:mt-0 md:items-center xs:w-60 xs:mt-10">
-      <h2 className="mb-3 text-sm font-medium tracking-widest text-c-turquoise-1 uppercase title-font">
+    <div className="flex w-full flex-col xs:mt-10 xs:w-60 sm:mt-0 sm:w-full md:items-center">
+      <h2 className="title-font mb-3 text-sm font-medium uppercase tracking-widest text-c-turquoise-1">
         Contato
       </h2>
 
       <form
         onSubmit={sendEmail}
-        className="flex flex-col max-w-lg w-full sm:w-full"
+        className="flex w-full max-w-lg flex-col sm:w-full"
       >
         <input
-          className="mb-3.5 h-8 rounded border-none p-0 p2 pl-2"
+          className="p2 mb-3.5 h-8 rounded border-none p-0 pl-2"
           type="text"
           placeholder="Digite seu nome"
           onChange={(e) => setName(e.target.value)}
@@ -64,7 +64,7 @@ function Form() {
         />
 
         <input
-          className="mb-3.5 h-8 rounded border-none p-0 p2 pl-2"
+          className="p2 mb-3.5 h-8 rounded border-none p-0 pl-2"
           type="text"
           placeholder="Digite seu e-mail"
           onChange={(e) => setEmail(e.target.value)}
@@ -72,7 +72,7 @@ function Form() {
         />
 
         <textarea
-          className="mb-3.5 h-20 rounded border-none p-1 p2 resize-none pl-2"
+          className="p2 mb-3.5 h-20 resize-none rounded border-none p-1 pl-2"
           type="text"
           placeholder="Digite sua mensagem..."
           onChange={(e) => setMessage(e.target.value)}
@@ -80,7 +80,7 @@ function Form() {
         />
       </form>
 
-      <div className="w-full flex justify-center">
+      <div className="flex w-full justify-center">
         <DefaultButton type="submit" onClick={sendEmail}>
           Enviar
         </DefaultButton>

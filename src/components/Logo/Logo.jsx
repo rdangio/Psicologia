@@ -6,29 +6,29 @@ const Logo = ({ showSubtitle, showSocialMedia }) => {
   const contactData = FooterData.find((data) => data.socialLinks);
 
   return (
-    <div className="flex items-center gap-3 min-w-[150px] mt-4">
+    <div className="mt-4 flex min-w-[150px] items-center gap-3">
       <div>
         <img
-          className="w-24 sm:w-28 min-w-[80px] sm:min-w-[100px]"
+          className="w-24 min-w-[80px] sm:w-28 sm:min-w-[100px]"
           src={"/src/assets/Logos/logo-psico-preto.webp"}
           alt="logo"
         />
       </div>
 
       <div className="text-center sm:text-left">
-        <p className="font-eurofucence text-center text-sm sm:text-xl whitespace-nowrap text-c-turquoise-1">
+        <p className="whitespace-nowrap text-center font-eurofucence text-sm text-c-turquoise-1 sm:text-xl">
           C L Á U D I A <br />
           D A N G I Ó <br />
         </p>
         {showSubtitle && (
-          <span className="font-florencesans text-[8px] sm:text-[10px] whitespace-nowrap text-c-turquoise-1">
+          <span className="whitespace-nowrap font-florencesans text-[8px] text-c-turquoise-1 sm:text-[10px]">
             PSICÓLOGA - CRP 06 / 136891
           </span>
         )}
 
         {/* Ícones das redes sociais */}
         {showSocialMedia && (
-          <div className="flex justify-center space-x-4 mt-2">
+          <div className="mt-2 flex justify-center space-x-4">
             {contactData?.socialLinks?.map((link, index) => (
               <a
                 key={index}

@@ -1,17 +1,16 @@
 // Importação com {}: Exportações Nomeadas
 // importa os componentes especificos do react
 // caso fosse usado import react from "react"
-// seria importada toda a biblioteca, o que 
-// poderia deixar o codigo mais pesado. 
+// seria importada toda a biblioteca, o que
+// poderia deixar o codigo mais pesado.
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-
 // Importação sem {}: Exportação Padrão
-// Quando você importa algo sem {}, você está  
+// Quando você importa algo sem {}, você está
 // importando uma exportação padrão do módulo.
-// Uma exportação padrão pode ser importada com qualquer 
-// nome que você escolher, pois ela é a 
+// Uma exportação padrão pode ser importada com qualquer
+// nome que você escolher, pois ela é a
 // principal exportação desse módulo.
 // 'export default'
 import Home from "./pages/Home/index";
@@ -23,5 +22,5 @@ import "./styles.css";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Home /> {/* home está em ./page/home/index.jsx  */}
-  </StrictMode>
+  </StrictMode>,
 );

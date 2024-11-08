@@ -25,10 +25,9 @@
 
 # Breakpoints:
 
-> > > telas pequenas (celular) --->  480px ---> classe: 's-small'
-> > > telas medias (tablet) ------>  768px ---> classe: 's-medium'
+> > > telas pequenas (celular) ---> 480px ---> classe: 's-small'
+> > > telas medias (tablet) ------> 768px ---> classe: 's-medium'
 > > > telas grandes (desktop) ----> 1024px ---> classe: 's-large'
-
 
 # Tarefas e Anotações Rico
 
