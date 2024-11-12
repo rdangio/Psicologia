@@ -32,6 +32,7 @@
 # Tarefas e Anotações Rico
 
 > > > Informações Cláudia Dangió: CRP 06/136891
+12-11-24 > > > Criação do componente <Title> T E X T O </Title> com responsividade
 
 # Tarefas e Anotações Dvd
 

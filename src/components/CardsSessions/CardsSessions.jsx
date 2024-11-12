@@ -1,17 +1,14 @@
 import DefaultButton from "../Button";
-import { dataSessions } from "./CardsSeccionsData";
+import { Description } from "../Description/Description";
+import { Title } from "../Titles/Titles";
+import { dataSessions } from "./CardsSessionsData";
 
 function CardsSessions() {
   return (
     <div className="container mb-10 flex flex-col items-center justify-center bg-c-turquoise-1 text-center">
       <div className="flex w-[89%] flex-col items-center justify-center">
-        <p className="mt-4 font-roboto-bold text-c-turquoise-6 sm:text-fs-h6 md:text-fs-h5 lg:text-fs-h4">
-          Tipos de Sessões
-        </p>
-        <p className="pb-5 pt-3 font-roboto text-c-turquoise-5 sm:w-[30rem] sm:text-fs-h8 md:w-[35rem] md:text-fs-h7 lg:w-[45rem]">
-          Atuo com diversos formatos de sessões para melhor atender a cada
-          situação
-        </p>
+        <Title>Tipos de Sessões</Title>
+        <Description>Atuo com diversos formatos de sessões para melhor atender a cada situação</Description>
 
         <div className="grid grid-cols-3 grid-rows-2 gap-10">
           {dataSessions.map((sessions) => {

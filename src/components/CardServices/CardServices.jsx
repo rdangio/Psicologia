@@ -1,3 +1,5 @@
+import { Description } from "../Description/Description";
+import { Title } from "../Titles/Titles";
 import { dataCardServices } from "./CardServicesData";
 
 function CardServices() {
@@ -5,17 +7,13 @@ function CardServices() {
     <div className="container flex flex-col items-center">
       {/* Título e texto */}
       <div className="text-center">
-        <h2 className="mt-4 font-roboto-bold text-c-turquoise-6 sm:text-fs-h6 md:text-fs-h5 lg:text-fs-h4">
-          Áreas de Atuação
-        </h2>
+        <Title>Áreas de Atuação</Title>
+        <Description>Seja atendido por uma profissional experiente e qualificada.</Description>
+        <Description className="hidden sm:block">
+          Desbloqueie sua vida, trate suas angústias. Comece seu tratamento.
+          Alívio para sua tristeza.
+        </Description>  
 
-        <h3 className="pb-5 pt-3 font-roboto text-c-turquoise-5 sm:w-[30rem] sm:text-fs-h8 md:w-[35rem] md:text-fs-h7 lg:w-[45rem]">
-          Seja atendido por uma profissional experiente e qualificada.
-          <p className="hidden sm:block">
-            Desbloqueie sua vida, trate suas angústias. Comece seu tratamento.
-            Alívio para sua tristeza.
-          </p>
-        </h3>
       </div>
 
       {/* Grid dos Cards */}
