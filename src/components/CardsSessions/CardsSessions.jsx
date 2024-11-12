@@ -20,7 +20,11 @@ function CardsSessions() {
               <div key={sessions.id}>
                 {sessions.id !== "6" ? (
                   <div className="overflow-hidden rounded-ee-3xl rounded-ss-3xl border-2 border-c-turquoise-5 shadow-xl shadow-gray-600">
-                    <img src={sessions.imagem} alt="Imagens tipos de sessões" className="w-full" />
+                    <img
+                      src={sessions.imagem}
+                      alt="Imagens tipos de sessões"
+                      className="w-full"
+                    />
                     <h2 className="to-99% bg-gradient-to-r from-c-turquoise-5 from-20% via-c-turquoise-4 via-70% to-c-turquoise-2 py-1 pl-6 text-left font-roboto-bold text-fs-h6 text-c-turquoise-1">
                       {sessions.title}
                     </h2>

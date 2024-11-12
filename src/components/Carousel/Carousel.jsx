@@ -44,11 +44,11 @@ function Carousel() {
       >
         {CarouselData.map((item) => (
           <SwiperSlide className="mt-[100px]" key={item.id}>
-            <div className="relative flex items-center justify-center">
+            <div className="relative flex items-center justify-center mx-auto">
               <img
                 src={item.image}
                 alt="imagem Carrossel"
-                className="max-h-[100%] max-w-[100%] blur-[2px]"
+                className="w-full blur-[2px]"
               />
               <div className="absolute">
                 <p className="text-center text-[17px] text-slate-100 drop-shadow-[_2px_2px_rgba(0,0,0,1.55)] sm:text-center sm:text-[27px] md:text-center md:text-[40px]">
