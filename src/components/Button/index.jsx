@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 
-const DefaultButton = ({ children, hideOnResize, ...props }) => {
+const DefaultButton = ({ className = "", children, hideOnResize, ...props }) => {
   const [isVisible, setIsVisible] = useState(true);
   useEffect(() => {
     if (hideOnResize) {
@@ -25,7 +25,7 @@ const DefaultButton = ({ children, hideOnResize, ...props }) => {
       <button
         {...props}
         type="submit"
-        className="whitespace-nowrap rounded-xl border border-white bg-c-turquoise-5 px-1 py-1 font-roboto text-xs font-medium text-c-turquoise-1 transition-all hover:bg-c-turquoise-6 active:bg-c-turquoise-3 active:font-roboto active:text-c-turquoise-5 sm:px-2 sm:py-2 sm:text-base"
+        className={`${className} whitespace-nowrap rounded-xl border border-white bg-c-turquoise-5 px-1 py-1 font-roboto text-xs font-medium text-c-turquoise-1 transition-all hover:bg-c-turquoise-6 active:bg-c-turquoise-3 active:font-roboto active:text-c-turquoise-5 sm:px-2 sm:py-2 sm:text-base`}
       >
         {children}
       </button>
