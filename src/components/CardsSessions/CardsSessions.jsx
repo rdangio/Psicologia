@@ -6,7 +6,7 @@ import { dataSessions } from "./CardsSessionsData";
 
 function CardsSessions() {
   return (
-    <div className="container mb-10">
+    <div className="container mb-20">
       <div className="flex flex-col items-center text-center">
         <Title className="mt-10">Tipos de Sessões</Title>
         <Description className="pb-5">

@@ -1,69 +1,52 @@
 import { Description } from "../Description/Description";
+import { Text } from "../Text/Text";
 import { Title } from "../Titles/Titles";
 import { dataCardServices } from "./CardServicesData";
+import DefaultButton from "../Button";
 
 function CardServices() {
   return (
     <div className="container flex flex-col items-center">
       {/* Título e texto */}
-      <div className="text-center">
+      <div className="mt-8 text-center">
         <Title>Áreas de Atuação</Title>
-        <Description>Seja atendido por uma profissional experiente e qualificada.</Description>
-        <Description className="hidden sm:block">
+        <Description>
+          Seja atendido por uma profissional experiente e qualificada.
+        </Description>
+        <Description className="mb-10 hidden sm:block">
           Desbloqueie sua vida, trate suas angústias. Comece seu tratamento.
           Alívio para sua tristeza.
-        </Description>  
-
+        </Description>
       </div>
 
       {/* Grid dos Cards */}
-      <div className="mb-6 grid sm:grid-cols-3 sm:grid-rows-1 sm:gap-x-3 md:gap-x-7 lg:gap-x-14">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+        {/* Imagens - Primeira Linha */}
         {dataCardServices.map((card) => (
-          <div key={card.id}>
-            {/* Imagem do Card (Linha 1/2) */}
-            <div
-              className={`${
-                card.id % 3 === 0
-                  ? "col-start-1"
-                  : card.id % 3 === 1
-                    ? "col-start-2"
-                    : "col-start-3"
-              } row-span-2 row-start-1`}
-            >
-              <div>
-                <img
-                  className="sm:w-35 overflow-hidden rounded-ee-3xl rounded-ss-3xl border-2 border-c-turquoise-5 shadow-xl shadow-gray-600 md:h-40 md:w-40 lg:h-60 lg:w-60"
-                  src={card.image}
-                  alt="imagens dos cards serviços"
-                />
-              </div>
-            </div>
-
-            {/* Card de Texto (Linha 2) */}
-            <div
-              className={`${
-                card.id % 3 === 0
-                  ? "col-start-1"
-                  : card.id % 3 === 1
-                    ? "col-start-2"
-                    : "col-start-3"
-              } row-start-2 -mt-20 mb-4 flex items-start justify-center sm:-mt-6 lg:-mt-8`}
-            >
-              <div className="flex w-[14rem] flex-col items-center justify-center rounded-xl border-2 border-b-c-turquoise-3 border-l-c-turquoise-4 bg-c-turquoise-1 shadow-2xl shadow-xl shadow-gray-600 sm:w-[10.5rem] md:w-36 lg:w-52">
-                {/* Título */}
-                <p className="mt-3 text-center font-roboto-bold text-sm text-c-turquoise-4 underline underline-offset-2 md:text-sm lg:text-lg">
-                  {card.title}
-                </p>
-                {/* Texto */}
-                <p className="p-2 pt-2 text-center font-roboto text-fs-h8 text-black sm:text-fs-h9 lg:py-3 lg:text-fs-h8">
-                  {card.text}
-                </p>
-                {/* Botão Saiba Mais */}
-
-                <button className="mb-2 rounded-lg border-2 bg-c-turquoise-5 px-3 py-1 font-roboto text-c-turquoise-1 hover:bg-c-turquoise-4 hover:text-white hover:shadow-md hover:shadow-c-turquoise-4 sm:mb-2 sm:text-fs-h9 md:mb-2 lg:mb-3 lg:text-fs-h8">
-                  Saiba mais
-                </button>
-              </div>
+          <div
+            key={card.id}
+            className="relative mb-[65%] flex justify-center sm:mb-[170%] md:mb-[130%] lg:mb-[80%]"
+          >
+            <img
+              className="w-full overflow-hidden rounded-ee-3xl rounded-ss-3xl border-2 border-c-turquoise-5 shadow-xl shadow-gray-600 sm:w-11/12"
+              src={card.image}
+              alt="imagens dos cards serviços"
+            />
+            {/* Card sobreposto */}
+            <div className="absolute bottom-2 left-2 right-2 top-[85%] mx-auto flex h-fit flex-col items-center justify-start rounded-xl border-2 border-b-c-turquoise-3 border-l-c-turquoise-4 bg-c-turquoise-1 p-4 shadow-xl shadow-gray-600 sm:max-w-[83%]">
+              <Description className="pb-2 text-center text-lg font-bold">
+                {card.title}
+              </Description>
+              <Text className="pb-4 text-center">{card.text}</Text>
+              <DefaultButton
+                className="px-3 text-fs-h8 sm:text-fs-h8 lg:text-fs-h6"
+                hideOnResize={false}
+              >
+                Saiba mais
+              </DefaultButton>
+              {/* <button className="rounded-lg border-2 bg-c-turquoise-5 px-4 py-2 font-roboto text-c-turquoise-1 hover:bg-c-turquoise-4 hover:text-white hover:shadow-md hover:shadow-c-turquoise-4">
+                Saiba mais
+              </button> */}
             </div>
           </div>
         ))}
