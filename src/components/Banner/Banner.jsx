@@ -4,9 +4,9 @@ import { Title } from "../Titles/Titles";
 
 const Banner = () => {
   return (
-    <CentralizedContainer>
+    <div>
       {/* Banner - faixa que ocupa 100% width e fica degrade */}
-      <div className="w-full bg-gradient-to-b from-c-turquoise-5 from-10% via-c-turquoise-4 via-30% to-c-turquoise-2 to-90% sm:bg-gradient-to-r">
+      <div className="w-full bg-gradient-to-b from-c-turquoise-5 from-15% via-c-turquoise-4 via-60% to-c-turquoise-2 to-90% sm:bg-gradient-to-r">
         {/* div que abraça tudo */}
         <div className="container mb-10 flex flex-col items-center justify-center gap-x-10 font-roboto sm:h-[250px] sm:flex-row md:h-[300px] lg:h-[400px]">
           {/* tratamento da imagem */}
@@ -29,7 +29,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-    </CentralizedContainer>
+    </div>
   );
 };
 

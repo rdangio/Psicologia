@@ -7,9 +7,9 @@ import { dataValue } from "./CardValuesData";
 function CardValues() {
   return (
     <CentralizedContainer>
-      <div className="mb-10 flex items-center justify-center">
-        <div className="grid items-center justify-center sm:w-[81.8%]">
-          <div>
+      <div className="flex items-center justify-center">
+        <div className="grid items-center justify-center">
+          <div className="mb-5">
             <Title>Os Pilares</Title>
             <Description className="text-center">
               Promovemos um espaço de acolhimento e desenvolvimento humano,
@@ -19,7 +19,7 @@ function CardValues() {
             </Description>
           </div>
           {/* desenho do card  */}
-          <div className="mx-auto grid items-start gap-10 sm:grid-cols-12 sm:grid-rows-1 md:gap-7 lg:gap-12">
+          <div className="mx-auto grid items-start gap-10 sm:grid-cols-12 sm:grid-rows-1 md:gap-7 lg:gap-6 mb-12">
             {dataValue.map((values) => (
               // estilização do card
               <div key={values.id} className={`${values.classCard} `}>

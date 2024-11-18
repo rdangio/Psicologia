@@ -27,15 +27,15 @@ function CardServices() {
           {dataCardServices.map((card) => (
             <div
               key={card.id}
-              className="relative mb-[65%] flex justify-center sm:mb-[170%] md:mb-[130%] lg:mb-[80%]"
+              className="relative mb-[45%] flex justify-center sm:mb-[110%] md:mb-[130%] lg:mb-[70%]"
             >
               <img
-                className="w-full overflow-hidden rounded-ee-3xl rounded-ss-3xl border-2 border-c-turquoise-5 shadow-xl shadow-gray-600 sm:w-11/12"
+                className="w-full overflow-hidden rounded-ee-3xl rounded-ss-3xl border-[1px] border-c-turquoise-6 shadow-xl shadow-gray-600 sm:w-max"
                 src={card.image}
                 alt="imagens dos cards serviços"
               />
               {/* Card sobreposto */}
-              <div className="absolute bottom-2 left-2 right-2 top-[85%] mx-auto flex h-fit flex-col items-center justify-start rounded-xl border-2 border-b-c-turquoise-3 border-l-c-turquoise-4 bg-c-turquoise-1 p-4 shadow-xl shadow-gray-600 sm:max-w-[83%]">
+              <div className="absolute bottom-2 left-2 right-2 top-[70%] mx-auto flex h-fit flex-col items-center justify-start rounded-xl border-2 border-b-c-turquoise-3 border-l-c-turquoise-4 bg-c-turquoise-1 p-4 shadow-xl shadow-gray-600 md:max-w-[90%]">
                 <Description className="pb-2 text-center text-lg font-bold">
                   {card.title}
                 </Description>

@@ -7,16 +7,16 @@ import { dataSessions } from "./CardsSessionsData";
 
 function CardsSessions() {
   return (
-    <CentralizedContainer>
-      <div className="mb-20">
-        <div className="flex flex-col items-center text-center">
+    <CentralizedContainer className="mb-20">
+      <div className={`mb-20`}>
+        <div className="text-center">
           <Title className="mt-10">Tipos de Sessões</Title>
           <Description className="pb-5">
             Atuo com diversos formatos de sessões para melhor atender a cada
             situação
           </Description>
 
-          <div className="container grid gap-7 sm:grid-cols-2 md:grid-cols-3 md:grid-rows-2">
+          <div className="grid gap-7 sm:grid-cols-2 md:grid-cols-3 md:grid-rows-2">
             {dataSessions.map((sessions) => {
               // console.log("ID atual:", sessions.id); // Verifica o valor de sessions.id para cada item
               return (
