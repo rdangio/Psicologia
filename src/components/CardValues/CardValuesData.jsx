@@ -11,7 +11,8 @@ const classTitle =
 
 const classText = "text-fs-h8 indent-8 font-roboto text-justify p-4"; // Texto dos valores
 
-const detail = "text-c-turquoise-5 sm:text-fs-h8 md:text-fs-h7 lg:text-fs-h7 xl:text-fs-h5 font-roboto-bold"; // Topicos dos Valores
+const detail =
+  "text-c-turquoise-5 sm:text-fs-h8 md:text-fs-h7 lg:text-fs-h7 xl:text-fs-h5 font-roboto-bold"; // Topicos dos Valores
 
 export const dataValue = [
   {
@@ -42,7 +43,7 @@ export const dataValue = [
     text: (
       <Text className="indent-0 leading-6">
         <img
-          src="./src/assets/images/psi_1.png"
+          src="/Images/psi_1.png"
           className="inline-block h-5 w-5"
           alt="Psy simbol"
         />
@@ -51,7 +52,7 @@ export const dataValue = [
         garantindo um ambiente seguro e acolhedor.
         <br />
         <img
-          src="./src/assets/images/psi_1.png"
+          src="/Images/psi_1.png"
           className="inline-block h-5 w-5"
           alt="Psy simbol"
         />
@@ -60,7 +61,7 @@ export const dataValue = [
         nossos pacientes.
         <br />
         <img
-          src="./src/assets/images/psi_1.png"
+          src="/Images/psi_1.png"
           className="inline-block h-5 w-5"
           alt="Psy simbol"
         />
@@ -70,7 +71,7 @@ export const dataValue = [
         cada paciente.
         <br />
         <img
-          src="./src/assets/images/psi_1.png"
+          src="/Images/psi_1.png"
           className="inline-block h-5 w-5"
           alt="Psy simbol"
         />
@@ -78,14 +79,14 @@ export const dataValue = [
         Estamos sempre em busca de novas práticas e conhecimentos para oferecer
         as melhores soluções para nossos pacientes. <br />
         <img
-          src="./src/assets/images/psi_1.png"
+          src="/Images/psi_1.png"
           className="inline-block h-5 w-5"
           alt="Psy simbol"
         />
         <b className={`${detail} pl-2`}>Humanização:</b> Tratamos nossos
         pacientes com atenção e cuidado, colocando sempre o ser humano em
         primeiro lugar em todos os aspectos do nosso trabalho.
-        </Text>
+      </Text>
     ),
   },
 ];

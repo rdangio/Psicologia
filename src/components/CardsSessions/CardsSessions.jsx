@@ -37,7 +37,7 @@ function CardsSessions() {
                     </div>
                   ) : (
                     // Executa somente se o card for o sexto
-                    <div className="overflow-hidden rounded-ee-3xl rounded-ss-3xl border-2 border-c-turquoise-5 px-7 py-9 shadow-xl shadow-gray-600 sm:py-4 md:py-7 lg:py-5 xl:py-3 2xl:py-16">
+                    <div className="xl:py- flex flex-col items-center overflow-hidden rounded-ee-3xl rounded-ss-3xl border-2 border-c-turquoise-5 px-7 py-9 shadow-xl shadow-gray-600 sm:py-10 md:py-9 lg:py-7 2xl:py-[6px]">
                       <Description className="font-roboto-bold">
                         {sessions.title2}
                       </Description>

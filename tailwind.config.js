@@ -5,7 +5,12 @@ export default {
     extend: {
       container: {
         center: true, // Centraliza o container automaticamente
-        padding: "2rem", // Adiciona padding ao redor do container
+        padding: "2rem", //Adiciona padding ao redor do container
+        // DEFAULT: "1rem",
+        // sm: "2rem",
+        // lg: "4rem",
+        // xl: "5rem",
+        // "2xl": "6rem",
       },
 
       colors: {
