@@ -3,54 +3,75 @@ import DefaultButton from "../Button/index";
 import CentralizedContainer from "../CentralizedContainer/CentralizedContainer";
 import Logo from "../Logo/Logo";
 import { MdMenu } from "react-icons/md";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ReponsiveMenu from "./ReponsiveMenu";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [showButton, setShowButton] = useState(true);
+
+  // Hook para monitorar o tamanho da janela
+  useEffect(() => {
+    const handleResize = () => {
+      setShowButton(window.innerWidth >= 1024); // Exibir botão somente em telas grandes
+    };
+
+    handleResize(); // Verifica inicialmente
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize); // Cleanup
+  }, []);
 
   return (
-    <CentralizedContainer>
-      <nav>
-        <div className="container flex items-center justify-between py-8">
-          {/* Logo Session */}
-          <div className="z-30 flex flex-1 items-center">
-            <Logo showSubtitle={false} />
-          </div>
+    <>
+      <nav className="fixed left-0 top-3 z-50 w-full">
+        <CentralizedContainer>
+          <div className="flex w-full items-center justify-between gap-4 rounded-lg bg-c-turquoise-5 px-6 py-4 shadow-lg sm:h-20 lg:px-12 lg:py-5">
+            {/* Logo Session */}
+            <div className="flex items-center">
+              <Logo showSubtitle={false} />
+            </div>
 
-          {/* Menu Session */}
-          <div className="hidden md:block">
-            <ul className="flex items-center gap-6 font-semibold text-c-turquoise-5">
-              {NavData.map((item) => {
-                return (
-                  <li key={item.id}>
-                    <a
-                      href={item.url}
-                      className="inline-block px-3 py-1 hover:text-c-turquoise-3"
-                    >
-                      {item.title}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+            {/* Menu Session */}
+            <div className="hidden items-center gap-8 md:flex">
+              <ul className="flex items-center gap-6 font-semibold text-c-turquoise-1">
+                {NavData.map((item) => {
+                  return (
+                    <li key={item.id}>
+                      <a
+                        href={item.url}
+                        className="inline-block px-4 py-1 hover:text-c-turquoise-3 md:px-1"
+                      >
+                        {item.title}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
 
-          {/* Button Session */}
-          <div className="ml-8 flex items-center gap-4">
-            <DefaultButton hideOnResize={true}>Agende sua Sessão</DefaultButton>
-          </div>
+            {/* Button Session */}
+            {showButton && (
+              <DefaultButton hideOnResize={false}>
+                Agende sua Sessão
+              </DefaultButton>
+            )}
 
-          {/* Moobile Menu Session */}
-          <div className="md:hidden" onClick={() => setOpen(!open)}>
-            <MdMenu className="text-4xl" />
+            {/* Moobile Menu Session */}
+            <button
+              className="block md:hidden"
+              onClick={() => setOpen(!open)}
+              aria-label="Abrir menu"
+            >
+              <MdMenu className="text-4xl text-c-turquoise-1" />
+            </button>
           </div>
-        </div>
+        </CentralizedContainer>
       </nav>
 
       {/* Mobile Sidebar Session */}
       <ReponsiveMenu open={open} />
-    </CentralizedContainer>
+    </>
   );
 };
 

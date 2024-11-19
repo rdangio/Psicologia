@@ -6,7 +6,7 @@ const Logo = ({ showSubtitle, showSocialMedia }) => {
   const contactData = FooterData.find((data) => data.socialLinks);
 
   return (
-    <div className="mt-4 flex min-w-[150px] items-center gap-3">
+    <div className="flex min-w-[150px] items-center gap-2">
       <div>
         <img
           className="w-24 min-w-[80px] sm:w-28 sm:min-w-[100px]"

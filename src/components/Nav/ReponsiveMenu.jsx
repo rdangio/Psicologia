@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import PropTypes from "prop-types";
+import { NavData } from "./NavData";
 
 const ReponsiveMenu = ({ open }) => {
   return (
@@ -10,15 +11,22 @@ const ReponsiveMenu = ({ open }) => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.3 }}
-          className="absolute left-0 top-24 z-20 h-screen w-full"
+          className="fixed left-0 top-16 z-20 h-screen w-full"
         >
-          <div className="m-6 rounded-3xl bg-c-turquoise-4 p-10 text-xl font-semibold uppercase text-c-turquoise-5">
+          <div className="m-8 rounded-3xl bg-c-turquoise-5 p-10 text-xl font-semibold uppercase text-c-turquoise-1">
             <ul className="flex flex-col items-center justify-center gap-10">
-              <li>Home</li>
-              <li>Sobre</li>
-              <li>Serviços</li>
-              <li>Projetos</li>
-              <li>Contatos</li>
+              {NavData.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <a
+                      href={item.url}
+                      className="inline-block px-3 py-1 hover:text-c-turquoise-3"
+                    >
+                      {item.title}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </motion.div>
