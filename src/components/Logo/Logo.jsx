@@ -10,7 +10,7 @@ const Logo = ({ showSubtitle, showSocialMedia }) => {
       <div>
         <img
           className="w-24 min-w-[80px] sm:w-28 sm:min-w-[100px]"
-          src={"/src/assets/Logos/logo-psico-preto.webp"}
+          src={"/Logos/logo-psico-preto.webp"}
           alt="logo"
         />
       </div>
