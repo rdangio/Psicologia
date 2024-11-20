@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const CentralizedContainer = ({ children }) => {
   return (
     <div className={`container mx-auto px-4`}>
-      <div className={`mx-auto w-full max-w-[800px]`}>{children}</div>
+      <div className={`mx-auto w-full max-w-[1080px]`}>{children}</div>
     </div>
   );
 };

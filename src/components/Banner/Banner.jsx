@@ -1,4 +1,3 @@
-import CentralizedContainer from "../CentralizedContainer/CentralizedContainer";
 import { Description } from "../Description/Description";
 import { Title } from "../Titles/Titles";
 
