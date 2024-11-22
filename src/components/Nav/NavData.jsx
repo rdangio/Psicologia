@@ -2,35 +2,31 @@ export const NavData = [
   {
     id: 1,
     title: "Home",
-    url: "/",
-    // cName: defaultCName,
+    url: "/", // Caminho da rota interna
+    type: "router", // Define o tipo de link: 'router' para rotas internas
   },
-
   {
     id: 2,
-    title: "Sobre",
-    url: "#",
-    // cName: defaultCName,
+    title: "Áreas de Atuação",
+    to: "areas", // ID da seção na página
+    type: "internal", // Define como scroll interno
   },
-
   {
     id: 3,
-    title: "Serviços",
-    url: "#",
-    // cName: defaultCName,
+    title: "Pilares",
+    to: "pillars", // ID da seção na página
+    type: "internal", // Define como scroll interno
   },
-
   {
     id: 4,
-    title: "Projetos",
-    url: "#",
-    // cName: defaultCName,
+    title: "Sessões",
+    to: "sessions", // ID da seção na página
+    type: "internal", // Define como scroll interno
   },
-
   {
     id: 5,
     title: "Contato",
-    url: "#",
-    // cName: defaultCName,
+    url: "contato", // Link externo absoluto
+    type: "internal", // Define o link como externo
   },
 ];

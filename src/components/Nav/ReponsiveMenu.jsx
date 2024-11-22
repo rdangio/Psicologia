@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import PropTypes from "prop-types";
 import { NavData } from "./NavData";
+import { Link as RouterLink } from "react-router-dom"; // Importação do React Router
 
 const ReponsiveMenu = ({ open }) => {
   return (
@@ -18,12 +19,25 @@ const ReponsiveMenu = ({ open }) => {
               {NavData.map((item) => {
                 return (
                   <li key={item.id}>
-                    <a
-                      href={item.url}
-                      className="inline-block px-3 py-1 hover:text-c-turquoise-3"
-                    >
-                      {item.title}
-                    </a>
+                    {item.external ? (
+                      // Link externo
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block px-3 py-1 hover:text-c-turquoise-3"
+                      >
+                        {item.title}
+                      </a>
+                    ) : (
+                      // Link interno
+                      <RouterLink
+                        to={item.url}
+                        className="inline-block px-3 py-1 hover:text-c-turquoise-3"
+                      >
+                        {item.title}
+                      </RouterLink>
+                    )}
                   </li>
                 );
               })}

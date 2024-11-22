@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
-const CentralizedContainer = ({ children }) => {
+const CentralizedContainer = ({ children, id="" }) => {
   return (
-    <div className={`container mx-auto px-4`}>
+    <div id={id} className={`container mx-auto px-4`}>
       <div className={`mx-auto w-full max-w-[1080px]`}>{children}</div>
     </div>
   );
@@ -10,6 +10,7 @@ const CentralizedContainer = ({ children }) => {
 
 CentralizedContainer.propTypes = {
   children: PropTypes.node.isRequired,
+  id: PropTypes.string,
 };
 
 export default CentralizedContainer;

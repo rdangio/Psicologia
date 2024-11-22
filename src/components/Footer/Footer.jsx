@@ -7,8 +7,8 @@ const Footer = () => {
   const Year = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-c-turquoise-5">
-      <div className="md:flex-no-wrap container mx-auto flex flex-col flex-wrap justify-between px-10 py-10 sm:items-center md:flex-row md:items-center md:justify-around lg:items-start">
+    <footer  className="w-full bg-c-turquoise-5">
+      <div id="contato" className="md:flex-no-wrap container mx-auto flex flex-col flex-wrap justify-between px-10 py-10 sm:items-center md:flex-row md:items-center md:justify-around lg:items-start">
         <Logo showSubtitle={true} showSocialMedia={true} />
 
         <div className="xs:w-60">

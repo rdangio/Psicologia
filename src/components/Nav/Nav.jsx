@@ -5,6 +5,8 @@ import Logo from "../Logo/Logo";
 import { MdMenu } from "react-icons/md";
 import { useEffect, useState } from "react";
 import ReponsiveMenu from "./ReponsiveMenu";
+import { Link as ScrollLink } from "react-scroll"; // Para scroll interno
+import { Link as RouterLink } from "react-router-dom"; // Para rotas internas (React Router DOM)
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -38,12 +40,36 @@ const Navbar = () => {
                 {NavData.map((item) => {
                   return (
                     <li key={item.id}>
-                      <a
-                        href={item.url}
-                        className="inline-block px-4 py-1 hover:text-c-turquoise-3 md:px-1"
-                      >
-                        {item.title}
-                      </a>
+                      {item.type === "internal" ? (
+                        // Scroll interno (para uma seção específica na mesma página)
+                        <ScrollLink
+                          to={item.to}
+                          smooth={true}
+                          offset={-100}
+                          duration={500}
+                          className="inline-block px-4 py-1 hover:text-c-turquoise-3 md:px-1 cursor-pointer"
+                        >
+                          {item.title}
+                        </ScrollLink>
+                      ) : item.type === "router" ? (
+                        // Links internos usando React Router
+                        <RouterLink
+                          to={item.url}
+                          className="inline-block px-4 py-1 hover:text-c-turquoise-3 md:px-1"
+                        >
+                          {item.title}
+                        </RouterLink>
+                      ) : (
+                        // Links externos absolutos
+                        <a
+                          href={item.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block px-4 py-1 hover:text-c-turquoise-3 md:px-1"
+                        >
+                          {item.title}
+                        </a>
+                      )}
                     </li>
                   );
                 })}
