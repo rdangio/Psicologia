@@ -9,10 +9,6 @@ import CardsSessions from "../../components/CardsSessions/CardsSessions";
 import Footer from "../../components/Footer/Footer";
 import WhatsappButton from "../../components/WhatsButton/WhatsButton";
 
-// imports para as rotas
-// import Home from "../../pages/Home";
-// import About from "../../pages/About";
-// import Services from "../../pages/Services";
 
 const App = () => {
   return (
@@ -32,8 +28,7 @@ const App = () => {
             </>
           }
         />
-        {/* <Route path="/about" element={<About />}/>
-        <Route path="/services" element={<Services/>} /> */}
+        
       </Routes>
       <Footer />
       <WhatsappButton />

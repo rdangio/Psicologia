@@ -7,10 +7,10 @@ import CentralizedContainer from "../CentralizedContainer/CentralizedContainer";
 
 function CardServices() {
   return (
-    <CentralizedContainer id="areas">
+    <CentralizedContainer id="areas" className="mt-16">
       <div  className="flex flex-col items-center">
         {/* Título e texto */}
-        <div className="mt-8 text-center">
+        <div className="text-center">
           <Title>Áreas de Atuação</Title>
           <Description>
             Seja atendido por uma profissional experiente e qualificada.

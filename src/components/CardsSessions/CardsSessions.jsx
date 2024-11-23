@@ -7,10 +7,10 @@ import { dataSessions } from "./CardsSessionsData";
 
 function CardsSessions() {
   return (
-    <CentralizedContainer id="sessions" className="mb-20">
+    <CentralizedContainer id="sessions" className="mb-20 mt-10">
       <div className={`mb-20`}>
         <div className="text-center">
-          <Title className="mt-10">Tipos de Sessões</Title>
+          <Title className="">Tipos de Sessões</Title>
           <Description className="pb-5">
             Atuo com diversos formatos de sessões para melhor atender a cada
             situação

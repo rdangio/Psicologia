@@ -45,7 +45,7 @@ const Navbar = () => {
                         <ScrollLink
                           to={item.to}
                           smooth={true}
-                          offset={-100}
+                          offset={-120}
                           duration={500}
                           className="inline-block px-4 py-1 hover:text-c-turquoise-3 md:px-1 cursor-pointer"
                         >
@@ -54,7 +54,7 @@ const Navbar = () => {
                       ) : item.type === "router" ? (
                         // Links internos usando React Router
                         <RouterLink
-                          to={item.url}
+                          to={item.to}
                           className="inline-block px-4 py-1 hover:text-c-turquoise-3 md:px-1"
                         >
                           {item.title}
@@ -62,7 +62,7 @@ const Navbar = () => {
                       ) : (
                         // Links externos absolutos
                         <a
-                          href={item.url}
+                          href={item.to}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-block px-4 py-1 hover:text-c-turquoise-3 md:px-1"

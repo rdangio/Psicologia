@@ -6,7 +6,7 @@ import { dataValue } from "./CardValuesData";
 
 function CardValues() {
   return (
-    <CentralizedContainer id="pillars">
+    <CentralizedContainer id="pillars" className="mt-16">
       <div className="flex items-center justify-center">
         <div className="grid items-center justify-center">
           <div className="mb-5">
