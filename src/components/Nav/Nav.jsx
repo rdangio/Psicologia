@@ -16,6 +16,9 @@ const Navbar = () => {
   useEffect(() => {
     const handleResize = () => {
       setShowButton(window.innerWidth >= 1024); // Exibir botão somente em telas grandes
+      if (window.innerWidth >= 768) {
+        setOpen(false); // Fecha o menu em telas grandes
+      }
     };
 
     handleResize(); // Verifica inicialmente
@@ -28,7 +31,7 @@ const Navbar = () => {
     <>
       <nav className="fixed left-0 top-3 z-50 w-full">
         <CentralizedContainer>
-          <div className="flex w-full items-center justify-between gap-4 rounded-lg bg-c-turquoise-5 px-6 py-4 shadow-lg sm:h-20 lg:px-12 lg:py-5">
+          <div className="flex w-full items-center justify-between gap-4 rounded-lg bg-c-turquoise-5 px-6 py-4 shadow-lg sm:h-20 lg:px-12 lg:py-5 h-[60px]">
             {/* Logo Session */}
             <div className="flex items-center">
               <Logo showSubtitle={false} />
@@ -36,7 +39,7 @@ const Navbar = () => {
 
             {/* Menu Session */}
             <div className="hidden items-center gap-8 md:flex">
-              <ul className="flex items-center gap-6 font-semibold text-c-turquoise-1">
+              <ul className="flex items-center gap-6 font-semibold text-c-turquoise-1 justify-between text-center">
                 {NavData.map((item) => {
                   return (
                     <li key={item.id}>
@@ -48,6 +51,7 @@ const Navbar = () => {
                           offset={-120}
                           duration={500}
                           className="inline-block px-4 py-1 hover:text-c-turquoise-3 md:px-1 cursor-pointer"
+                          onClick={() => setOpen(false)} // Fecha o menu ao clicar
                         >
                           {item.title}
                         </ScrollLink>
@@ -56,6 +60,7 @@ const Navbar = () => {
                         <RouterLink
                           to={item.to}
                           className="inline-block px-4 py-1 hover:text-c-turquoise-3 md:px-1"
+                          onClick={() => setOpen(false)} // Fecha o menu ao clicar
                         >
                           {item.title}
                         </RouterLink>
@@ -63,9 +68,10 @@ const Navbar = () => {
                         // Links externos absolutos
                         <a
                           href={item.to}
-                          target="_blank"
+                          target=""
                           rel="noopener noreferrer"
                           className="inline-block px-4 py-1 hover:text-c-turquoise-3 md:px-1"
+                          onClick={() => setOpen(false)} // Fecha o menu ao clicar
                         >
                           {item.title}
                         </a>
@@ -89,14 +95,14 @@ const Navbar = () => {
               onClick={() => setOpen(!open)}
               aria-label="Abrir menu"
             >
-              <MdMenu className="text-4xl text-c-turquoise-1" />
+              <MdMenu className="text-3xl text-c-turquoise-1" />
             </button>
           </div>
         </CentralizedContainer>
       </nav>
 
       {/* Mobile Sidebar Session */}
-      <ReponsiveMenu open={open} />
+      <ReponsiveMenu open={open} closeMenu={() => setOpen(false)} />
     </>
   );
 };

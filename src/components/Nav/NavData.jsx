@@ -2,8 +2,8 @@ export const NavData = [
   {
     id: 1,
     title: "Home",
-    to: "home", // Caminho da rota interna
-    type: "internal", // Define o tipo de link: 'router' para rotas internas
+    to: "/", // Caminho da rota interna
+    type: "route", // Define o tipo de link: 'router' para rotas internas
   },
   {
     id: 2,

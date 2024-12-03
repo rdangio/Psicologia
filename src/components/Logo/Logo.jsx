@@ -9,7 +9,7 @@ const Logo = ({ showSubtitle, showSocialMedia }) => {
     <div className="flex min-w-[150px] items-center gap-2">
       <div>
         <img
-          className="w-24 min-w-[80px] sm:w-28 sm:min-w-[100px]"
+          className="w-20 min-w-[80px] sm:w-28 sm:min-w-[100px]"
           src={"/Logos/logo-psico-preto.webp"}
           alt="logo"
         />
