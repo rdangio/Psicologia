@@ -29,9 +29,9 @@ const Navbar = () => {
 
   return (
     <>
-      <CentralizedContainer>
-        <nav className="fixed w-[80.15%] z-50 mt-4">
-          <div className="flex h-[60px] items-center justify-between gap-4 rounded-lg bg-c-turquoise-5 px-6 py-4 shadow-lg sm:h-20 lg:px-12 lg:py-5">
+      <CentralizedContainer className="">
+        <nav className="fixed left-1/2 top-9 z-50 mt-4 w-[80%] -translate-x-1/2 -translate-y-1/2 transform sm:w-[92%] md:w-[96%] lg:w-[97%] xl:w-[80%] 2xl:w-[68%]">
+          <div className="flex h-[60px] items-center justify-between gap-[3.2rem] rounded-lg bg-c-turquoise-5 px-6 py-4 shadow-lg sm:h-20 lg:px-12 lg:py-5">
             {/* Logo Session */}
             <div className="flex items-center">
               <Logo showSubtitle={false} />

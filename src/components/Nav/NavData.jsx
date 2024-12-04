@@ -7,7 +7,7 @@ export const NavData = [
   },
   {
     id: 2,
-    title: "Áreas de Atuação",
+    title: "Atuação",
     to: "areas", // ID da seção na página
     type: "internal", // Define como scroll interno
   },
