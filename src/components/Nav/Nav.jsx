@@ -29,9 +29,9 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed left-0 top-3 z-50 w-full">
-        <CentralizedContainer>
-          <div className="flex w-full items-center justify-between gap-4 rounded-lg bg-c-turquoise-5 px-6 py-4 shadow-lg sm:h-20 lg:px-12 lg:py-5 h-[60px]">
+      <CentralizedContainer>
+        <nav className="fixed w-[80.15%] z-50 mt-4">
+          <div className="flex h-[60px] items-center justify-between gap-4 rounded-lg bg-c-turquoise-5 px-6 py-4 shadow-lg sm:h-20 lg:px-12 lg:py-5">
             {/* Logo Session */}
             <div className="flex items-center">
               <Logo showSubtitle={false} />
@@ -39,7 +39,7 @@ const Navbar = () => {
 
             {/* Menu Session */}
             <div className="hidden items-center gap-8 md:flex">
-              <ul className="flex items-center gap-6 font-semibold text-c-turquoise-1 justify-between text-center">
+              <ul className="flex items-center justify-between gap-6 text-center font-semibold text-c-turquoise-1">
                 {NavData.map((item) => {
                   return (
                     <li key={item.id}>
@@ -50,7 +50,7 @@ const Navbar = () => {
                           smooth={true}
                           offset={-120}
                           duration={500}
-                          className="inline-block px-4 py-1 hover:text-c-turquoise-3 md:px-1 cursor-pointer"
+                          className="inline-block cursor-pointer px-4 py-1 hover:text-c-turquoise-3 md:px-1"
                           onClick={() => setOpen(false)} // Fecha o menu ao clicar
                         >
                           {item.title}
@@ -98,8 +98,8 @@ const Navbar = () => {
               <MdMenu className="text-3xl text-c-turquoise-1" />
             </button>
           </div>
-        </CentralizedContainer>
-      </nav>
+        </nav>
+      </CentralizedContainer>
 
       {/* Mobile Sidebar Session */}
       <ReponsiveMenu open={open} closeMenu={() => setOpen(false)} />
