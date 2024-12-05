@@ -32,7 +32,7 @@ const Navbar = () => {
       <CentralizedContainer>
         <nav className="fixed  z-10">
           {/* aqui é o tamanho da div nav  */}
-          <div className="w-[120%] sm:w-[208%] mt-3 flex items-center sm:gap-[1rem] md:gap-[4rem] lg:gap-[2.8rem] rounded-lg bg-c-turquoise-5 h-14 sm:h-20 md:px-[4.9rem] lg:px-2 lg:py-5 sm:px-7 px-5 justify-between">
+          <div className="w-[120%] sm:w-[208%] md:w-[100%] mt-3 flex items-center sm:gap-[1rem] md:gap-[4rem] lg:gap-[2.8rem] rounded-lg bg-c-turquoise-5 h-14 sm:h-20 md:px-[4.9rem] lg:px-2 lg:py-5 sm:px-7 px-5 justify-between">
             {/* Logo Session */}
             {/* <div className="flex items-center"> */}
               <Logo showSubtitle={false} />
