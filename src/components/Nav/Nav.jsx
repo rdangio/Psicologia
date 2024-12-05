@@ -29,17 +29,18 @@ const Navbar = () => {
 
   return (
     <>
-      <CentralizedContainer className="">
-        <nav className="fixed left-1/2 top-9 z-50 mt-4 w-[40%] -translate-x-1/2 -translate-y-1/2 transform sm:w-[92%] md:w-[96%] lg:w-[97%] xl:w-[80%] 2xl:w-[68%]">
-          <div className="flex h-[60px] items-center justify-between gap-[3.2rem] rounded-lg bg-c-turquoise-5 px-6 py-4 shadow-lg sm:h-20 lg:px-12 lg:py-5">
+      <CentralizedContainer>
+        <nav className="fixed  z-10">
+          {/* aqui é o tamanho da div nav  */}
+          <div className="w-[120%] sm:w-[208%] mt-3 flex items-center sm:gap-[1rem] md:gap-[4rem] lg:gap-[2.8rem] rounded-lg bg-c-turquoise-5 h-14 sm:h-20 md:px-[4.9rem] lg:px-2 lg:py-5 sm:px-7 px-5 justify-between">
             {/* Logo Session */}
-            <div className="flex items-center">
+            {/* <div className="flex items-center"> */}
               <Logo showSubtitle={false} />
-            </div>
+            {/* </div> */}
 
             {/* Menu Session */}
-            <div className="hidden items-center gap-8 md:flex">
-              <ul className="flex items-center justify-between gap-6 text-center font-semibold text-c-turquoise-1">
+            {/* <div className="hidden items-center gap-3 md:flex"> */}
+              <ul className="hidden md:flex items-center justify-between md:gap-4 text-center font-semibold text-c-turquoise-1">
                 {NavData.map((item) => {
                   return (
                     <li key={item.id}>
@@ -50,7 +51,7 @@ const Navbar = () => {
                           smooth={true}
                           offset={-120}
                           duration={500}
-                          className="inline-block cursor-pointer px-4 py-1 hover:text-c-turquoise-3 md:px-1"
+                          className="inline-block cursor-pointer px-4 py-1 sm:text-fs-h6 lg:text-fs-h5 hover:text-c-turquoise-3 md:px-1"
                           onClick={() => setOpen(false)} // Fecha o menu ao clicar
                         >
                           {item.title}
@@ -59,7 +60,7 @@ const Navbar = () => {
                         // Links internos usando React Router
                         <RouterLink
                           to={item.to}
-                          className="inline-block px-4 py-1 hover:text-c-turquoise-3 md:px-1"
+                          className="inline-block px-4 py-1 sm:text-fs-h6 lg:text-fs-h5 hover:text-c-turquoise-3 md:px-1"
                           onClick={() => setOpen(false)} // Fecha o menu ao clicar
                         >
                           {item.title}
@@ -70,7 +71,7 @@ const Navbar = () => {
                           href={item.to}
                           target=""
                           rel="noopener noreferrer"
-                          className="inline-block px-4 py-1 hover:text-c-turquoise-3 md:px-1"
+                          className="inline-block px-4 py-1 sm:text-fs-h6 lg:text-fs-h5  hover:text-c-turquoise-3 md:px-1"
                           onClick={() => setOpen(false)} // Fecha o menu ao clicar
                         >
                           {item.title}
@@ -80,12 +81,12 @@ const Navbar = () => {
                   );
                 })}
               </ul>
-            </div>
+            {/* </div> */}
 
             {/* Button Session */}
             {showButton && (
               <DefaultButton hideOnResize={false}>
-                Agende sua Sessão
+                Agendar Sessão
               </DefaultButton>
             )}
 

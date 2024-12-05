@@ -6,17 +6,17 @@ const Logo = ({ showSubtitle, showSocialMedia }) => {
   const contactData = FooterData.find((data) => data.socialLinks);
 
   return (
-    <div className="flex min-w-[150px] items-center gap-2">
-      <div>
+    <div className="flex  items-center gap-2">
+
         <img
-          className="w-20 min-w-[80px] sm:w-28 sm:min-w-[100px]"
+          className="w-20 min-w-[80px] sm:w-24 sm:min-w-[100px]"
           src={"/Logos/logo-psico-preto.webp"}
           alt="logo"
         />
-      </div>
+
 
       <div className="text-center sm:text-left">
-        <p className="whitespace-nowrap text-center font-eurofucence text-sm text-c-turquoise-1 sm:text-xl">
+        <p className="whitespace-nowrap text-center font-eurofucence text-sm text-c-turquoise-1 sm:text-md">
           C L Á U D I A <br />
           D A N G I Ó <br />
         </p>

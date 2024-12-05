@@ -19,7 +19,7 @@ const Home = () => {
       <CardValues />
       <CardsSessions />
       <Footer />
-      <WhatsappButton />
+      {/* <WhatsappButton /> */}
     </>
   );
 };

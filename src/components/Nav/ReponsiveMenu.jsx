@@ -3,21 +3,23 @@ import PropTypes from "prop-types";
 import { NavData } from "./NavData";
 import { Link as RouterLink } from "react-router-dom"; // Importação do React Router
 import { Link as ScrollLink } from "react-scroll"; // Para scroll interno
+import CentralizedContainer from "../CentralizedContainer/CentralizedContainer";
 
 const ReponsiveMenu = ({ open, closeMenu }) => {
   return (
-    <AnimatePresence mode="wait">
-      {open && (
-        <motion.div
-          initial={{ opacity: 0, y: -100 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -100 }}
-          transition={{ duration: 0.3 }}
-          className="fixed left-0 top-16 z-20 h-screen w-full"
-        >
-          <div className="mx-24 mt-4 sm:mt-8 rounded-3xl bg-c-turquoise-5 py-5 text-fs-h6 sm:text-fs-h5 font-semibold uppercase text-c-turquoise-1">
-            <ul className="flex flex-col items-center justify-center gap-10">
-            {NavData.map((item) => {
+    <CentralizedContainer>
+      <AnimatePresence mode="wait">
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -100 }}
+            transition={{ duration: 0.3 }}
+            className="fixed left-0 top-16 z-20 h-screen w-full"
+          >
+            <div className="ml-[8rem] sm:ml-[20rem] mr-[1rem] mt-2 rounded-3xl rounded-tr-none bg-c-turquoise-5 py-5 text-fs-h6 font-semibold uppercase text-c-turquoise-1 sm:mt-8 sm:text-fs-h5">
+              <ul className="flex flex-col items-center justify-center gap-10">
+                {NavData.map((item) => {
                   return (
                     <li key={item.id}>
                       {item.type === "internal" ? (
@@ -28,7 +30,7 @@ const ReponsiveMenu = ({ open, closeMenu }) => {
                           offset={-120}
                           duration={500}
                           onClick={closeMenu} // Fecha o menu ao clicar
-                          className="inline-block px-4 py-1 hover:text-c-turquoise-3 md:px-1 cursor-pointer"
+                          className="inline-block cursor-pointer px-4 py-1 hover:text-c-turquoise-3 md:px-1"
                         >
                           {item.title}
                         </ScrollLink>
@@ -56,11 +58,12 @@ const ReponsiveMenu = ({ open, closeMenu }) => {
                     </li>
                   );
                 })}
-            </ul>
-          </div>
-        </motion.div>
-      )}
-    </AnimatePresence>
+              </ul>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </CentralizedContainer>
   );
 };
 
