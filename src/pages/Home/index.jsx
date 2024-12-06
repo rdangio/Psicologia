@@ -13,8 +13,8 @@ const Home = () => {
   return (
     <>
       <GlobalStyle />
-      {/* <Nav />
-      <Carousel /> */}
+      <Nav />
+      <Carousel />
       <CardServices />
       <Banner />
       <CardValues />
