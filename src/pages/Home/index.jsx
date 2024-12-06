@@ -7,11 +7,10 @@ import CardValues from "../../components/CardValues/CardValues";
 import CardsSessions from "../../components/CardsSessions/CardsSessions";
 import Footer from "../../components/Footer/Footer";
 import WhatsappButton from "../../components/WhatsButton/WhatsButton";
-import CentralizedContainer from "../../components/CentralizedContainer/CentralizedContainer";
 
 const Home = () => {
   return (
-    <CentralizedContainer>
+    <>
       <GlobalStyle />
       <Nav />
       <Carousel />
@@ -21,7 +20,7 @@ const Home = () => {
       <CardsSessions />
       <Footer />
       <WhatsappButton />
-    </CentralizedContainer>
+    </>
   );
 };
 
