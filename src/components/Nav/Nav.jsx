@@ -29,65 +29,63 @@ const Navbar = () => {
 
   return (
     <>
-      <CentralizedContainer className="w-[600px] ml-0">
-        <nav className="fixed  z-10 w-[97%] ">
+      <div className="flex justify-center">
+        <nav className="fixed z-10 w-[92%] sm:w-[80%]">
           {/* aqui é o tamanho da div nav  */}
-          <div className="w-[120%] sm:w-[208%] md:w-[100%] mt-3 flex items-center sm:gap-[1rem] md:gap-[4rem] lg:gap-[2.8rem] rounded-lg bg-c-turquoise-5 h-14 sm:h-20 md:px-[4.9rem] lg:px-2 lg:py-5 sm:px-7 px-5 justify-between">
+          <div className="mt-3 flex h-14 items-center justify-between rounded-lg bg-c-turquoise-5 px-3 
+          sm:h-20 sm:w-[100%] sm:px-5
+          md:gap-[2rem] md:px-[2rem] md:w-[100%]
+          lg:gap-[2rem] lg:px-4
+          xl:gap-[2.8rem] xl:px-8 xl:py-5">
             {/* Logo Session */}
-            {/* <div className="flex items-center"> */}
-              <Logo showSubtitle={false} />
-            {/* </div> */}
+            <Logo showSubtitle={false} />
 
             {/* Menu Session */}
-            {/* <div className="hidden items-center gap-3 md:flex"> */}
-              <ul className="hidden md:flex items-center justify-between md:gap-4 text-center font-semibold text-c-turquoise-1">
-                {NavData.map((item) => {
-                  return (
-                    <li key={item.id}>
-                      {item.type === "internal" ? (
-                        // Scroll interno (para uma seção específica na mesma página)
-                        <ScrollLink
-                          to={item.to}
-                          smooth={true}
-                          offset={-120}
-                          duration={500}
-                          className="inline-block cursor-pointer px-4 py-1 sm:text-fs-h6 lg:text-fs-h5 hover:text-c-turquoise-3 md:px-1"
-                          onClick={() => setOpen(false)} // Fecha o menu ao clicar
-                        >
-                          {item.title}
-                        </ScrollLink>
-                      ) : item.type === "router" ? (
-                        // Links internos usando React Router
-                        <RouterLink
-                          to={item.to}
-                          className="inline-block px-4 py-1 sm:text-fs-h6 lg:text-fs-h5 hover:text-c-turquoise-3 md:px-1"
-                          onClick={() => setOpen(false)} // Fecha o menu ao clicar
-                        >
-                          {item.title}
-                        </RouterLink>
-                      ) : (
-                        // Links externos absolutos
-                        <a
-                          href={item.to}
-                          target=""
-                          rel="noopener noreferrer"
-                          className="inline-block px-4 py-1 sm:text-fs-h6 lg:text-fs-h5  hover:text-c-turquoise-3 md:px-1"
-                          onClick={() => setOpen(false)} // Fecha o menu ao clicar
-                        >
-                          {item.title}
-                        </a>
-                      )}
-                    </li>
-                  );
-                })}
-              </ul>
-            {/* </div> */}
+            <ul className="hidden items-center justify-between text-center font-semibold text-c-turquoise-1 md:flex md:gap-4">
+              {NavData.map((item) => {
+                return (
+                  <li key={item.id}>
+                    {item.type === "internal" ? (
+                      // Scroll interno (para uma seção específica na mesma página)
+                      <ScrollLink
+                        to={item.to}
+                        smooth={true}
+                        offset={-120}
+                        duration={500}
+                        className="inline-block cursor-pointer px-4 py-1 hover:text-c-turquoise-3 sm:text-fs-h6 md:px-1 lg:text-fs-h5"
+                        onClick={() => setOpen(false)} // Fecha o menu ao clicar
+                      >
+                        {item.title}
+                      </ScrollLink>
+                    ) : item.type === "router" ? (
+                      // Links internos usando React Router
+                      <RouterLink
+                        to={item.to}
+                        className="inline-block px-4 py-1 hover:text-c-turquoise-3 sm:text-fs-h6 md:px-1 lg:text-fs-h5"
+                        onClick={() => setOpen(false)} // Fecha o menu ao clicar
+                      >
+                        {item.title}
+                      </RouterLink>
+                    ) : (
+                      // Links externos absolutos
+                      <a
+                        href={item.to}
+                        target=""
+                        rel="noopener noreferrer"
+                        className="inline-block px-4 py-1 hover:text-c-turquoise-3 sm:text-fs-h6 md:px-1 lg:text-fs-h5"
+                        onClick={() => setOpen(false)} // Fecha o menu ao clicar
+                      >
+                        {item.title}
+                      </a>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
 
             {/* Button Session */}
             {showButton && (
-              <DefaultButton hideOnResize={false}>
-                Agendar Sessão
-              </DefaultButton>
+              <DefaultButton hideOnResize={false}>Agendar Sessão</DefaultButton>
             )}
 
             {/* Moobile Menu Session */}
@@ -100,7 +98,7 @@ const Navbar = () => {
             </button>
           </div>
         </nav>
-      </CentralizedContainer>
+      </div>
 
       {/* Mobile Sidebar Session */}
       <ReponsiveMenu open={open} closeMenu={() => setOpen(false)} />
