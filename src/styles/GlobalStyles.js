@@ -14,6 +14,21 @@ body {
    min-width: 320px;
    background-color: #FEFFFF;
 }
+
+// .custom-whatsapp {
+//   position: fixed !important; /* Sobrescreve qualquer estilo inline */
+//   bottom: 20px !important; /* Distância do fundo */
+//   left: 20px !important; /* Distância da lateral esquerda */
+//   right: auto !important; /* Garante que ele não fique alinhado à direita */
+// }
+
+// /* Ajusta o contêiner do botão caso necessário */
+// .custom-whatsapp > div {
+//   position: fixed !important;
+//   bottom: 20px !important;
+//   left: 55% !important;
+// }
+
 `;
 
 export default GlobalStyle;

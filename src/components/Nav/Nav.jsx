@@ -1,6 +1,5 @@
 import { NavData } from "../Nav/NavData";
 import DefaultButton from "../Button/index";
-import CentralizedContainer from "../CentralizedContainer/CentralizedContainer";
 import Logo from "../Logo/Logo";
 import { MdMenu } from "react-icons/md";
 import { useEffect, useState } from "react";

@@ -8,6 +8,7 @@ import CardsSessions from "../../components/CardsSessions/CardsSessions";
 import Footer from "../../components/Footer/Footer";
 import WhatsappButton from "../../components/WhatsButton/WhatsButton";
 
+
 const Home = () => {
   return (
     <>
