@@ -19,8 +19,8 @@ const Home = () => {
       <Banner />
       <CardValues />
       <CardsSessions />
-      <Footer />
-      <WhatsappButton />
+      {/* <Footer />
+      <WhatsappButton /> */}
     </>
   );
 };
