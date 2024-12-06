@@ -17,8 +17,14 @@ const ReponsiveMenu = ({ open, closeMenu }) => {
             transition={{ duration: 0.3 }}
             className="fixed left-0 top-16 z-20 h-screen w-full"
           >
-            <div className="ml-[12.5rem] mr-[1rem] mt-[.4rem] w-[11rem] rounded-3xl rounded-tr-none bg-c-turquoise-5 py-5 text-fs-h6 font-semibold uppercase text-c-turquoise-1 
-            sm:ml-[20rem] sm:mt-8 sm:w-[16rem] sm:text-fs-h6">
+            {/* ml-[12.5rem] mr-[1rem] mt-[.4rem] w-[11rem] 
+            sm:ml-[20rem] sm:mt-8 sm:w-[16rem] sm:text-fs-h6 */}
+            <div className="rounded-3xl rounded-tr-none bg-c-turquoise-5 py-5 text-fs-h6 font-semibold uppercase text-c-turquoise-1 
+            
+            ml-[40.5%] mt-[2%] w-[55%] 
+            sm:ml-[50%] sm:mt-[5%] sm:w-[40%] sm:text-fs-h6
+            
+            md:hidden">
               <ul className="flex flex-col items-center justify-center gap-10">
                 {NavData.map((item) => {
                   return (
