@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-center">
-        <nav className="fixed z-10 w-[92%] sm:w-[80%]">
+        <nav className="fixed z-10 w-[104%] sm:w-[101%]">
           {/* aqui é o tamanho da div nav  */}
           <div className="mt-3 flex h-14 items-center justify-between rounded-lg bg-c-turquoise-5 px-3 
           sm:h-20 sm:w-[100%] sm:px-5

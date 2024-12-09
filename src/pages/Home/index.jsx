@@ -19,7 +19,7 @@ const Home = () => {
       <Banner />
       <CardValues />
       <CardsSessions />
-      {/* <Footer /> */}
+      <Footer />
       <WhatsappButton />
     </>
   );
