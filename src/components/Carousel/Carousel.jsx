@@ -50,7 +50,7 @@ function Carousel() {
                 alt="imagem Carrossel"
                 className="w-full blur-[2px]"
               />
-              <div className="absolute text-center text-c-turquoise-2 sm:text-c-turquoise-6 font-roboto-bold">
+              <div className="absolute text-center text-c-turquoise-2 font-roboto-bold">
                 <p className="text-center text-fs-h6 sm:text-fs-h4 lg:text-fs-h2 drop-shadow-[_1.7px_1.7px_rgba(0,0,0,1.55)]">
                   {item.text1}
                 </p>
