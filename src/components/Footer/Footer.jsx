@@ -1,7 +1,3 @@
-// import CentralizedContainer from "../CentralizedContainer/CentralizedContainer";
-// import { Title }  from "../Titles/Titles";
-
-import Form from "../Form";
 import Logo from "../Logo/Logo";
 import { FooterData } from "./FooterData";
 import { Description } from "../Description/Description";

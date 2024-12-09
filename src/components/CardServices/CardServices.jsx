@@ -35,13 +35,13 @@ function CardServices() {
                 alt="imagens dos cards serviços"
               />
               {/* Card sobreposto */}
-              <div className="absolute bottom-2 left-2 right-2 top-[70%] mx-auto flex h-fit flex-col items-center justify-start rounded-xl border-2 border-b-c-turquoise-3 border-l-c-turquoise-4 bg-c-turquoise-1 p-4 shadow-xl shadow-gray-600 md:max-w-[90%]">
+              <div className="absolute  left-2 right-2 top-[70%] mx-auto flex max-h-18 flex-col items-center justify-start rounded-xl border-2 border-b-c-turquoise-3 border-l-c-turquoise-4 bg-c-turquoise-1 p-4 shadow-xl shadow-gray-600 md:max-w-[90%]">
                 <Description className="pb-2 text-center text-lg font-bold">
                   {card.title}
                 </Description>
-                <Text className="pb-4 text-center">{card.text}</Text>
+                <Text className="pb-[5%] text-center">{card.text}</Text>
                 <DefaultButton
-                  className="px-3 text-fs-h8 sm:text-fs-h7 lg:text-fs-h6"
+                  className="px-4 text-fs-h8 sm:text-fs-h7 lg:text-fs-h6"
                   hideOnResize={false}
                 >
                   Saiba mais
