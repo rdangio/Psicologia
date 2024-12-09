@@ -4,18 +4,18 @@ export const CarouselData = [
     image: "/Images/slider/slider-1.jpg",
     text1: "Quer encontrar uma melhor qualidade de vida?",
     text2:
-      "Podemos ajudá-lo a superar uma ampla gama de problemas psicológicos e emocionais.",
+      "Posso ajudá-lo a superar uma ampla gama de problemas psicológicos e emocionais.",
   },
   {
     id: "2",
     image: "/Images/slider/slider-2.jpg",
     text1: "Sente-se estressado ou ansioso?",
-    text2: "Podemos ajudá-lo a superar uma ampla gama de problemas",
+    text2: "Posso ajudá-lo a superar uma ampla gama de problemas",
   },
   {
     id: "3",
     image: "/Images/slider/slider-3.jpg",
     text1: "Reconquiste a alegria de viver!",
-    text2: "Somos qualificados para atender às suas necessidades específicas.",
+    text2: "Sou qualificada para atender às suas necessidades específicas.",
   },
 ];

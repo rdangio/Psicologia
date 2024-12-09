@@ -21,15 +21,15 @@ function Carousel() {
         modules={[EffectFade]}
         speed="1500"
         effect="fade"
-        className="pb-2"
+        className="pb-1 -mt-[7%] sm:mt-[1%]"
         style={{
-          "--swiper-navigation-color": "#000",
-          "--swiper-navigation-size": "28px",
-          "--swiper-navigation-top-offset": "50%",
-          "--swiper-navigation-sides-offset": "15px",
+          "--swiper-navigation-color": "#17252a",
+          "--swiper-navigation-size": "1.4rem",
+          "--swiper-navigation-top-offset": "65%",
+          "--swiper-navigation-sides-offset": ".5rem",
 
-          "--swiper-pagination-color": "#000",
-          "--swiper-pagination-bullet-size": "15px",
+          "--swiper-pagination-color": "#17252a",
+          "--swiper-pagination-bullet-size": ".5rem",
         }}
         autoplay={{
           delay: 6000,
@@ -50,11 +50,11 @@ function Carousel() {
                 alt="imagem Carrossel"
                 className="w-full blur-[2px]"
               />
-              <div className="absolute">
-                <p className="text-center text-[17px] text-slate-100 drop-shadow-[_2px_2px_rgba(0,0,0,1.55)] sm:text-center sm:text-[27px] md:text-center md:text-[40px]">
+              <div className="absolute text-center text-c-turquoise-6 font-roboto-bold">
+                <p className="text-center text-fs-h7 sm:text-fs-h4 lg:text-fs-h2 drop-shadow-[_1.7px_1.7px_rgba(0,0,0,1.55)]">
                   {item.text1}
                 </p>
-                <p className="text-center text-[13px] text-slate-100 drop-shadow-[_2px_2px_rgba(0,0,0,1.55)] sm:text-center sm:text-[19px] md:text-center md:text-[25px]">
+                <p className="text-center text-fs-h7 px-7 sm:text-fs-h5 lg:text-fs-h3 drop-shadow-[_1.7px_1.7px_rgba(0,0,0,1.55)]">
                   {item.text2}
                 </p>
               </div>

@@ -21,8 +21,8 @@ const ReponsiveMenu = ({ open, closeMenu }) => {
             sm:ml-[20rem] sm:mt-8 sm:w-[16rem] sm:text-fs-h6 */}
             <div className="rounded-3xl rounded-tr-none bg-c-turquoise-5 py-5 text-fs-h6 font-semibold uppercase text-c-turquoise-1 
             
-            ml-[40.5%] mt-[2%] w-[55%] 
-            sm:ml-[50%] sm:mt-[5%] sm:w-[40%] sm:text-fs-h6
+            ml-[40.5%] mt-[1.5%] w-[55%] 
+            sm:ml-[56%] sm:mt-[4.5%] sm:w-[40%] sm:text-fs-h6
             
             md:hidden">
               <ul className="flex flex-col items-center justify-center gap-10">
