@@ -17,11 +17,11 @@ const Banner = () => {
 
           {/* div com os textos */}
           <div className="flex flex-col items-center justify-center sm:w-[27rem] sm:items-start sm:p-1 lg:ml-10">
-            <Title className="font-roboto-bold text-c-turquoise-5">Olá,</Title>
-            <Description className="">
+            <Title className="font-roboto-bold text-c-turquoise-5 text-fs-h2 md:text-fs-h1">Olá,</Title>
+            <Description className="md:text-fs-h4">
               sou a Cláudia, sabe como posso te ajudar?
             </Description>
-            <Description className="text-justify">
+            <Description className="text-justify pb-10 md:text-fs-h4">
               Com encontros regulares e ética profissional, cada sessão é um
               passo em direção ao crescimento pessoal.
             </Description>

@@ -11,11 +11,11 @@ function CardServices() {
       <div  className="flex flex-col items-center">
         {/* Título e texto */}
         <div className="text-center">
-          <Title>Áreas de Atuação</Title>
-          <Description>
+          <Title className="text-c-turquoise-5">Áreas de Atuação</Title>
+          <Description className="text-c-turquoise-5">
             Seja atendido por uma profissional experiente e qualificada.
           </Description>
-          <Description className="mb-10 hidden sm:block">
+          <Description className="mb-10 hidden sm:block text-c-turquoise-5">
             Desbloqueie sua vida, trate suas angústias. Comece seu tratamento.
             Alívio para sua tristeza.
           </Description>
@@ -27,7 +27,7 @@ function CardServices() {
           {dataCardServices.map((card) => (
             <div
               key={card.id}
-              className="relative mb-[45%] flex justify-center sm:mb-[110%] md:mb-[130%] lg:mb-[70%]"
+              className="relative mb-[45%] flex justify-center sm:mb-[110%] md:mb-[70%] lg:mb-[60%] xl:mb-[75%]"
             >
               <img
                 className="w-full overflow-hidden rounded-ee-3xl rounded-ss-3xl border-[1px] border-c-turquoise-6 shadow-xl shadow-gray-600 sm:w-max"
@@ -36,10 +36,10 @@ function CardServices() {
               />
               {/* Card sobreposto */}
               <div className="absolute  left-2 right-2 top-[70%] mx-auto flex max-h-18 flex-col items-center justify-start rounded-xl border-2 border-b-c-turquoise-3 border-l-c-turquoise-4 bg-c-turquoise-1 p-4 shadow-xl shadow-gray-600 md:max-w-[90%]">
-                <Description className="pb-2 text-center text-lg font-bold">
+                <Description className="pb-2 text-center text-lg font-bold text-c-turquoise-5">
                   {card.title}
                 </Description>
-                <Text className="pb-[5%] text-center">{card.text}</Text>
+                <Text className="pb-[5%] text-center text-c-turquoise-5">{card.text}</Text>
                 <DefaultButton
                   className="px-4 text-fs-h8 sm:text-fs-h7 lg:text-fs-h6"
                   hideOnResize={false}

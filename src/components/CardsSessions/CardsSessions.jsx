@@ -10,8 +10,8 @@ function CardsSessions() {
     <CentralizedContainer id="sessions" className="mb-20 mt-10">
       <div className={`mb-20`}>
         <div className="text-center">
-          <Title className="">Tipos de Sessões</Title>
-          <Description className="pb-5">
+          <Title className="text-c-turquoise-5">Tipos de Sessões</Title>
+          <Description className="pb-5 text-c-turquoise-5">
             Atuo com diversos formatos de sessões para melhor atender a cada
             situação
           </Description>
@@ -41,7 +41,7 @@ function CardsSessions() {
                       <Description className="font-roboto-bold">
                         {sessions.title2}
                       </Description>
-                      <Text className="text-fs-body pb-4 text-gray-700 md:hidden lg:block">
+                      <Text className="text-fs-body pb-4 text-c-turquoise-5 md:hidden lg:block xl:">
                         {sessions.text}
                       </Text>
                       <DefaultButton

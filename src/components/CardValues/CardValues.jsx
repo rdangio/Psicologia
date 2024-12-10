@@ -28,9 +28,7 @@ function CardValues() {
                   {values.icon}
                   {values.title}
                 </div>
-                {/* texto do card  */}
-                {/* <p className=" text-balance indent-8 font-roboto text-justify p-6 leading-7 border-bottom">{values.classText}</p> */}
-                <Text className="px-8 pb-6 pt-5 text-justify indent-8">
+                <Text className="px-8 pb-6 pt-5 text-justify indent-8 hyphens-auto">
                   {values.text}
                 </Text>
               </div>

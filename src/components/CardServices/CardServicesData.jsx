@@ -9,7 +9,7 @@ export const dataCardServices = [
     id: "2",
     image: "/Images/service-2.jpg",
     title: "Relacionamento",
-    text: "Discussões e desentendimentos frequentes, falta de contato físico, momentos tensos...",
+    text: "Discussões e desentendimentos frequentes, falta de contato físico...",
   },
   {
     id: "3",

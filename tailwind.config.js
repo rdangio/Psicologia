@@ -44,7 +44,7 @@ export default {
         "fs-h1": ["2.074rem", "2.696rem"],
         "fs-h2": ["1.728rem", "2.246rem"],
         "fs-h3": ["1.44rem", "1.872rem"],
-        "fs-h4": ["1.2rem", "1.56rem"],
+        "fs-h4": ["1.25rem", "1.56rem"],
         "fs-h5": ["1rem", "1.5rem"],
         "fs-h6": ["0.833rem", "1.25rem"],
         "fs-h7": ["0.694rem", "1.041rem"],
