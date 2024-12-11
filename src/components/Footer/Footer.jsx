@@ -7,8 +7,8 @@ const Footer = () => {
   const Year = new Date().getFullYear();
 
   return (
-    <footer id="contato"  className="w-full bg-c-turquoise-5">
-      <div className="md:flex-no-wrap container mx-auto flex flex-col flex-wrap justify-between px-10 py-10 sm:items-center md:flex-row md:items-center md:justify-around lg:items-start">
+    <footer id="contato"  className="w-[100%] mx-auto m-0 bg-c-turquoise-5">
+      <div className="flex flex-col items-center justify-between pt-8">
         <Logo showSubtitle={true} showSocialMedia={true} />
 
         <div className="xs:w-60">
@@ -34,17 +34,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex w-96 items-center text-center sm:mt-10 md:mt-5">
           {/* Formulário */}
           <Form />
-        </div>
       </div>
-      <div className="w-full bg-gray-300">
-        <div className="container mx-auto px-5 py-4">
-          <p className="text-sm capitalize text-c-turquoise-5 xs:text-center">
-            &copy; {Year} RD Dev&Design
-          </p>
-        </div>
+      <div className="w-full bg-c-turquoise-2 p-4 text-center font-roboto-bold text-c-turquoise-5">
+          <p>&copy; {Year} RD Dev&Design</p>
       </div>
     </footer>
   );
