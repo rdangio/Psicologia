@@ -47,8 +47,8 @@ function Form() {
 
   return (
     <div className="flex w-full flex-col xs:mt-10 xs:w-60 sm:mt-0 sm:w-full md:items-center">
-      <h2 className="title-font mb-3 text-sm font-medium uppercase tracking-widest text-c-turquoise-1">
-        Contato
+      <h2 className="title-font mb-3 text-sm font-medium uppercase tracking-widest text-c-turquoise-5">
+        Fale conosco
       </h2>
 
       <form
@@ -56,7 +56,7 @@ function Form() {
         className="flex w-full max-w-lg flex-col sm:w-full"
       >
         <input
-          className="p2 mb-3.5 h-8 rounded border-none p-0 pl-2"
+          className="p2 mb-3.5 h-8 rounded border p-0 pl-2"
           type="text"
           placeholder="Digite seu nome"
           onChange={(e) => setName(e.target.value)}
@@ -64,7 +64,7 @@ function Form() {
         />
 
         <input
-          className="p2 mb-3.5 h-8 rounded border-none p-0 pl-2"
+          className="p2 mb-3.5 h-8 rounded border p-0 pl-2"
           type="text"
           placeholder="Digite seu e-mail"
           onChange={(e) => setEmail(e.target.value)}
@@ -72,7 +72,7 @@ function Form() {
         />
 
         <textarea
-          className="p2 mb-3.5 h-20 resize-none rounded border-none p-1 pl-2"
+          className="p2 mb-3.5 h-20 resize-none rounded border p-1 pl-2"
           type="text"
           placeholder="Digite sua mensagem..."
           onChange={(e) => setMessage(e.target.value)}
