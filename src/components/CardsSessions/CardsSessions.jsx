@@ -41,7 +41,7 @@ function CardsSessions() {
                       <Description className="font-roboto-bold">
                         {sessions.title2}
                       </Description>
-                      <Text className="text-fs-body pb-4 text-c-turquoise-5 md:hidden lg:block xl:">
+                      <Text className="text-fs-body pb-4 text-c-turquoise-5 md:hidden lg:block ">
                         {sessions.text}
                       </Text>
                       <DefaultButton

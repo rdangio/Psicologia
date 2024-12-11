@@ -12,7 +12,7 @@ const classTitle =
 const classText = "text-fs-h8 indent-8 font-roboto text-justify p-4"; // Texto dos valores
 
 const detail =
-  "text-c-turquoise-5 sm:text-fs-h8 md:text-fs-h7 lg:text-fs-h7 xl:text-fs-h5 font-roboto-bold"; // Topicos dos Valores
+  "text-c-turquoise-5 sm:text-fs-h6 md:text-fs-h6 lg:text-fs-h5 xl:text-fs-h5 font-roboto-bold"; // Topicos dos Valores
 
 export const dataValue = [
   {

@@ -26,7 +26,7 @@ export const dataSessions = [
   },
   {
     id: "6",
-    title2: "Agende uma sessão hoje!",
-    text: "Dê o primeiro passo na sua jornada para uma melhor qualidade de vida.",
+    title2: "Agende uma sessão!",
+    text: "Dê o primeiro passo para uma vida melhor.",
   },
 ];

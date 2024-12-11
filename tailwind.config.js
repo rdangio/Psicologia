@@ -48,6 +48,8 @@ export default {
         "fs-h5": ["1rem", "1.5rem"],
         "fs-h6": ["0.833rem", "1.25rem"],
         "fs-h7": ["0.694rem", "1.041rem"],
+        "fs-h8": ["0.555rem", "0.833rem"],
+        "fs-h9": ["0.444rem", "0.666rem"],
         "fs-text": ["1rem", "1.5rem"],
         "fs-nav": ["1rem", "1.5rem"],
         "fs-button": ["0.833rem", "1.25rem"],

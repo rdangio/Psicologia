@@ -13,7 +13,7 @@ export const FooterData = [
   },
 
   {
-    title: "Telefone: (14) 99999-8888",
+    title: "Telefone: (14) 99703-0269",
     cName: defaultCname,
   },
 

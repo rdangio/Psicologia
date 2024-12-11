@@ -31,11 +31,13 @@ const Navbar = () => {
       <div className="flex justify-center">
         <nav className="fixed z-10 w-[104%] sm:w-[101%]">
           {/* aqui é o tamanho da div nav  */}
-          <div className="mt-3 flex h-14 items-center justify-between rounded-lg bg-c-turquoise-5 px-5 
+          <div className="mt-0 flex h-14 items-center justify-between rounded-lg bg-c-turquoise-5 px-5 
           sm:h-20 sm:w-[100%] sm:px-8
           md:gap-[2rem] md:px-[2rem] md:w-[100%]
           lg:gap-[2rem] lg:px-7
-          xl:gap-[2.8rem] xl:px-12 xl:py-5">
+          xl:gap-[2.8rem] xl:px-12 xl:py-5
+          shadow-lg shadow-gray-600 "
+          >
             {/* Logo Session */}
             <Logo showSubtitle={false} />
 
