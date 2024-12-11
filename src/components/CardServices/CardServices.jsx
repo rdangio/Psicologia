@@ -41,7 +41,7 @@ function CardServices() {
                 </Description>
                 <Text className="pb-[5%] text-center text-c-turquoise-5">{card.text}</Text>
                 <DefaultButton
-                  className="px-4 text-fs-h8 sm:text-fs-h7 lg:text-fs-h6"
+                  className="px-4 text-fs-h7 sm:text-fs-h7 lg:text-fs-h6"
                   hideOnResize={false}
                 >
                   Saiba mais

@@ -31,7 +31,7 @@ function CardsSessions() {
                         className="w-full"
                       />
                       {/* texto  */}
-                      <h2 className="to-99% bg-gradient-to-r from-c-turquoise-5 from-20% via-c-turquoise-4 via-70% to-c-turquoise-2 py-1 pl-3 text-left font-roboto-bold text-fs-h8 text-c-turquoise-1 sm:text-fs-h7 md:text-fs-h7 lg:text-fs-h6 xl:text-fs-h5">
+                      <h2 className="to-99% bg-gradient-to-r from-c-turquoise-5 from-20% via-c-turquoise-4 via-70% to-c-turquoise-2 py-1 pl-3 text-left font-roboto-bold text-fs-h6 text-c-turquoise-1 xl:text-fs-h5">
                         {sessions.title}
                       </h2>
                     </div>
