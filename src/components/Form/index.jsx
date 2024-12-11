@@ -46,7 +46,7 @@ function Form() {
   }
 
   return (
-    <div className="mx-auto flex flex-col mt-10 mb-10 w-[80%] justify-center items-center">
+    <div className="flex flex-col mt-10 mb-10 w-[80%] justify-center items-center lg:w-[30%]">
       <h2 className="title-font mb-3 text-sm font-medium uppercase tracking-widest text-c-turquoise-1">
         Contato
       </h2>

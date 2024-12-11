@@ -2,9 +2,9 @@ import LinkedInIcon from "../Icons/LinkedInIcon";
 import FacebookIcon from "../Icons/FacebookIcon";
 import InstagramIcon from "../Icons/InstagramIcon";
 
-const defaultCname = "mb-3 text-gray-400";
+const defaultCname = "mb-1 text-gray-400";
 
-const defaultSocialLinks = "text-c-turquoise-1 cursor-pointer w-6";
+const defaultSocialLinks = "text-c-turquoise-1 cursor-pointer w-6";;
 
 export const FooterData = [
   {
