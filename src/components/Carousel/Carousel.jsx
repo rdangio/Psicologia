@@ -43,7 +43,8 @@ function Carousel() {
         navigation={true}
       >
         {CarouselData.map((item) => (
-          <SwiperSlide className="mt-[100px]" key={item.id}>
+          <SwiperSlide className="mt-[26%] sm:mt-[12%] md:mt-[10%]
+          lg:mt-[7%] xl:mt-[5%]" key={item.id}>
             <div className="relative flex items-center justify-center mx-auto">
               <img
                 src={item.image}
