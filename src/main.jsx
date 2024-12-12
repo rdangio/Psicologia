@@ -5,7 +5,6 @@
 // poderia deixar o codigo mais pesado.
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter as Router } from "react-router-dom";
 
 // Importação sem {}: Exportação Padrão
 // Quando você importa algo sem {}, você está
@@ -15,16 +14,15 @@ import { BrowserRouter as Router } from "react-router-dom";
 // principal exportação desse módulo.
 // 'export default'
 // import Home from "./pages/Home/index";
-import App from "./App"
+
 
 // Importação de estilos
 import "./styles.css";
+import { App } from "./App";
 
 // O elemento "root" vendo do arquivo index.html
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Router>
-      <App /> {/* home está em ./page/home/index.jsx  */}
-    </Router>
+    <App/>
   </StrictMode>,
 );
