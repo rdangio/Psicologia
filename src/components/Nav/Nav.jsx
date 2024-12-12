@@ -29,9 +29,12 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-center">
-        <nav className="fixed z-10 w-[104%] sm:w-[101%]">
+        {/* teste */}
+        <div className="h-[5.8rem] sm:h-[4.4rem] xl:h-[4.3rem]"></div>
+        <nav className="fixed z-10 w-full">
           {/* aqui é o tamanho da div nav  */}
-          <div className="mt-0 flex h-14 items-center justify-between rounded-lg bg-c-turquoise-5 px-5 
+          <div className="flex items-center justify-between  bg-c-turquoise-5 
+          h-[4.3rem] px-5 mt-0
           sm:h-20 sm:w-[100%] sm:px-8
           md:gap-[2rem] md:px-[2rem] md:w-[100%]
           lg:gap-[2rem] lg:px-7

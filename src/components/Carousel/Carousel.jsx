@@ -24,12 +24,12 @@ function Carousel() {
         className="pb-1 -mt-[7%] sm:mt-[1%]"
         style={{
           "--swiper-navigation-color": "#17252a",
-          "--swiper-navigation-size": "1.4rem",
-          "--swiper-navigation-top-offset": "65%",
-          "--swiper-navigation-sides-offset": ".5rem",
+          "--swiper-navigation-size": "1.3rem",
+          "--swiper-navigation-top-offset": "50%",
+          "--swiper-navigation-sides-offset": ".65rem",
 
           "--swiper-pagination-color": "#17252a",
-          "--swiper-pagination-bullet-size": ".5rem",
+          "--swiper-pagination-bullet-size": ".8rem",
         }}
         autoplay={{
           delay: 6000,
@@ -43,8 +43,7 @@ function Carousel() {
         navigation={true}
       >
         {CarouselData.map((item) => (
-          <SwiperSlide className="mt-[26%] sm:mt-[12%] md:mt-[10%]
-          lg:mt-[7%] xl:mt-[5%]" key={item.id}>
+          <SwiperSlide className="" key={item.id}>
             <div className="relative flex items-center justify-center mx-auto">
               <img
                 src={item.image}
@@ -68,3 +67,7 @@ function Carousel() {
 }
 
 export default Carousel;
+
+
+// mt-[28%] sm:mt-[12%] md:mt-[10%]
+//           lg:mt-[7%] xl:mt-[5%]
