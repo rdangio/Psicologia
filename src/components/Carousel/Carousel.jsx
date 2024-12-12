@@ -21,7 +21,7 @@ function Carousel() {
         modules={[EffectFade]}
         speed="1500"
         effect="fade"
-        className="pb-1 -mt-[7%] sm:mt-[1%]"
+        className="pb-1"
         style={{
           "--swiper-navigation-color": "#17252a",
           "--swiper-navigation-size": "1.3rem",
