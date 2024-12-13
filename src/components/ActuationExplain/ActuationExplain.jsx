@@ -2,13 +2,15 @@ import CentralizedContainer from "../CentralizedContainer/CentralizedContainer";
 import { dataActuationExplain } from "./DataActuationExplain";
 import LeftArrow from "../Icons/LeftArrow";
 import UpArrow from "../Icons/UpArrow";
-import { Link } from "react-router-dom";
-import ScrollToTop from "../ScrollToTop/ScrollToTop";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+
+
 
 function ActuationExplain() {
   return (
     <>
-      <CentralizedContainer className="mt-10 md:px-12 lg:px-4">
+      <CentralizedContainer id="ansiedade" className="mt-10 md:px-12 lg:px-4">
         <div className="">
           <div className="flex flex-row">
             {/* essa é a parte do capitulo */}
@@ -57,18 +59,21 @@ function ActuationExplain() {
             </div>
           </div>
         </div>
+
         <div className="flex flex-row justify-center gap-5">
-          <Link to="/">
+          <RouterLink to="/">
             <div className="my-6 flex justify-center">
               <LeftArrow />
             </div>
-          </Link>
-          <Link to="/ansiedade" onClick={<ScrollToTop />}>
+          </RouterLink>
+
+          <ScrollLink to="ansiedade" smooth={true} offset={-120} duration={500}>
             <div className="my-6 flex justify-center">
               <UpArrow />
             </div>
-          </Link>
+          </ScrollLink>
         </div>
+
       </CentralizedContainer>
       <div className="w-full bg-c-turquoise-2 py-[.4rem] text-center font-roboto-bold text-c-turquoise-5">
         <p>2024 RD Dev&Design</p>

@@ -6,7 +6,7 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 const AppRoutes = () => {
   return (
     <BrowserRouter>
-    <ScrollToTop />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/ansiedade" element={<Ansiedade />}></Route>
