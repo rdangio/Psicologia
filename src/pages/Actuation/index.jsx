@@ -1,14 +1,13 @@
 import ActuationExplain from "../../components/ActuationExplain/ActuationExplain";
-import CentralizedContainer from "../../components/CentralizedContainer/CentralizedContainer";
 import Nav from "../../components/Nav/Nav";
 
-const Ansiedade = () => {
+const AreasDeAtuacao = ({numero}) => {
   return (
     <>
       <Nav />
-      <ActuationExplain/>
+      <ActuationExplain area={numero} />
     </>
   );
 };
 
-export default Ansiedade;
+export default AreasDeAtuacao;

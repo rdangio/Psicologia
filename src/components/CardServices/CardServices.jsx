@@ -43,6 +43,7 @@ function CardServices() {
                 <Text className="pb-[5%] text-center text-c-turquoise-5">
                   {card.text}
                 </Text>
+
                 <Link to={card.url}>
                   <DefaultButton
                     className="px-4 text-fs-h7 sm:text-fs-h7 lg:text-fs-h6"
@@ -51,9 +52,7 @@ function CardServices() {
                     Saiba mais
                   </DefaultButton>
                 </Link>
-                {/* <button className="rounded-lg border-2 bg-c-turquoise-5 px-4 py-2 font-roboto text-c-turquoise-1 hover:bg-c-turquoise-4 hover:text-white hover:shadow-md hover:shadow-c-turquoise-4">
-                Saiba mais
-              </button> */}
+                
               </div>
             </div>
           ))}

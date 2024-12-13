@@ -7,10 +7,10 @@ import { Link as ScrollLink } from "react-scroll";
 
 
 
-function ActuationExplain() {
+function ActuationExplain({area}) {
   return (
     <>
-      <CentralizedContainer id="ansiedade" className="mt-10 md:px-12 lg:px-4">
+      <CentralizedContainer id="top" className="mt-10 md:px-12 lg:px-4">
         <div className="">
           <div className="flex flex-row">
             {/* essa é a parte do capitulo */}
@@ -33,8 +33,9 @@ function ActuationExplain() {
             </div>
 
             <div className="mx-auto w-[90%] border-x-c-turquoise-6 bg-c-turquoise-1 sm:w-[70%] md:border-l-2">
+
               <h1 className="pb-5 text-center font-roboto-bold sm:p-5 sm:pb-0 md:text-left">
-                {dataActuationExplain[0].title}
+                {dataActuationExplain[area].title}
               </h1>
               <ul>
                 {dataActuationExplain.map((actuation) => (
@@ -67,7 +68,7 @@ function ActuationExplain() {
             </div>
           </RouterLink>
 
-          <ScrollLink to="ansiedade" smooth={true} offset={-120} duration={500}>
+          <ScrollLink to="top" smooth={true} offset={-120} duration={500}>
             <div className="my-6 flex justify-center">
               <UpArrow />
             </div>
