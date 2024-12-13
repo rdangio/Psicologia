@@ -15,14 +15,13 @@ import { createRoot } from "react-dom/client";
 // 'export default'
 // import Home from "./pages/Home/index";
 
-
 // Importação de estilos
 import "./styles.css";
-import { App } from "./App";
+import App from "./App";
 
 // O elemento "root" vendo do arquivo index.html
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App/>
+    <App />
   </StrictMode>,
 );
