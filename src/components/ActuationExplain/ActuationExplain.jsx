@@ -1,16 +1,18 @@
-import { Button } from "react-scroll";
 import CentralizedContainer from "../CentralizedContainer/CentralizedContainer";
 import { dataActuationExplain } from "./DataActuationExplain";
-import DefaultButton from "../Button";
+import LeftArrow from "../Icons/LeftArrow";
+import UpArrow from "../Icons/UpArrow";
+import { Link } from "react-router-dom";
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 function ActuationExplain() {
   return (
     <>
-      <CentralizedContainer className="mt-10  md:px-12 lg:px-4">
+      <CentralizedContainer className="mt-10 md:px-12 lg:px-4">
         <div className="">
           <div className="flex flex-row">
             {/* essa é a parte do capitulo */}
-            <div className="hidden md:flex h-dvh w-[30%] bg-c-turquoise-1 text-left">
+            <div className="hidden h-dvh w-[30%] bg-c-turquoise-1 text-left md:flex">
               <ul className="w-full">
                 {dataActuationExplain.map((actuation) => {
                   return (
@@ -28,8 +30,8 @@ function ActuationExplain() {
               </ul>
             </div>
 
-            <div className="mx-auto w-[90%] sm:w-[70%] md:border-l-2 border-x-c-turquoise-6 bg-c-turquoise-1">
-              <h1 className="pb-5 sm:pb-0 sm:p-5 text-center md:text-left font-roboto-bold">
+            <div className="mx-auto w-[90%] border-x-c-turquoise-6 bg-c-turquoise-1 sm:w-[70%] md:border-l-2">
+              <h1 className="pb-5 text-center font-roboto-bold sm:p-5 sm:pb-0 md:text-left">
                 {dataActuationExplain[0].title}
               </h1>
               <ul>
@@ -54,9 +56,19 @@ function ActuationExplain() {
               </ul>
             </div>
           </div>
-          
         </div>
-      <DefaultButton className="flex items-center justify-center">Voltar</DefaultButton>
+        <div className="flex flex-row justify-center gap-5">
+          <Link to="/">
+            <div className="my-6 flex justify-center">
+              <LeftArrow />
+            </div>
+          </Link>
+          <Link to="/ansiedade" onClick={<ScrollToTop />}>
+            <div className="my-6 flex justify-center">
+              <UpArrow />
+            </div>
+          </Link>
+        </div>
       </CentralizedContainer>
       <div className="w-full bg-c-turquoise-2 py-[.4rem] text-center font-roboto-bold text-c-turquoise-5">
         <p>2024 RD Dev&Design</p>
