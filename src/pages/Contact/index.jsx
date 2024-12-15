@@ -1,20 +1,28 @@
+import Map from "../../components/Map";
+import CentralizedContainer from "../../components/CentralizedContainer/CentralizedContainer";
+import Form from "../../components/Form";
+
 const Contact = () => {
   return (
-    <div className="w-full">
-      <div>
-        <iframe
-          width="400"
-          height="400"
-          // frameBorder="1"
-          // scrolling="no"
-          // marginHeight="0"
-          // marginWidth="0"
-          src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=Rua%20Conde%20do%20Pinhal,%20196%20Ja%C3%BA%20SP+(Cl%C3%A1udia%20Psic%C3%B3loga)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-        >
-          <a href="https://www.gps.ie/">gps tracker sport</a>
-        </iframe>
-      </div>
-    </div>
+    <CentralizedContainer>
+      <section className="m-auto mt-8 flex w-4/5 max-w-lg flex-col items-center">
+        <h4 className="mb-1 text-lg font-bold capitalize">Contate-me</h4>
+
+        <h1 className="mb-2 text-2xl font-bold">Entre em Contato</h1>
+        <p className="mb-4 text-center text-sm leading-6">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+          assumenda.
+        </p>
+
+        <div>
+          <Form />
+        </div>
+
+        <div>
+          <Map />
+        </div>
+      </section>
+    </CentralizedContainer>
   );
 };
 
