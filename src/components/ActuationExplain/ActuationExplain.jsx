@@ -8,7 +8,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 function ActuationExplain({ area }) {
   const selectedData = dataActuationExplain.find(
-    (actuation) => actuation.id === area.toString(),
+    (actuation) => actuation.id === area.toString()
   );
 
   return (
@@ -22,10 +22,12 @@ function ActuationExplain({ area }) {
                 <ul className="w-full">
                   {selectedData.chapter.map((item, index) => (
                     <li className="" key={index}>
-                      <div className="w-full">
-                        <span className="">{item}</span>
-                        <div className="mb-3 border-b-2 border-c-turquoise-6 pt-1"></div>
-                      </div>
+                      <ScrollLink to={`section-${index}`} smooth={true} offset={-120} duration={500}>
+                        <div className="w-full cursor-pointer">
+                          <span className="">{item}</span>
+                          <div className="mb-3 border-b-2 border-c-turquoise-6 pt-1"></div>
+                        </div>
+                      </ScrollLink>
                     </li>
                   ))}
                 </ul>
@@ -40,7 +42,7 @@ function ActuationExplain({ area }) {
                 </h1>
                 <ul>
                   {selectedData.chapter.map((chapterItem, index) => (
-                    <div key={index}>
+                    <div key={index} id={`section-${index}`}>
                       <h2 className="pl-5 pt-3 font-bold">{chapterItem}</h2>
                       <div className="mb-3 border-b-2 border-c-turquoise-6 pt-1"></div>
                       {selectedData.text[index] && (
