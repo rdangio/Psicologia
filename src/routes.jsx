@@ -9,9 +9,9 @@ const AppRoutes = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="0" element={<AreasDeAtuacao numero={0} />}></Route>
-        <Route path="1" element={<AreasDeAtuacao numero={1} />}></Route>
-        <Route path="2" element={<AreasDeAtuacao numero={2} />}></Route>
+        <Route path="0" element={<AreasDeAtuacao numero={1} />}></Route>
+        <Route path="1" element={<AreasDeAtuacao numero={2} />}></Route>
+        <Route path="2" element={<AreasDeAtuacao numero={3} />}></Route>
 
       </Routes>
     </BrowserRouter>
