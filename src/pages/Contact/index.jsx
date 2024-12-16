@@ -1,25 +1,51 @@
-import Map from "../../components/Map";
 import CentralizedContainer from "../../components/CentralizedContainer/CentralizedContainer";
 import Form from "../../components/Form";
+import Map from "../../components/Map";
+
+//Importação dos icones
+import InstagramIcon from "../../components/Icons/Instagram";
+import FacebookIcon from "../../components/Icons/Facebook";
+import LinkedInIcon from "../../components/Icons/Linkedin";
+import LocationIcon from "../../components/Icons/Location";
+
+import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
 
 const Contact = () => {
   return (
     <CentralizedContainer>
-      <section className="m-auto mt-8 flex w-4/5 max-w-lg flex-col items-center">
-        <h4 className="mb-1 text-lg font-bold capitalize">Contate-me</h4>
-
-        <h1 className="mb-2 text-2xl font-bold">Entre em Contato</h1>
-        <p className="mb-4 text-center text-sm leading-6">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
-          assumenda.
+      <section className="m-auto mt-4 flex flex-col items-center">
+        <h1 className="mb-2 text-2xl font-bold">Contato</h1>
+        <p className="text-center text-sm leading-6">
+          Tem alguma dúvida? Fale comigo pelos canais de comunicação e agende
+          seu atendimento!
         </p>
 
-        <div>
-          <Form />
+        <div className="mt-10 flex w-full flex-col md:flex-row">
+          <div className="w-full">
+            <Form />
+          </div>
+
+          <div className="sm:p-4 md:w-full">
+            <Map />
+          </div>
         </div>
 
-        <div>
-          <Map />
+        <div className="mx-4 mb-4 grid w-full grid-cols-5 items-center gap-10 p-4">
+          <div className="border-2 border-black">
+            <FaBeer />
+          </div>
+          <div className="border-2 border-black">
+            <FacebookIcon />
+          </div>
+          <div className="border-2 border-black">
+            <InstagramIcon />
+          </div>
+          <div className="border-2 border-black">
+            <LinkedInIcon />
+          </div>
+          <div className="border-2 border-black">
+            <LocationIcon />
+          </div>
         </div>
       </section>
     </CentralizedContainer>

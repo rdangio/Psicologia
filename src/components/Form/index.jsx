@@ -46,17 +46,14 @@ function Form() {
   }
 
   return (
-    <div className="flex w-full flex-col xs:mt-10 xs:w-60 sm:mt-0 sm:w-full md:items-center">
-      <h2 className="title-font mb-3 text-sm font-medium uppercase tracking-widest text-c-turquoise-5">
-        Fale conosco
+    <div className="flex w-full flex-col items-center border-c-turquoise-5 sm:p-4 md:border-r-2 md:py-2">
+      <h2 className="text-fs-h8 mb-1 font-bold text-c-turquoise-5">
+        Fale comigo
       </h2>
 
-      <form
-        onSubmit={sendEmail}
-        className="flex w-full max-w-lg flex-col sm:w-full"
-      >
+      <form onSubmit={sendEmail} className="flex w-full flex-col">
         <input
-          className="p2 mb-3.5 h-8 rounded border p-0 pl-2"
+          className="mb-3.5 h-8 rounded border p-2"
           type="text"
           placeholder="Digite seu nome"
           onChange={(e) => setName(e.target.value)}
@@ -64,7 +61,7 @@ function Form() {
         />
 
         <input
-          className="p2 mb-3.5 h-8 rounded border p-0 pl-2"
+          className="mb-3.5 h-8 rounded border p-2"
           type="text"
           placeholder="Digite seu e-mail"
           onChange={(e) => setEmail(e.target.value)}
@@ -72,19 +69,19 @@ function Form() {
         />
 
         <textarea
-          className="p2 mb-3.5 h-20 resize-none rounded border p-1 pl-2"
+          className="mb-3.5 h-32 w-full resize-none rounded border p-2"
           type="text"
           placeholder="Digite sua mensagem..."
           onChange={(e) => setMessage(e.target.value)}
           value={message}
         />
-      </form>
 
-      <div className="flex w-full justify-center">
-        <DefaultButton type="submit" onClick={sendEmail}>
-          Enviar
-        </DefaultButton>
-      </div>
+        <div className="flex w-full justify-center">
+          <DefaultButton type="submit" onClick={sendEmail} className="w-full">
+            Enviar
+          </DefaultButton>
+        </div>
+      </form>
     </div>
   );
 }
