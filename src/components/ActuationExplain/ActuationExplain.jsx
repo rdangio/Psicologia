@@ -4,10 +4,9 @@ import LeftArrow from "../Icons/LeftArrow";
 import UpArrow from "../Icons/UpArrow";
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import { PropTypes } from "prop-types";
 
-
-
-function ActuationExplain({area}) {
+function ActuationExplain({ area }) {
   return (
     <>
       <CentralizedContainer id="top" className="mt-10 md:px-12 lg:px-4">
@@ -33,7 +32,6 @@ function ActuationExplain({area}) {
             </div>
 
             <div className="mx-auto w-[90%] border-x-c-turquoise-6 bg-c-turquoise-1 sm:w-[70%] md:border-l-2">
-
               <h1 className="pb-5 text-center font-roboto-bold sm:p-5 sm:pb-0 md:text-left">
                 {dataActuationExplain[area].title}
               </h1>
@@ -74,7 +72,6 @@ function ActuationExplain({area}) {
             </div>
           </ScrollLink>
         </div>
-
       </CentralizedContainer>
       <div className="w-full bg-c-turquoise-2 py-[.4rem] text-center font-roboto-bold text-c-turquoise-5">
         <p>2024 RD Dev&Design</p>
@@ -82,5 +79,9 @@ function ActuationExplain({area}) {
     </>
   );
 }
+
+ActuationExplain.propTypes = {
+  area: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+};
 
 export default ActuationExplain;
