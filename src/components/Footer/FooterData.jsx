@@ -1,10 +1,10 @@
-import LinkedInIcon from "../Icons/LinkedInIcon";
-import FacebookIcon from "../Icons/FacebookIcon";
-import InstagramIcon from "../Icons/InstagramIcon";
-import LocationIcon from "../Icons/Location";
-import EmailIcon from "../Icons/Email";
-import PhoneIcon from "../Icons/Phone";
-import WhatsappIcon from "../Icons/Whatsapp";
+import LinkedInIcon from "../../components/Icons/Linkedin";
+import FacebookIcon from "../../components/Icons/Facebook";
+import InstagramIcon from "../../components/Icons/Instagram";
+import LocationIcon from "../../components/Icons/Location";
+import EmailIcon from "../../components/Icons/Email";
+import PhoneIcon from "../../components/Icons/Phone";
+import WhatsappIcon from "../../components/Icons/Whatsapp";
 
 const defaultCname =
   "mb-3 text-c-turquoise-1 text-center flex flex-col items-center font-roboto text-fs-h7 sm:text-fs-h6 md:text-fs-h6 lg:text-fs-h6 xl:text-fs-h4";

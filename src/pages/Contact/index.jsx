@@ -3,12 +3,12 @@ import Form from "../../components/Form";
 import Map from "../../components/Map";
 
 //Importação dos icones
-import InstagramIcon from "../../components/Icons/Instagram";
-import FacebookIcon from "../../components/Icons/Facebook";
-import LinkedInIcon from "../../components/Icons/Linkedin";
-import LocationIcon from "../../components/Icons/Location";
-
-import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
+import {
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaLinkedin,
+} from "react-icons/fa";
+import { RiMailFill } from "react-icons/ri";
 
 const Contact = () => {
   return (
@@ -30,21 +30,33 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="mx-4 mb-4 grid w-full grid-cols-5 items-center gap-10 p-4">
-          <div className="border-2 border-black">
-            <FaBeer />
+        <div className="grid w-full grid-cols-4 border-2 md:gap-7 md:p-2 lg:m-4">
+          <div className="flex items-center border-2">
+            <div className="flex items-center justify-center border-r-2 border-c-turquoise-5">
+              <RiMailFill className="h-6 w-6 md:h-4 md:w-6" />
+            </div>
+            <div className="ml-1">Claudia@email.com</div>
           </div>
-          <div className="border-2 border-black">
-            <FacebookIcon />
+
+          <div className="flex items-center">
+            <div className="flex items-center justify-center border-r-2 border-c-turquoise-5">
+              <FaFacebookSquare className="h-6 w-6 md:h-4 md:w-6" />
+            </div>
+            <div className="ml-1">@claudia.dangio</div>
           </div>
-          <div className="border-2 border-black">
-            <InstagramIcon />
+
+          <div className="flex items-center">
+            <div className="flex items-center justify-center border-r-2 border-c-turquoise-5">
+              <FaInstagramSquare className="h-6 w-6 md:h-4 md:w-6" />
+            </div>
+            <div className="ml-1">@claudia_dangio</div>
           </div>
-          <div className="border-2 border-black">
-            <LinkedInIcon />
-          </div>
-          <div className="border-2 border-black">
-            <LocationIcon />
+
+          <div className="flex items-center">
+            <div className="flex items-center justify-center border-r-2 border-c-turquoise-5">
+              <FaLinkedin className="h-6 w-6 md:h-4 md:w-6" />
+            </div>
+            <div className="ml-1 whitespace-nowrap">Claudia Dangió</div>
           </div>
         </div>
       </section>
