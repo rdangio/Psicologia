@@ -3,10 +3,10 @@ import Form from "../../components/Form";
 import Map from "../../components/Map";
 
 //Importação dos icones
-import FacebookIcon from "../../components/Icons/FacebookIcon";
-import InstagramIcon from "../../components/Icons/InstagramIcon";
-import EmailIcon from "../../components/Icons/EmailIcon";
-import LinkedInIcon from "../../components/Icons/LinkedInIcon";
+// import FacebookIcon from "../../components/Icons/FacebookIcon";
+// import InstagramIcon from "../../components/Icons/InstagramIcon";
+// import EmailIcon from "../../components/Icons/EmailIcon";
+// import LinkedInIcon from "../../components/Icons/LinkedInIcon";
 
 const Contact = () => {
   return (
@@ -28,7 +28,8 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="grid w-full grid-cols-4 border-2 md:gap-7 md:p-2 lg:m-4">
+        {/* Ícones redes sociais */}
+        {/* <div className="grid w-full grid-cols-4 border-2 md:gap-7 md:p-2 lg:m-4">
           <div className="flex items-center border-2">
             <div className="flex items-center justify-center border-r-2 border-c-turquoise-5">
               <EmailIcon className="h-6 w-6 md:h-4 md:w-6" />
@@ -56,7 +57,7 @@ const Contact = () => {
             </div>
             <div className="ml-1 whitespace-nowrap">Claudia Dangió</div>
           </div>
-        </div>
+        </div> */}
       </section>
     </CentralizedContainer>
   );
