@@ -3,12 +3,10 @@ import Form from "../../components/Form";
 import Map from "../../components/Map";
 
 //Importação dos icones
-import {
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaLinkedin,
-} from "react-icons/fa";
-import { RiMailFill } from "react-icons/ri";
+import FacebookIcon from "../../components/Icons/FacebookIcon";
+import InstagramIcon from "../../components/Icons/InstagramIcon";
+import EmailIcon from "../../components/Icons/EmailIcon";
+import LinkedInIcon from "../../components/Icons/LinkedInIcon";
 
 const Contact = () => {
   return (
@@ -33,28 +31,28 @@ const Contact = () => {
         <div className="grid w-full grid-cols-4 border-2 md:gap-7 md:p-2 lg:m-4">
           <div className="flex items-center border-2">
             <div className="flex items-center justify-center border-r-2 border-c-turquoise-5">
-              <RiMailFill className="h-6 w-6 md:h-4 md:w-6" />
+              <EmailIcon className="h-6 w-6 md:h-4 md:w-6" />
             </div>
             <div className="ml-1">Claudia@email.com</div>
           </div>
 
           <div className="flex items-center">
             <div className="flex items-center justify-center border-r-2 border-c-turquoise-5">
-              <FaFacebookSquare className="h-6 w-6 md:h-4 md:w-6" />
+              <FacebookIcon className="h-6 w-6 md:h-4 md:w-6" />
             </div>
             <div className="ml-1">@claudia.dangio</div>
           </div>
 
           <div className="flex items-center">
             <div className="flex items-center justify-center border-r-2 border-c-turquoise-5">
-              <FaInstagramSquare className="h-6 w-6 md:h-4 md:w-6" />
+              <InstagramIcon className="h-6 w-6 md:h-4 md:w-6" />
             </div>
             <div className="ml-1">@claudia_dangio</div>
           </div>
 
           <div className="flex items-center">
             <div className="flex items-center justify-center border-r-2 border-c-turquoise-5">
-              <FaLinkedin className="h-6 w-6 md:h-4 md:w-6" />
+              <LinkedInIcon className="h-6 w-6 md:h-4 md:w-6" />
             </div>
             <div className="ml-1 whitespace-nowrap">Claudia Dangió</div>
           </div>
