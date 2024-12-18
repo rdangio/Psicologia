@@ -26,7 +26,7 @@ export const NavData = [
   {
     id: 5,
     title: "Contato",
-    to: "contato", // Link externo absoluto
-    type: "internal", // Define o link como externo
+    to: "/contato", // Link externo absoluto
+    type: "route", // Define o link como externo
   },
 ];
