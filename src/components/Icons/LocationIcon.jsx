@@ -1,9 +1,6 @@
 const LocationIcon = () => (
   <div>
-    <a
-      href="javascript:;"
-      className="flex items-center justify-center rounded-lg border border-c-turquoise-1 p-1 transition-all duration-500 hover:border-c-turquoise-4 hover:bg-c-turquoise-4"
-    >
+    <a className="flex items-center justify-center rounded-lg border border-c-turquoise-1 p-1 transition-all duration-500 hover:border-c-turquoise-4 hover:bg-c-turquoise-4">
       <svg
         width="24"
         height="24"

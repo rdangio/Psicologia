@@ -3,7 +3,10 @@ import HomeIcon from "../Icons/HomeIcon";
 import AboutIcon from "../Icons/AboutIcon";
 import EmailIcon from "../Icons/EmailIcon";
 import PhoneIcon from "../Icons/PhoneIcon";
-import HoverEmail from "./HoverEmail";
+import FacebookIcon from "../Icons/FacebookIcon";
+import InstagramIcon from "../Icons/InstagramIcon";
+import LinkedInIcon from "../Icons/LinkedInIcon";
+import WhatsAppIcon from "../Icons/WhatsAppIcon";
 
 const whatsappLink = `https://wa.me/5514997030269?text=Olá, Cláudia! Estou entrando em contato para agendar um atendimento.`;
 
@@ -13,42 +16,78 @@ const Footer = () => {
 
   return (
     <footer id="contato" className="w-[100%] bg-c-turquoise-5">
-      <div className="flex flex-col items-center justify-between pt-8">
-        <Logo showSubtitle={true} sm:showSocialMedia={true} />
+      <div className="flex flex-col items-center justify-between p-10 sm:flex-row sm:justify-evenly lg:justify-center">
+        <div>
+          <Logo showSubtitle={true} sm:showSocialMedia={true} />
 
-        <div className="flex items-center p-10">
-          {/* Ícones */}
+          {/* Ícones redes sociais */}
+          <div className="mt-4 flex justify-end gap-4 px-6">
+            <a href="https://www.facebook.com/claudia.dangio" target="_blank">
+              <FacebookIcon />
+            </a>
+            <a href="https://www.instagram.com/claudia_dangio" target="_blank">
+              <InstagramIcon />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/claudia-dangi%C3%B3-21100469/"
+              target="_blank"
+            >
+              <LinkedInIcon />
+            </a>
+
+            <a href={whatsappLink} target="_blank">
+              <WhatsAppIcon />
+            </a>
+          </div>
+        </div>
+
+        {/* Traço vertical que separa o logo dos ícones */}
+        <div className="sm:h-40 sm:w-[2px] sm:rounded-full sm:bg-gradient-to-b sm:from-purple-500 sm:to-green-500 sm:shadow-md sm:transition-all sm:duration-500 sm:hover:h-32 lg:mx-14"></div>
+
+        {/* Ícones */}
+        <div className="mt-10 flex items-center sm:mt-0">
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-2">
               <HomeIcon />
-              <a href="/" className="text-gray-600 hover:text-c-turquoise-4">
+              <a
+                href="/"
+                className="text-fs-h6 text-gray-600 hover:text-c-turquoise-4"
+              >
                 Home
               </a>
             </div>
 
             <div className="flex items-center gap-2">
               <AboutIcon />
-              <a href="/" className="text-gray-600 hover:text-c-turquoise-4">
+              <a
+                href=""
+                className="text-fs-h6 text-gray-600 hover:text-c-turquoise-4"
+              >
                 Quem sou?
               </a>
             </div>
 
             <div className="flex items-center gap-2">
-              <a href="">
+              <a href="mailto:claudia.iroma@hotmail.com">
                 <EmailIcon />
               </a>
-              <a href="/" className="text-gray-600 hover:text-c-turquoise-4">
-                <HoverEmail label="E-mail" info="claudia.iroma@hotmail.com" />
+              <a
+                href="mailto:claudia.iroma@hotmail.com"
+                className="text-fs-h6 text-gray-600 hover:text-c-turquoise-4"
+              >
+                E-mail
               </a>
             </div>
 
             <div className="flex items-center gap-2">
-              <PhoneIcon />
+              <a href={whatsappLink} target="_blank">
+                <PhoneIcon />
+              </a>
               <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-c-turquoise-4"
+                className="text-fs-h6 text-gray-600 hover:text-c-turquoise-4"
               >
                 Telefone
               </a>

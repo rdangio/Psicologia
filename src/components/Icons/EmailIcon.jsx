@@ -1,13 +1,9 @@
 const EmailIcon = () => (
   <div>
-    <a
-      href="javascript:;"
-      className="flex items-center justify-center rounded-lg border border-c-turquoise-1 p-1 transition-all duration-500 hover:border-c-turquoise-4 hover:bg-c-turquoise-4"
-    >
+    <a className="flex items-center justify-center rounded-lg border border-c-turquoise-1 p-1 transition-all duration-500 hover:border-c-turquoise-4 hover:bg-c-turquoise-4">
       <svg
+        className="h-6 w-6"
         xmlns="http://www.w3.org/2000/svg"
-        width="28"
-        height="28"
         viewBox="0 0 72 72"
         fill="none"
       >
