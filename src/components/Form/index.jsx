@@ -1,4 +1,4 @@
-//Bilioteca utilizada para o envio de e-mail através do formulário: Emailjs (yarn add @emailjs/browser)
+//Bilioteca utilizada para o envio de e-mail pelo do formulário: Emailjs (yarn add @emailjs/browser)
 
 import { useState } from "react";
 import DefaultButton from "../Button/index";
