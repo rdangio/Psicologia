@@ -1,4 +1,3 @@
-import Form from "../Form";
 import Logo from "../Logo/Logo";
 import HomeIcon from "../Icons/HomeIcon";
 import AboutIcon from "../Icons/AboutIcon";
@@ -94,10 +93,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-
-          {/* Formulário */}
         </div>
-        <Form />
       </div>
 
       <div className="w-full bg-gray-300">
