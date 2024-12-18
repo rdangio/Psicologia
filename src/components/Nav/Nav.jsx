@@ -29,9 +29,11 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-center">
-        <nav className="fixed z-10 w-[104%] sm:w-[101%]">
+        {/* teste */}
+        <div className="h-[4.3rem] sm:h-[4.6rem] xl:h-[4.3rem]"></div>
+        <nav className="fixed z-10 w-full">
           {/* aqui é o tamanho da div nav  */}
-          <div className="mt-3 flex h-14 items-center justify-between rounded-lg bg-c-turquoise-5 px-5 sm:h-20 sm:w-[100%] sm:px-8 md:w-[100%] md:gap-[2rem] md:px-[2rem] lg:gap-[2rem] lg:px-7 xl:gap-[2.8rem] xl:px-12 xl:py-5">
+          <div className="mt-0 flex h-[4.3rem] items-center justify-between bg-c-turquoise-5 px-5 shadow-lg shadow-gray-600 sm:h-20 sm:w-[100%] sm:px-8 md:w-[100%] md:gap-[2rem] md:px-[2rem] lg:gap-[2rem] lg:px-7 xl:gap-[2.8rem] xl:px-12 xl:py-5">
             {/* Logo Session */}
             <Logo showSubtitle={false} />
 
