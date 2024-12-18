@@ -26,7 +26,7 @@ const DefaultButton = ({
   if (!isVisible && hideOnResize) return null;
 
   return (
-    <div className="w-full">
+    <div className="">
       <button
         {...props}
         type="submit"
