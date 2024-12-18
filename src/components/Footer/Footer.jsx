@@ -12,7 +12,7 @@ const whatsappLink = `https://wa.me/5514997030269?text=Olá, Cláudia! Estou ent
 
 const Footer = () => {
   //Const para atualizar o ano junto ao rodapé
-  const Year = new Date().getFullYear();
+  // const Year = new Date().getFullYear();
 
   return (
     <footer id="contato" className="w-[100%] bg-c-turquoise-5">
@@ -95,10 +95,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       <div className="w-full bg-c-turquoise-2 py-[.4rem] text-center font-roboto-bold text-c-turquoise-5">
         <p>2024 RD Dev&Design</p>
-      </div>    </footer>
+      </div>{" "}
+    </footer>
   );
 };
 
