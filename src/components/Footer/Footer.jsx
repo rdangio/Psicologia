@@ -42,13 +42,15 @@ const Footer = () => {
         </div>
 
         {/* Traço vertical que separa o logo dos ícones */}
-        <div className="sm:h-40 sm:w-[2px] sm:rounded-full sm:bg-gradient-to-b sm:from-purple-500 sm:to-green-500 sm:shadow-md sm:transition-all sm:duration-500 sm:hover:h-32 lg:mx-14"></div>
+        <div className="bg-c-turquoise-1 sm:mt-4 sm:h-40 sm:w-[1px] sm:rounded-full sm:shadow-md lg:mx-14"></div>
 
         {/* Ícones */}
         <div className="mt-10 flex items-center sm:mt-0">
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-2">
-              <HomeIcon />
+              <a href="/">
+                <HomeIcon />
+              </a>
               <a
                 href="/"
                 className="text-fs-h6 text-gray-600 hover:text-c-turquoise-4"
@@ -58,7 +60,9 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center gap-2">
-              <AboutIcon />
+              <a href="#">
+                <AboutIcon />
+              </a>
               <a
                 href=""
                 className="text-fs-h6 text-gray-600 hover:text-c-turquoise-4"
@@ -95,10 +99,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       <div className="w-full bg-c-turquoise-2 py-[.4rem] text-center font-roboto-bold text-c-turquoise-5">
-        <p>2024 RD Dev&Design</p>
-      </div>    </footer>
+        <p> © {Year} RD Dev&Design</p>
+      </div>
+    </footer>
   );
 };
 

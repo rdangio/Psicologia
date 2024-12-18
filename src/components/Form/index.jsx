@@ -46,8 +46,8 @@ function Form() {
   }
 
   return (
-    <div className="flex w-full flex-col items-center border-c-turquoise-5 sm:p-4 md:py-2">
-      <h2 className="mb-1 text-fs-h5 font-bold text-c-turquoise-5">
+    <div className="flex w-full flex-col items-center sm:p-4 md:py-2">
+      <h2 className="mb-1 text-fs-h5 font-bold tracking-wider text-c-turquoise-5">
         Fale comigo
       </h2>
 
@@ -61,7 +61,7 @@ function Form() {
         />
 
         <input
-          className="mb-3.5 h-8 rounded border p-2 tracking-wider shadow-sm placeholder:text-fs-h6 hover:border-c-turquoise-4 focus:border-c-turquoise-6 focus:shadow focus:outline-none"
+          className="mb-3.5 h-8 rounded border bg-gray-200 p-2 tracking-wider shadow-sm placeholder:text-fs-h6 hover:border-c-turquoise-4 focus:border-c-turquoise-6 focus:shadow focus:outline-none"
           type="text"
           placeholder="Digite seu e-mail"
           onChange={(e) => setEmail(e.target.value)}
@@ -69,7 +69,7 @@ function Form() {
         />
 
         <textarea
-          className="mb-3.5 h-32 w-full resize-none rounded border p-2 tracking-wider placeholder:text-fs-h6 hover:border-c-turquoise-4 focus:border-c-turquoise-6 focus:shadow focus:outline-none"
+          className="mb-3.5 h-32 w-full resize-none rounded border bg-gray-200 p-2 tracking-wider placeholder:text-fs-h6 hover:border-c-turquoise-4 focus:border-c-turquoise-6 focus:shadow focus:outline-none"
           type="text"
           placeholder="Digite sua mensagem..."
           onChange={(e) => setMessage(e.target.value)}
