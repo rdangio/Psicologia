@@ -32,6 +32,9 @@ const Navbar = () => {
         {/* teste */}
         <div className="h-[4.3rem] sm:h-[4.6rem] xl:h-[4.3rem]"></div>
         <nav className="fixed z-10 w-full">
+        {/* teste */}
+        <div className="h-[4.3rem] sm:h-[4.6rem] xl:h-[4.3rem]"></div>
+        <nav className="fixed z-10 w-full">
           {/* aqui é o tamanho da div nav  */}
           <div className="flex items-center justify-between  bg-c-turquoise-5 
           h-[4.3rem] px-5 mt-0

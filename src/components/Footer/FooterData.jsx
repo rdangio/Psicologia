@@ -1,10 +1,14 @@
-import LinkedInIcon from "../Icons/LinkedInIcon";
-import FacebookIcon from "../Icons/FacebookIcon";
-import InstagramIcon from "../Icons/InstagramIcon";
+import LinkedInIcon from "../../components/Icons/LinkedInIcon";
+import FacebookIcon from "../../components/Icons/FacebookIcon";
+import InstagramIcon from "../../components/Icons/InstagramIcon";
+import LocationIcon from "../../components/Icons/LocationIcon";
+import EmailIcon from "../../components/Icons/EmailIcon";
+import PhoneIcon from "../../components/Icons/PhoneIcon";
+import WhatsappIcon from "../../components/Icons/WhatsAppIcon";
 
 const defaultCname = "mb-1 text-gray-400";
 
-const defaultSocialLinks = "text-c-turquoise-1 cursor-pointer w-6";;
+const defaultSocialLinks = "text-c-turquoise-1 cursor-pointer w-6";
 
 export const FooterData = [
   {

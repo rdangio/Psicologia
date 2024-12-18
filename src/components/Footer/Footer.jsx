@@ -1,48 +1,111 @@
 import Form from "../Form";
 import Logo from "../Logo/Logo";
-import { FooterData } from "./FooterData";
-import { Description } from "../Description/Description";
+import HomeIcon from "../Icons/HomeIcon";
+import AboutIcon from "../Icons/AboutIcon";
+import EmailIcon from "../Icons/EmailIcon";
+import PhoneIcon from "../Icons/PhoneIcon";
+import FacebookIcon from "../Icons/FacebookIcon";
+import InstagramIcon from "../Icons/InstagramIcon";
+import LinkedInIcon from "../Icons/LinkedInIcon";
+import WhatsAppIcon from "../Icons/WhatsAppIcon";
+
+const whatsappLink = `https://wa.me/5514997030269?text=Olá, Cláudia! Estou entrando em contato para agendar um atendimento.`;
 
 const Footer = () => {
   //Const para atualizar o ano junto ao rodapé
   const Year = new Date().getFullYear();
 
   return (
-    <footer id="contato" className="mx-auto w-[100%] bg-c-turquoise-5">
-      <div className="flex flex-col items-center 
-      lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-[10%]">
-        <div className="flex flex-col items-center justify-between pt-8 
-        md:pt-2 md:flex-row md:justify-center md:gap-16 
-        lg:flex-col lg:items-center lg:gap-4"> 
-          <Logo showSubtitle={true} showSocialMedia={true} />
-          <div className="mt-10 flex flex-col text-center  
-          lg:mt-5 lg:items-center">
-            <Description className="uppercase text-c-turquoise-1 sm:text-fs-h6 lg:text-fs-h5">
-            Como me encontrar
-            </Description>
-            <ul className="mt-2 list-none">
-              {/* <li className="mb-2">
-                <a
-                  href="#"
-                  className="cursor-pointer text-c-turquoise-1 hover:text-c-turquoise-6"
-                >
+    <footer id="contato" className="w-[100%] bg-c-turquoise-5">
+      <div className="flex flex-col items-center justify-between p-10 sm:flex-row sm:justify-evenly lg:justify-center">
+        <div>
+          <Logo showSubtitle={true} sm:showSocialMedia={true} />
 
-                </a>
-              </li> */}
-              {FooterData.map((item, index) => (
-                <li key={index} className={item.cName}>
-                  {item.title}
-                </li>
-              ))}
-            </ul>
+          {/* Ícones redes sociais */}
+          <div className="mt-4 flex justify-end gap-4 px-6">
+            <a href="https://www.facebook.com/claudia.dangio" target="_blank">
+              <FacebookIcon />
+            </a>
+            <a href="https://www.instagram.com/claudia_dangio" target="_blank">
+              <InstagramIcon />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/claudia-dangi%C3%B3-21100469/"
+              target="_blank"
+            >
+              <LinkedInIcon />
+            </a>
+
+            <a href={whatsappLink} target="_blank">
+              <WhatsAppIcon />
+            </a>
+          </div>
+        </div>
+
+        {/* Traço vertical que separa o logo dos ícones */}
+        <div className="sm:h-40 sm:w-[2px] sm:rounded-full sm:bg-gradient-to-b sm:from-purple-500 sm:to-green-500 sm:shadow-md sm:transition-all sm:duration-500 sm:hover:h-32 lg:mx-14"></div>
+
+        {/* Ícones */}
+        <div className="mt-10 flex items-center sm:mt-0">
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center gap-2">
+              <HomeIcon />
+              <a
+                href="/"
+                className="text-fs-h6 text-gray-600 hover:text-c-turquoise-4"
+              >
+                Home
+              </a>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <AboutIcon />
+              <a
+                href=""
+                className="text-fs-h6 text-gray-600 hover:text-c-turquoise-4"
+              >
+                Quem sou?
+              </a>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <a href="mailto:claudia.iroma@hotmail.com">
+                <EmailIcon />
+              </a>
+              <a
+                href="mailto:claudia.iroma@hotmail.com"
+                className="text-fs-h6 text-gray-600 hover:text-c-turquoise-4"
+              >
+                E-mail
+              </a>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <a href={whatsappLink} target="_blank">
+                <PhoneIcon />
+              </a>
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-fs-h6 text-gray-600 hover:text-c-turquoise-4"
+              >
+                Telefone
+              </a>
+            </div>
           </div>
 
           {/* Formulário */}
         </div>
         <Form />
       </div>
-      <div className="w-full bg-c-turquoise-2 py-[.4rem] text-center font-roboto-bold text-c-turquoise-5">
-        <p>&copy; {Year} RD Dev&Design</p>
+
+      <div className="w-full bg-gray-300">
+        <div className="container mx-auto px-5 py-2">
+          <p className="text-sm capitalize text-c-turquoise-5 xs:text-center">
+            &copy; {Year} RD Dev&Design
+          </p>
+        </div>
       </div>
     </footer>
   );
