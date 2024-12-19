@@ -1,7 +1,6 @@
 import CentralizedContainer from "../../components/CentralizedContainer/CentralizedContainer";
 import Footer from "../../components/Footer/Footer";
-// import Form from "../../components/Form";
-import Form2 from "../../components/Form/index2";
+import Form from "../../components/Form";
 import Map from "../../components/Map";
 
 const Contact = () => {
@@ -17,7 +16,7 @@ const Contact = () => {
 
           <div className="mt-8 flex w-full flex-col md:flex-row">
             <div className="w-full">
-              <Form2 />
+              <Form />
             </div>
 
             {/* Traço vertical que separa o formulário do mapa */}
