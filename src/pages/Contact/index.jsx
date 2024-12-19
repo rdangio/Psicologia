@@ -14,10 +14,6 @@ const Contact = () => {
     );
   };
 
-  const handleInfoClick = () => {
-    window.alert("Mais informações em breve!");
-  };
-
   return (
     <>
       <CentralizedContainer className="border-red border">
@@ -62,13 +58,14 @@ const Contact = () => {
                 showButton={false}
               />
               <Cards
-                imageSrc="/Images/info.jpg"
-                imageAlt="Imagem de informações"
+                imageSrc="/Images/atendimento-online.jpg"
+                imageAlt="Imagem de Atendimento Online"
+                imageClassName=""
                 icon={FaInfoCircle}
-                title="Sobre Nós"
-                description="Conheça mais sobre nossos serviços"
-                buttonText="Saiba Mais"
-                onButtonClick={handleInfoClick}
+                showIcon={false}
+                title="Atendimento Clínico On-line e Presencial"
+                description="Não importa como, irei te ajudar!"
+                showButton={false}
               />
             </div>
           </div>
