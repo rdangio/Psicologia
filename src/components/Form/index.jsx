@@ -9,6 +9,11 @@ function Form() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  // Função para transformar as palavras sempre com inicial maiúscula
+  const capitalizeWords = (text) => {
+    return text.toLowerCase().replace(/\b\w/g, (char) => char.toUpperCase());
+  };
+
   function sendEmail(e) {
     e.preventDefault();
 
@@ -52,32 +57,52 @@ function Form() {
       </h2>
 
       <form onSubmit={sendEmail} className="flex w-full flex-col">
-        <input
-          className="mb-3.5 h-8 rounded border p-2 tracking-wider shadow-sm placeholder:text-fs-h6 hover:border-c-turquoise-4 focus:border-c-turquoise-6 focus:shadow focus:outline-none"
-          type="text"
-          placeholder="Digite seu nome"
-          onChange={(e) => setName(e.target.value)}
-          value={name}
-        />
+        {/* Nome */}
+        <div className="group relative z-0 mb-5 w-full">
+          <input
+            type="text"
+            onChange={(e) => setName(capitalizeWords(e.target.value))}
+            value={name}
+            className="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-blue-500"
+            placeholder=" "
+            required
+          />
+          <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm tracking-wider text-gray-500 duration-300 placeholder:text-fs-h6 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-blue-600 rtl:peer-focus:translate-x-1/4 dark:text-gray-400 peer-focus:dark:text-blue-500">
+            Seu nome
+          </label>
+        </div>
 
-        <input
-          className="mb-3.5 h-8 rounded border bg-gray-200 p-2 tracking-wider shadow-sm placeholder:text-fs-h6 hover:border-c-turquoise-4 focus:border-c-turquoise-6 focus:shadow focus:outline-none"
-          type="text"
-          placeholder="Digite seu e-mail"
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
-        />
+        {/* E-mail */}
+        <div className="group relative z-0 mb-5 w-full">
+          <input
+            type="text"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+            className="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-blue-500"
+            placeholder=" "
+            required
+          />
+          <label className="cap absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm tracking-wider text-gray-500 duration-300 placeholder:text-fs-h6 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-blue-600 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4 dark:text-gray-400 peer-focus:dark:text-blue-500">
+            Seu e-mail
+          </label>
+        </div>
 
-        <textarea
-          className="mb-3.5 h-32 w-full resize-none rounded border bg-gray-200 p-2 tracking-wider placeholder:text-fs-h6 hover:border-c-turquoise-4 focus:border-c-turquoise-6 focus:shadow focus:outline-none"
-          type="text"
-          placeholder="Digite sua mensagem..."
-          onChange={(e) => setMessage(e.target.value)}
-          value={message}
-        />
+        {/* Mensagem */}
+        <div className="group relative z-0 mb-5 w-full">
+          <textarea
+            onChange={(e) => setMessage(e.target.value)}
+            value={message}
+            className="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-blue-500"
+            placeholder=" "
+            required
+          />
+          <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm tracking-wider text-gray-500 duration-300 placeholder:text-fs-h6 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-blue-600 rtl:peer-focus:translate-x-1/4 dark:text-gray-400 peer-focus:dark:text-blue-500">
+            Sua mensagem
+          </label>
+        </div>
 
-        <div className="flex w-full justify-center">
-          <DefaultButton type="submit" onClick={sendEmail} className="w-full">
+        <div className="mt-7 flex w-full justify-center">
+          <DefaultButton type="submit" onClick={sendEmail} className="w-60">
             Enviar
           </DefaultButton>
         </div>
@@ -85,5 +110,4 @@ function Form() {
     </div>
   );
 }
-
 export default Form;
