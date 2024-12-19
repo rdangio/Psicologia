@@ -11,6 +11,12 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [showButton, setShowButton] = useState(true);
 
+  // Função para abrir o WhatsApp ao clicar no botão
+  const handleWhatsappClick = () => {
+    const whatsappLink = `https://wa.me/5514997030269?text=Olá, Cláudia! Estou entrando em contato para agendar um atendimento.`;
+    window.open(whatsappLink, "_blank");
+  };
+
   // Hook para monitorar o tamanho da janela
   useEffect(() => {
     const handleResize = () => {
@@ -85,7 +91,12 @@ const Navbar = () => {
 
             {/* Button Session */}
             {showButton && (
-              <DefaultButton hideOnResize={false}>Agendar Sessão</DefaultButton>
+              <DefaultButton
+                hideOnResize={false}
+                onClickAction={handleWhatsappClick}
+              >
+                Agendar Sessão
+              </DefaultButton>
             )}
 
             {/* Moobile Menu Session */}

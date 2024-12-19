@@ -101,7 +101,7 @@ function Form() {
           </label>
         </div>
 
-        <div className="mt-7 flex w-full justify-center">
+        <div className="mt-4 flex w-full justify-center md:mt-7">
           <DefaultButton type="submit" onClick={sendEmail} className="w-60">
             Enviar
           </DefaultButton>

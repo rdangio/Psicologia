@@ -5,6 +5,7 @@ const DefaultButton = ({
   className = "",
   children,
   hideOnResize,
+  onClickAction,
   ...props
 }) => {
   const [isVisible, setIsVisible] = useState(true);
@@ -30,6 +31,7 @@ const DefaultButton = ({
       <button
         {...props}
         type="submit"
+        onClick={onClickAction}
         className={`${className} hidden whitespace-nowrap rounded-md border-2 border-white bg-c-turquoise-5 px-2 py-1 font-semibold text-white duration-200 hover:bg-c-turquoise-6 active:bg-c-turquoise-3 xs:block sm:block 2xl:block`}
       >
         {children}
@@ -43,6 +45,7 @@ DefaultButton.propTypes = {
   children: PropTypes.node.isRequired,
   hideOnResize: PropTypes.bool,
   className: PropTypes.string,
+  onClickAction: PropTypes.func,
 };
 
 export default DefaultButton;
