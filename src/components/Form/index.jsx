@@ -63,7 +63,7 @@ function Form() {
             type="text"
             onChange={(e) => setName(capitalizeWords(e.target.value))}
             value={name}
-            className="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-c-turquoise-6 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-c-turquoise-5"
+            className="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-c-turquoise-6 focus:outline-none focus:ring-0 dark:border-gray-600 dark:focus:border-c-turquoise-5"
             placeholder=" "
             required
           />
@@ -78,7 +78,7 @@ function Form() {
             type="text"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
-            className="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-c-turquoise-6 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-c-turquoise-5"
+            className="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-c-turquoise-6 focus:outline-none focus:ring-0 dark:border-gray-600 dark:focus:border-c-turquoise-5"
             placeholder=" "
             required
           />
@@ -92,7 +92,7 @@ function Form() {
           <textarea
             onChange={(e) => setMessage(e.target.value)}
             value={message}
-            className="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-c-turquoise-6 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-c-turquoise-5"
+            className="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-c-turquoise-6 focus:outline-none focus:ring-0 dark:border-gray-600 dark:focus:border-c-turquoise-5"
             placeholder=" "
             required
           />
