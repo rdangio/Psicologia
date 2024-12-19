@@ -1,10 +1,23 @@
 import Cards from "../../components/Cards";
+import { FaClock, FaPhone, FaInfoCircle } from "react-icons/fa";
 import CentralizedContainer from "../../components/CentralizedContainer/CentralizedContainer";
 import Footer from "../../components/Footer/Footer";
 import Form from "../../components/Form";
 import Map from "../../components/Map";
 
 const Contact = () => {
+  // Funções para os botões dos cards
+  const handleWhatsappClick = () => {
+    window.open(
+      `https://wa.me/5514997030269?text=Olá, Cláudia! Estou entrando em contato para agendar um atendimento.`,
+      "_blank",
+    );
+  };
+
+  const handleInfoClick = () => {
+    window.alert("Mais informações em breve!");
+  };
+
   return (
     <>
       <CentralizedContainer className="border-red border">
@@ -30,11 +43,34 @@ const Contact = () => {
         </section>
         <div className="my-10">
           <div className="flex flex-col sm:grid md:grid-cols-3">
-            <div>
-              <Cards />
+            <div className="flex flex-wrap justify-center gap-4">
+              <Cards
+                imageSrc="/Images/horario.jpg"
+                imageAlt="Imagem de um relógio"
+                icon={FaClock}
+                title="Horários de Atendimento"
+                description="Segunda à sexta-feira: 9h às 18h"
+                buttonText="Agendar Horário"
+                onButtonClick={handleWhatsappClick}
+              />
+              <Cards
+                imageSrc="/Images/telefone.jpg"
+                imageAlt="Imagem de um telefone"
+                icon={FaPhone}
+                title="Fale Conosco"
+                description="Entre em contato para tirar suas dúvidas"
+                showButton={false}
+              />
+              <Cards
+                imageSrc="/Images/info.jpg"
+                imageAlt="Imagem de informações"
+                icon={FaInfoCircle}
+                title="Sobre Nós"
+                description="Conheça mais sobre nossos serviços"
+                buttonText="Saiba Mais"
+                onButtonClick={handleInfoClick}
+              />
             </div>
-            <div>{/* grid2 */}</div>
-            <div>{/* grid3 */}</div>
           </div>
         </div>
       </CentralizedContainer>
