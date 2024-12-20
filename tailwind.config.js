@@ -6,11 +6,6 @@ export default {
       container: {
         center: true, // Centraliza o container automaticamente
         padding: "2rem", //Adiciona padding ao redor do container
-        // DEFAULT: "1rem",
-        // sm: "2rem",
-        // lg: "4rem",
-        // xl: "5rem",
-        // "2xl": "6rem",
       },
 
       colors: {
@@ -39,8 +34,6 @@ export default {
       },
 
       fontSize: {
-        // "fs-h1": ["2.986rem", "3.881rem"],
-        // "fs-h2": ["2.488rem", "3.234rem"],
         "fs-h1": ["2.074rem", "2.696rem"],
         "fs-h2": ["1.728rem", "2.246rem"],
         "fs-h3": ["1.44rem", "1.872rem"],
