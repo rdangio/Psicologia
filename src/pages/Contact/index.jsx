@@ -4,6 +4,7 @@ import CentralizedContainer from "../../components/CentralizedContainer/Centrali
 import Footer from "../../components/Footer/Footer";
 import Form from "../../components/Form";
 import Map from "../../components/Map";
+import Navbar from "../../components/Nav/Nav";
 
 const Contact = () => {
   // Funções para os botões dos cards
@@ -16,6 +17,7 @@ const Contact = () => {
 
   return (
     <>
+      <Navbar />
       <CentralizedContainer className="">
         <section className="m-auto mt-4 flex flex-col items-center">
           <h1 className="mb-2 text-fs-h1 font-bold">Contato</h1>
