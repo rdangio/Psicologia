@@ -50,4 +50,30 @@
 
 ### Sites modelos:
 
-> > > https://franciscahurtadopsicologa.com.br > > >https://www.psigiovanamoraes.com > > > https://www.vitoriaalbinopsi.com.br > > > https://marcossantanapsi.com
+> > > https://franciscahurtadopsicologa.com.br 
+> > > https://www.psigiovanamoraes.com 
+> > > https://www.vitoriaalbinopsi.com.br 
+> > > https://marcossantanapsi.com
+
+
+### Extrutura de pastas
+
+### Client (Frontend):
+
+> > > client/src/components: Componentes React reutilizáveis.
+> > > client/src/pages: Páginas principais da aplicação.
+> > > client/src/hooks: Custom hooks.
+> > > client/index.html: Arquivo HTML principal.
+> > > client/public: Arquivos públicos como imagens e ícones.
+> > > client/package.json: Dependências e scripts específicos do frontend.
+> > > client/vite.config.js: Configuração do Vite.
+
+
+### Server (Backend):
+
+> > > server/routes: Definições de rotas, separados por contexto (auth, user).
+> > > server/controllers: Lógica de negócios para cada rota.
+> > > server/models: Modelos de dados, como o usuário.
+> > > server/middlewares: Middlewares, como autenticação.
+> > > server/server.js: Ponto de entrada do servidor.
+> > > server/package.json: Dependências e scripts específicos do backend.
