@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 import Logo from "../Logo/Logo";
 import HomeIcon from "../Icons/HomeIcon";
 import AboutIcon from "../Icons/AboutIcon";
@@ -60,15 +62,17 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center gap-2">
-              <a href="#">
+              <Link to="about" smooth={true} duration={500}>
                 <AboutIcon />
-              </a>
-              <a
-                href=""
-                className="text-fs-h6 text-gray-600 hover:text-c-turquoise-4"
+              </Link>
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer text-fs-h6 text-gray-600 hover:text-c-turquoise-4"
               >
                 Quem sou?
-              </a>
+              </Link>
             </div>
 
             <div className="flex items-center gap-2">

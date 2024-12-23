@@ -1,9 +1,10 @@
+import { Element } from "react-scroll";
 import { Description } from "../Description/Description";
 import { Title } from "../Titles/Titles";
 
 const Banner = () => {
   return (
-    <div>
+    <Element name="about">
       {/* Banner - faixa que ocupa 100% width e fica degrade */}
       <div className="w-full bg-gradient-to-b from-c-turquoise-5 from-15% via-c-turquoise-4 via-60% to-c-turquoise-2 to-90% sm:bg-gradient-to-r">
         {/* div que abraça tudo */}
@@ -17,18 +18,20 @@ const Banner = () => {
 
           {/* div com os textos */}
           <div className="flex flex-col items-center justify-center sm:w-[27rem] sm:items-start sm:p-1 lg:ml-10">
-            <Title className="font-roboto-bold text-c-turquoise-5 text-fs-h2 md:text-fs-h1">Olá,</Title>
-            <Description className="md:text-fs-h4 text-fs-h5 text-center">
+            <Title className="font-roboto-bold text-fs-h2 text-c-turquoise-5 md:text-fs-h1">
+              Olá,
+            </Title>
+            <Description className="text-center text-fs-h5 md:text-fs-h4">
               sou a Cláudia, sabe como posso te ajudar?
             </Description>
-            <Description className="text-center pb-12 text-fs-h5 md:text-fs-h4">
+            <Description className="pb-12 text-center text-fs-h5 md:text-fs-h4">
               Com encontros regulares e ética profissional, cada sessão é um
               passo em direção ao crescimento pessoal.
             </Description>
           </div>
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 
