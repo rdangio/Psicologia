@@ -85,7 +85,7 @@ const Footer = () => {
         <div className="hidden h-40 w-[1px] rounded-full bg-c-turquoise-1 shadow-md md:block lg:mx-12"></div>
 
         {/* Links redes sociais */}
-        <div className="mt-10 flex flex-col gap-1 sm:mt-0">
+        <div className="mt-10 flex flex-col items-center gap-1 sm:mt-0">
           <p className="text-fs-h6 uppercase text-c-turquoise-1">
             Me siga nas redes sociais
           </p>
