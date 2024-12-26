@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex justify-center">
+      <div id="top" className="flex justify-center">
         {/*         
         <div className="h-[4.3rem] sm:h-[4.6rem] xl:h-[4.3rem]"></div>
         <nav className="fixed z-10 w-full"> */}

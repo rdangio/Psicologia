@@ -2,7 +2,7 @@ const EmailIcon = () => (
   <div>
     <a className="flex items-center justify-center rounded-lg border border-c-turquoise-1 p-1 transition-all duration-500 hover:border-c-turquoise-4 hover:bg-c-turquoise-4">
       <svg
-        className="h-6 w-6"
+        className="h-6 w-6 sm:h-4 sm:w-4"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 72 72"
         fill="none"
